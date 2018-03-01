@@ -5,8 +5,8 @@ description: >
   AXE is a decentralized X-11 based cryptocurrency.
 baseurl: "/website"
 url: "https://axerunners.github.io"
-twitter_username: taniarascia
-github_username:  taniarascia
+twitter_username: axerunners
+github_username:  AXErunners
 # Build Settings
 sass:
   sass_dir: _sass
