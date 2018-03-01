@@ -4,6 +4,4 @@ title: Contact
 permalink: /contact/
 ---
 
-Contact content goes here.
-
-My e-mail is [email@something.com](mailto:email@something.com).
+<iframe src="https://discordapp.com/widget?id=390063890438029322&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
