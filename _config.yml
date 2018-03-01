@@ -1,0 +1,15 @@
+# Site Settings
+title: AXErunners
+email: none
+description: >
+  AXE is a decentralized X-11 based cryptocurrency.
+baseurl: "/website"
+url: "https://axerunners.github.io"
+twitter_username: taniarascia
+github_username:  taniarascia
+# Build Settings
+sass:
+  sass_dir: _sass
+include: ['_pages']
+kramdown:
+  input: GFM
