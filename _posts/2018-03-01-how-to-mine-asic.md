@@ -3,10 +3,10 @@ layout: post
 title: "Mining with ASICs"
 date: 2018-03-01
 excerpt: "How to mine AXE coin with ASIC miner"
-tags: [core, linux, guide, masternode, vps]
+tags: [mining, linux, windows, guide, asic]
 comments: true
-project: false
 ---
+
 ### Download a miner.
 
 SGminer for Windows - download <a href="https://github.com/nicehash/sgminer/releases"><b>here</b></a>
