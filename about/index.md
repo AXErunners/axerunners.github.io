@@ -27,7 +27,7 @@ comments: false
 {% endcapture %}
 {% include gallery images=images caption="v1.1.1 regtest on macOS" cols=2 %}
 
-Support the development
+Support the development <br />
 axe `PBSFWKt583Xb5t92EPccWnXP2UHMTtCt5F`<br />
 bch `13LAh3RFzQb1aUa9Wzxy1uWwDCrZjBT43g`<br />
 ltc `LdihK8mesqJ1Pm11zBqtJW2SmksdgGMuNd`<br />
