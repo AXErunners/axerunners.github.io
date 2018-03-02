@@ -7,7 +7,7 @@ tags: [core, linux, guide]
 comments: true
 ---
 
-#### Prepare the system
+### Prepare the system
 
 Update operating system and install dependencies
 
@@ -24,7 +24,7 @@ sudo apt-get install libdb4.8-dev libdb4.8++-dev
 sudo apt-get install libminiupnpc-dev libzmq3-dev
 ```
 
-#### Install AXE core and launch the client
+### Install AXE core and launch the client
 
 Use following command to install AXE core
 

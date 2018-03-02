@@ -2,11 +2,11 @@
 layout: post
 title: "Mining with ASICs"
 date: 2018-03-01
-excerpt: "How to mine AXE coin with ASIC miner"
-tags: [core, linux, guide, masternode, vps]
+excerpt: "Start mining AXE coin with ASIC miner"
+tags: [mining, linux, windows, guide, asic]
 comments: true
-project: false
 ---
+
 ### Download a miner.
 
 SGminer for Windows - download <a href="https://github.com/nicehash/sgminer/releases"><b>here</b></a>
@@ -32,4 +32,4 @@ CCminer<br />
 ```
 ccminer -a x11 -o stratum+tcp://eu1.arcpool.com:1208 -u PBSFWKt583Xb5t92EPccWnXP2UHMTtCt5F -p x
 ```
-You then need to change -u `PBSFWKt583Xb5t92EPccWnXP2UHMTtCt5F` to reflect your own account. Go to "File > Save as" and save the file as `start.bat` in the same folder containing your miners application files. You are now ready to mine, double click on `start.bat` to start mining.
+You then need to change -u `PBSFWKt583Xb5t92EPccWnXP2UHMTtCt5F` to reflect your own address. Replace `stratum+tcp://eu1.arcpool.com:1208` to another pool if needed. Go to "File > Save as" and save the file as `start.bat` in the same folder containing your miners application files. You are now ready to mine, double click on `start.bat` to start mining.
