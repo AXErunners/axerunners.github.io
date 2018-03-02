@@ -6,7 +6,7 @@ date: 2018-03-01
 comments: false
 ---
 
-<center><a href="https://github.com/AXErunners/axe"><b>AXE</b></a> is decentralized X11-based cryptocurrency. We are focused on privacy, decentralization and full transparency.</center>
+<center><a href="https://github.com/AXErunners/axe"><b>AXE</b></a> is a decentralized X11-based cryptocurrency. We are focused on privacy, decentralization and full transparency.</center>
 
 ## Features
 * algorithm: X11
