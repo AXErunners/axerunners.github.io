@@ -26,3 +26,5 @@ comments: false
     https://raw.githubusercontent.com/AXErunners/media/master/etc/axe-qt-v111macos-scrnsht.png
 {% endcapture %}
 {% include gallery images=images caption="v1.1.1 regtest on macOS" cols=2 %}
+
+[Releases](https://github.com/AXErunners/axe/releases){: .btn}
