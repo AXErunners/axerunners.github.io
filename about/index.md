@@ -27,6 +27,12 @@ comments: false
 {% endcapture %}
 {% include gallery images=images caption="v1.1.1 regtest on macOS" cols=2 %}
 
+Support the development
+axe `PBSFWKt583Xb5t92EPccWnXP2UHMTtCt5F`<br />
+bch `13LAh3RFzQb1aUa9Wzxy1uWwDCrZjBT43g`<br />
+ltc `LdihK8mesqJ1Pm11zBqtJW2SmksdgGMuNd`<br />
+btc `14syJXgwoczCKm2E2APMt4td7MozTw1pZF`<br />
+
 [Releases](https://github.com/AXErunners/axe/releases){: .btn}
 [Masternodes](https://github.com/AXErunners/axe/wiki/Masternodes){: .btn}
 [Block explorer](http://207.246.65.114:3001){: .btn}
