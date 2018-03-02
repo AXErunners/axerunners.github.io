@@ -6,7 +6,7 @@ date: 2018-03-01
 comments: false
 ---
 
-<center><a href="http://taylantatli.github.io/Moon"><b>Moon</b></a> is a minimal, one column jekyll theme.</center>
+<center><a href="https://github.com/AXErunners/axe"><b>AXE</b></a> is decentralized X11-based cryptocurrency.</center>
 
 ## Features
 * algorithm: X11
