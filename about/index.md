@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Information
-tags: [about, Jekyll, theme, moon]
+tags: [about]
 date: 2018-03-01
 comments: false
 ---
