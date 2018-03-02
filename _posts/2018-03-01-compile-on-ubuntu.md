@@ -3,7 +3,7 @@ layout: post
 title: "How to compile AXE core on Ubuntu 16"
 date: 2018-03-01
 excerpt: "v1.1.1"
-tags: [sample post, readability, test]
+tags: [core, linux, guide]
 comments: true
 ---
 
