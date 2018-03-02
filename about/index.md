@@ -7,6 +7,7 @@ comments: false
 ---
 
 <center><a href="https://github.com/AXErunners/axe"><b>AXE</b></a> is a decentralized X11-based cryptocurrency. We are focused on privacy, decentralization and full transparency.</center>
+[Discord](https://hook.io/geo1088/discord-badge/390063890438029322?left=%7Bname%7D&right=%7Bmembers%7D%20online)](https://discord.gg/RKE5PD9)<br />
 
 ## Features
 * algorithm: X11
@@ -26,8 +27,6 @@ comments: false
     https://raw.githubusercontent.com/AXErunners/media/master/etc/axe-qt-v111macos-scrnsht.png
 {% endcapture %}
 {% include gallery images=images caption="v1.1.1 regtest on macOS" cols=2 %}
-
-[Discord](https://hook.io/geo1088/discord-badge/390063890438029322?left=%7Bname%7D&right=%7Bmembers%7D%20online)](https://discord.gg/RKE5PD9)<br />
 
 #### Support the development
 axe `PBSFWKt583Xb5t92EPccWnXP2UHMTtCt5F`<br />
