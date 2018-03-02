@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How to compile AXE core on Ubuntu 16"
-date: 2012-05-22
+date: 2018-03-01
 excerpt: "How to compile AXE core on Ubuntu"
 tags: [sample post, readability, test]
 comments: true
