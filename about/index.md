@@ -5,10 +5,11 @@ tags: [about]
 date: 2018-03-01
 comments: false
 ---
-
 <center><a href="https://github.com/AXErunners/axe"><b>AXE</b></a> is a decentralized X11-based cryptocurrency. We are focused on privacy, decentralization and full transparency.</center>
+[Releases](https://github.com/AXErunners/axe/releases){: .btn}
+[Masternodes](https://github.com/AXErunners/axe/wiki/Masternodes){: .btn}
+[Block explorer](http://207.246.65.114:3001){: .btn}
 
-[![Discord](https://hook.io/geo1088/discord-badge/390063890438029322/JkasDjQ)](https://discord.gg/RKE5PD9)<br />
 
 ## Features
 * algorithm: X11
@@ -27,7 +28,7 @@ defined by Moore's Law with min/max base subsidy 5/25 AXE
 
 ## Masternodes
 
-The second tier of AXE network - masternodes. They sustain a certain minimum level of network performance and provide additional privacy. 
+The second tier of AXE network - masternodes. They sustain a certain minimum level of network performance and provide additional privacy.
 
 #### InstantSend
 Allows for near-instant transactions. AXE InstantSend transactions are fully confirmed within four seconds.
@@ -47,7 +48,6 @@ axe `PBSFWKt583Xb5t92EPccWnXP2UHMTtCt5F`<br />
 bch `13LAh3RFzQb1aUa9Wzxy1uWwDCrZjBT43g`<br />
 ltc `LdihK8mesqJ1Pm11zBqtJW2SmksdgGMuNd`<br />
 btc `14syJXgwoczCKm2E2APMt4td7MozTw1pZF`<br />
-
-[Releases](https://github.com/AXErunners/axe/releases){: .btn}
-[Masternodes](https://github.com/AXErunners/axe/wiki/Masternodes){: .btn}
-[Block explorer](http://207.246.65.114:3001){: .btn}
+<br />
+<br />
+[![Discord](https://hook.io/geo1088/discord-badge/390063890438029322/JkasDjQ)](https://discord.gg/RKE5PD9)
