@@ -25,6 +25,16 @@ comments: false
 block reward:<br />
 defined by Moore's Law with min/max base subsidy 5/25 AXE
 
+## Masternodes
+
+The second tier of AXE network - masternodes. They sustain a certain minimum level of network performance and provide additional privacy. 
+
+#### InstantSend
+Allows for near-instant transactions. AXE InstantSend transactions are fully confirmed within four seconds.
+
+#### PrivateSend
+Gives you financial privacy by obscuring the source of funds on the blockchain.
+
 ## GUI
 
 {% capture images %}
