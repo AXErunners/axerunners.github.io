@@ -5,13 +5,12 @@ tags: [about]
 date: 2018-03-01
 comments: false
 ---
+![axerunnerslogo](https://raw.githubusercontent.com/AXErunners/media/master/axerunners-blk.png){:height="32%" width="32%"}
 <center><a href="https://github.com/AXErunners/axe"><b>AXE</b></a> is a decentralized X11-based cryptocurrency. We are focused on privacy, decentralization and full transparency.</center>
 [Releases](https://github.com/AXErunners/axe/releases){: .btn}
 [Masternodes](https://github.com/AXErunners/axe/wiki/Masternodes){: .btn}
 [Block explorer](http://207.246.65.114:3001){: .btn}
 [Forum](https://bitcointalk.org/index.php?topic=2569112){: .btn}
-
-
 
 ## Features
 * algorithm: X11
