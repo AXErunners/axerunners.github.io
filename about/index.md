@@ -19,7 +19,7 @@ comments: false
 * supply: 21000000
 * maturity: 101 blocks
 * confirmations: 6
-* spacing: 2.5
+* spacing: 2.5 min
 * diff: DGW
 * port: 9937
 * rpc port: 9337
