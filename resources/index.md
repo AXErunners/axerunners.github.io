@@ -6,7 +6,7 @@ tags:
 date: '2018-03-04'
 comments: false
 ---
-![axerunnerslogo](https://raw.githubusercontent.com/AXErunners/media/master/axe-tx-long-bk.png){:height="35%" width="35%"}
+![axerunnerslogo](https://raw.githubusercontent.com/AXErunners/media/master/axe-tx-long-bk.png){:height="23%" width="23%"}
 * [documentation](https://github.com/AXErunners/axe/tree/master/doc)
 * [repositories](https://github.com/AXErunners)
 * [wiki](https://github.com/AXErunners/axe/wiki)
