@@ -8,7 +8,7 @@ comments: false
 ---
 
 * [documentation](https://github.com/AXErunners/axe/tree/master/doc)
-* [repositories](https://github.com/AXErunners
+* [repositories](https://github.com/AXErunners)
 * [wiki](https://github.com/AXErunners/axe/wiki)
 * [downloads](https://github.com/AXErunners/axe/releases) 
 * [slack](https://axe-slack.herokuapp.com/)
