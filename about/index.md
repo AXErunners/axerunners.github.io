@@ -10,7 +10,6 @@ comments: false
 [Releases](https://github.com/AXErunners/axe/releases){: .btn}
 [Masternodes](https://github.com/AXErunners/axe/wiki/Masternodes){: .btn}
 [Block explorer](http://207.246.65.114:3001){: .btn}
-[Forum](https://bitcointalk.org/index.php?topic=2569112){: .btn}
 
 ## Features
 * algorithm: X11
