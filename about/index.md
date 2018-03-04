@@ -17,7 +17,7 @@ comments: false
 * ticker: AXE
 * prefix: P
 * supply: 21000000
-* maturity: 101 blocks
+* maturity: 101
 * confirmations: 6
 * spacing: 2.5 min
 * diff: DGW
