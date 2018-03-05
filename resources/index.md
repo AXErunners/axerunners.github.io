@@ -16,5 +16,5 @@ comments: false
 * [discord](https://discord.gg/RKE5PD9)
 * [bitcointalk](https://bitcointalk.org/index.php?topic=2569112)
 
-## Tools
+### Tools
 [block explorer](http://207.246.65.114:3001)
