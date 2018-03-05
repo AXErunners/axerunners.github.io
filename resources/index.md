@@ -17,6 +17,6 @@ comments: false
 * [bitcointalk](https://bitcointalk.org/index.php?topic=2569112)
 
 ### Tools
-[block explorer](http://207.246.65.114:3001)
-[wallet generator](https://axerunners.github.io/axe-wallet-generator)
-[vanitygen](https://github.com/exploitagency/vanitygen-plus)
+* [block explorer](http://207.246.65.114:3001)
+* [wallet generator](https://axerunners.github.io/axe-wallet-generator)
+* [vanitygen](https://github.com/exploitagency/vanitygen-plus)
