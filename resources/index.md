@@ -18,3 +18,4 @@ comments: false
 
 ### Tools
 [block explorer](http://207.246.65.114:3001)
+[wallet generator](https://axerunners.github.io/axe-wallet-generator)
