@@ -10,7 +10,7 @@ comments: false
 [Releases](https://github.com/AXErunners/axe/releases){: .btn}
 [Masternodes](https://github.com/AXErunners/axe/wiki/Masternodes){: .btn}
 [Block explorer](http://207.246.65.114:3001){: .btn}
-
+<br />
 <img src="https://travis-ci.org/AXErunners/axe.svg?branch=master" alt="master" align="left"><br />
 
 ## Features
