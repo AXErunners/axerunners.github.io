@@ -12,8 +12,9 @@ build status:<br />
 ### Official
 * [documentation](https://github.com/AXErunners/axe/tree/master/doc)
 * [repositories](https://github.com/AXErunners)
-* [wiki](https://github.com/AXErunners/axe/wiki)
 * [downloads](https://github.com/AXErunners/axe/releases)
+* [wiki](https://github.com/AXErunners/axe/wiki)
+* [travis-ci](https://travis-ci.org/AXErunners/axe)
 * [slack](https://axe-slack.herokuapp.com/)
 * [discord](https://discord.gg/RKE5PD9)
 * [bitcointalk](https://bitcointalk.org/index.php?topic=2569112)
