@@ -7,6 +7,8 @@ date: '2018-03-04'
 comments: false
 ---
 ### Official
+build status:<br />
+[![Build Status](https://travis-ci.org/AXErunners/axe.svg?branch=master)](https://travis-ci.org/AXErunners/axe)<br />
 * [documentation](https://github.com/AXErunners/axe/tree/master/doc)
 * [repositories](https://github.com/AXErunners)
 * [wiki](https://github.com/AXErunners/axe/wiki)
