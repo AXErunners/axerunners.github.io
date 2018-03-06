@@ -11,7 +11,7 @@ comments: false
 [Masternodes](https://github.com/AXErunners/axe/wiki/Masternodes){: .btn}
 [Block explorer](http://207.246.65.114:3001){: .btn}
 
-<kbd>M</kbd><kbd>A</kbd><kbd>S</kbd><kbd>T</kbd><kbd>E</kbd><kbd>R</kbd><img src="https://travis-ci.org/AXErunners/axe.svg?branch=master" alt="master" align="left"><br />
+<img src="https://travis-ci.org/AXErunners/axe.svg?branch=master" alt="master" align="left"><br />
 
 ## Features
 * algorithm: X11
