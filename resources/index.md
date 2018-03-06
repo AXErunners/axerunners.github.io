@@ -6,7 +6,7 @@ tags:
 date: '2018-03-04'
 comments: false
 ---
-<img src="https://img.shields.io/github/tag/axerunners/axe.svg?maxAge=2592000" align="left"> . <img src="https://travis-ci.org/AXErunners/axe.svg?branch=master" alt="master" align="left"><br />
+<img src="https://travis-ci.org/AXErunners/axe.svg?branch=master" alt="master" align="left"><br />
 
 ### Official
 * [documentation](https://github.com/AXErunners/axe/tree/master/doc)
