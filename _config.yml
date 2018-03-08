@@ -30,10 +30,10 @@ sass:
 
 # Social
 # if you don't have any of social below, comment the line.
-#google:
+google:             
   #plus:            #axerunners
   #analytics:       
-   verify:          ZZQ2EXNJm1J2YeFEV9Tckqm7Bdir7OvHcNEu_ypPl2w
+   #verify:          ZZQ2EXNJm1J2YeFEV9Tckqm7Bdir7OvHcNEu_ypPl2w
   #ad-client:
   #ad-slot:
 #bing-verify:
