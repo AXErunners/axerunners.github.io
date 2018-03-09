@@ -14,8 +14,9 @@ comments: false
 * [travis-ci](https://travis-ci.org/AXErunners/axe)
 * [bountysource](https://www.bountysource.com/teams/axe)
 * [slack](https://axe-slack.herokuapp.com/)
-* [discord](https://discord.gg/RKE5PD9)
+* [discord](https://discord.gg/RKE5PD9/)
 * [bitcointalk](https://bitcointalk.org/index.php?topic=2569112)
+* [reddit](https://www.reddit.com/r/AXErunners)
 
 ### Tools
 * [block explorer](http://207.246.65.114:3001)
