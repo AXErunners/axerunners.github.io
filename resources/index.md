@@ -12,6 +12,7 @@ comments: false
 * [downloads](https://github.com/AXErunners/axe/releases)
 * [wiki](https://github.com/AXErunners/axe/wiki)
 * [travis-ci](https://travis-ci.org/AXErunners/axe)
+* [bountysource](https://www.bountysource.com/teams/axe)
 * [slack](https://axe-slack.herokuapp.com/)
 * [discord](https://discord.gg/RKE5PD9)
 * [bitcointalk](https://bitcointalk.org/index.php?topic=2569112)
