@@ -23,3 +23,6 @@ comments: false
 * [wallet generator](https://axerunners.github.io/axe-wallet-generator)
 * [pycoin](https://github.com/richardkiss/pycoin)
 * [vanitygen](https://github.com/exploitagency/vanitygen-plus)
+
+### Misc
+* [Mastering Bitcoin](https://github.com/bitcoinbook/bitcoinbook)
