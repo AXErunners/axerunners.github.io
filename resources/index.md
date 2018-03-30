@@ -18,9 +18,10 @@ comments: false
 * [bitcointalk](https://bitcointalk.org/index.php?topic=2569112)
 * [reddit](https://www.reddit.com/r/AXErunners)
 
-### Tools
+### Tools & Services
 * [block explorer](http://207.246.65.114:3001)
 * [p2pool-axe](https://github.com/AXErunners/p2pool-axe)
+* [electrumx](https://github.com/kyuupichan/electrumx)
 * [wallet generator](https://axerunners.github.io/axe-wallet-generator)
 * [pycoin](https://github.com/richardkiss/pycoin)
 * [vanitygen](https://github.com/exploitagency/vanitygen-plus)
