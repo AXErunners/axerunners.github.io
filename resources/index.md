@@ -27,4 +27,4 @@ comments: false
 * [vanitygen](https://github.com/exploitagency/vanitygen-plus)
 
 ### Misc
-* [Mastering Bitcoin](https://github.com/bitcoinbook/bitcoinbook)
+* [mastering bitcoin](https://github.com/bitcoinbook/bitcoinbook)
