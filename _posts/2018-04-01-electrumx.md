@@ -35,6 +35,8 @@ HOST=91.65.291.42
 COIN=AXE
 ```
 
-
+Starting and stopping electrumx server:
+`service electrumx start`
+`service electrumx start
 
 Source https://github.com/kyuupichan/electrumx
