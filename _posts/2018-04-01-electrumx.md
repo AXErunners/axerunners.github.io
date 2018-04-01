@@ -16,4 +16,25 @@ To start, input following line:
 wget https://raw.githubusercontent.com/bauerj/electrumx-installer/master/bootstrap.sh -O - | bash`
 ```
 
-Follow the instructions and finish the configuration
+Finish the configuration by adding your AXE node's RPC login/pass
+
+Sample:
+```
+# REQUIRED
+DB_DIRECTORY = /db
+# AXE node RPC credentials
+DAEMON_URL = axerunner:m3hk86m8vw@144.202.40.33:9337/
+DB_ENGINE=rocksdb
+
+SSL_CERTFILE=/etc/electrumx/server.crt
+SSL_KEYFILE=/etc/electrumx/server.key
+TCP_PORT=50001
+SSL_PORT=50002
+# Listen on all interfaces:
+HOST=91.65.291.42
+COIN=AXE
+```
+
+
+
+Source https://github.com/kyuupichan/electrumx
