@@ -11,7 +11,7 @@ comments: true
 
 SGminer for Windows - download <a href="https://github.com/nicehash/sgminer/releases"><b>here</b></a><br />
 SGminer Source - download <a href="https://github.com/nicehash/sgminer/releases"><b>here</b></a><br />
-CCminer 1.2 (Nvidia - Compute 2.5+) - download <a href="https://github.com/cbuchner1/ccminer/releases/download/v1.2/ccminer-v1.2.zip"><b>here</b></a>br />
+CCminer 1.2 (Nvidia - Compute 2.5+) - download <a href="https://github.com/cbuchner1/ccminer/releases/download/v1.2/ccminer-v1.2.zip"><b>here</b></a><br />
 
 ### Create AXE address to receive payments.
 
