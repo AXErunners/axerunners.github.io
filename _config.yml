@@ -1,5 +1,5 @@
 # Site
-title:              AXE
+title:              AXErunners
 bio:                'AXE is a decentralized X11-based cryptocurrency.'
 description:        "Decentralized cryptocurrency"
 reading_time:       false
@@ -30,9 +30,9 @@ sass:
 
 # Social
 # if you don't have any of social below, comment the line.
-google:             
+google:
   #plus:            #axerunners
-  #analytics:       
+  #analytics:
    #verify:          ZZQ2EXNJm1J2YeFEV9Tckqm7Bdir7OvHcNEu_ypPl2w
   #ad-client:
   #ad-slot:
