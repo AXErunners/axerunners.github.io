@@ -20,7 +20,7 @@ comments: false
 * maturity: 101
 * confirmations: 6
 * spacing: 2.5 min
-* diff: DGW
+* diff: DGW/KGW
 * port: 9937
 * rpc port: 9337
 
