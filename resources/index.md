@@ -11,7 +11,7 @@ comments: false
 * [repositories](https://github.com/AXErunners)
 * [downloads](https://github.com/AXErunners/axe/releases)
 * [wiki](https://github.com/AXErunners/axe/wiki)
-* [travis-ci](https://travis-ci.org/AXErunners/axe)
+* [travis-ci](https://travis-ci.org/AXErunners)
 * [bountysource](https://www.bountysource.com/teams/axe)
 * [slack](https://axe-slack.herokuapp.com/)
 * [discord](https://discordapp.com/invite/BqhteaU)
