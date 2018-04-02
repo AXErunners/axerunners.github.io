@@ -7,5 +7,5 @@ date: '2018-03-15'
 comments: false
 ---
 
-AXE core for linux [download](https://github.com/AXErunners/axe/releases/download/v1.1.2/axecore-1.1.2-linux64.tar.gz)
+AXE core for linux [download](https://github.com/AXErunners/axe/releases/download/v1.1.2/axecore-1.1.2-linux64.tar.gz){: info.btn}
 [checksum](https://github.com/AXErunners/axe/releases/download/v1.1.2/axecore-1.1.2-linux64.tar.gz.asc)
