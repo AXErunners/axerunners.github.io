@@ -3,7 +3,7 @@ layout: post
 title: "electrumx server"
 date: 2018-04-01
 excerpt: "Deployment of ElectrumX SPV server"
-tags: [linux, guide, backend, spv, service]
+tags: [linux, guide, backend, spv, , service]
 comments: true
 project: true
 ---
@@ -13,7 +13,7 @@ The current version of electrumx requires precise system configuration and is no
 
 To start, input following line:
 ```
-wget https://raw.githubusercontent.com/bauerj/electrumx-installer/master/bootstrap.sh -O - | bash`
+wget https://raw.githubusercontent.com/bauerj/electrumx-installer/master/bootstrap.sh -O - | bash
 ```
 
 Finish the configuration by adding your AXE node's RPC login/pass
