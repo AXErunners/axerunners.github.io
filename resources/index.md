@@ -20,6 +20,7 @@ comments: false
 
 ### Tools & Services
 * [block explorer](http://207.246.65.114:3001)
+* [barterdex](https://github.com/KomodoPlatform/BarterDEX)
 * [p2pool-axe](https://github.com/AXErunners/p2pool-axe)
 * [electrumx](https://github.com/kyuupichan/electrumx)
 * [wallet generator](https://axerunners.github.io/axe-wallet-generator)
