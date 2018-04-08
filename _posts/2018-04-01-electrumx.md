@@ -16,7 +16,8 @@ To start, input following line:
 wget https://raw.githubusercontent.com/bauerj/electrumx-installer/master/bootstrap.sh -O - | bash
 ```
 
-Finish the configuration by adding your AXE node's RPC login/pass
+Finish the configuration by adding your AXE node's RPC login/pass in DAEMON_URL as `user:pass@<VPS IP>:<RPCPORT>/`
+
 
 Sample:
 ```
@@ -34,6 +35,9 @@ SSL_PORT=50002
 HOST=91.65.291.42
 COIN=AXE
 ```
+add the ports in the firewall exception:<br />
+`sudo ufw allow 50001`<br />
+`sudo ufw allow 50002`<br />
 
 Starting and stopping electrumx server:<br />
 `service electrumx start`<br />
