@@ -16,7 +16,7 @@ To start, input following line:
 wget https://raw.githubusercontent.com/bauerj/electrumx-installer/master/bootstrap.sh -O - | bash
 ```
 
-Finish the configuration by adding your AXE node's RPC login/pass in DAEMON_URL as user:pass@<VPS IP>:<RPCPORT>/
+Finish the configuration by adding your AXE node's RPC login/pass in DAEMON_URL as `user:pass@<VPS IP>:<RPCPORT>/`
 
 
 Sample:
