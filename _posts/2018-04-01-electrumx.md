@@ -34,6 +34,11 @@ SSL_PORT=50002
 # Listen on all interfaces:
 HOST=91.65.291.42
 COIN=AXE
+
+#BANNER_FILE = /etc/electrumx/electrum.banner
+#Uncomment the above line if you want to have a banner and create the banner file
+
+
 ```
 add the ports in the firewall exception:<br />
 `sudo ufw allow 50001`<br />
