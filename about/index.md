@@ -21,6 +21,7 @@ comments: false
 * confirmations: 6
 * spacing: 2.5 min
 * diff: KGW/DGW
+* block size: 2MB
 * port: 9937
 * rpc port: 9337
 
