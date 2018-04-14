@@ -24,7 +24,8 @@ comments: false
 * block size: 2MB
 * port: 9937
 * rpc port: 9337
-<br />
+
+
 * block reward: defined by Moore's Law with min/max base subsidy 5/25 AXE
 * smart contracts: atomic-swap powered
 
