@@ -23,9 +23,8 @@ comments: false
 * diff: KGW/DGW
 * block size: 2MB
 * port: 9937
-* rpc port: 9337
+* rpc port: 9337<br />
 
-<br />
 * block reward: defined by Moore's Law with min/max base subsidy 5/25 AXE
 * smart contracts: atomic-swap powered
 
