@@ -7,7 +7,7 @@ tags: [trading, decentralized, exchange, guide, core, linux, windows, mac]
 comments: true
 ---
 ## Environment
-Download and install <a href="https://github.com/AXErunners/axe/releases/latest"><b>AXE</b></a> with other wallets you planning to trade with. While your wallets are syncing, download latest BarterDEX binaries <a href="https://github.com/KomodoPlatform/BarterDEX/releases">here</a>. When wallets are synced, close AXE core and edit `axe.conf` as in the example below:
+Download and install <a href="https://github.com/AXErunners/axe/releases/latest"><b>AXE</b></a> with other wallets you planning to trade with. While your wallets are syncing, download latest <b>BarterDEX</b> binaries <a href="https://github.com/KomodoPlatform/BarterDEX/releases">here</a>. When wallets are synced, close AXE core and edit `axe.conf` as in the example below:
 ```
 rpcuser=axerunner283723
 rpcpassword=warp2178302
