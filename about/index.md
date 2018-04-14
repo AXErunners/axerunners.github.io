@@ -31,10 +31,10 @@ smart contracts: atomic-swap powered
 
 ## Masternodes
 
-The second tier of AXE network - masternodes. They sustain a certain minimum level of network performance and provide additional privacy (PoSe).
+The second tier of <b>AXE</b> network - masternodes. They sustain a certain minimum level of network performance and provide additional privacy (PoSe).
 
 #### InstantSend
-Allows for near-instant transactions. AXE InstantSend transactions are fully confirmed within four seconds.
+Allows for near-instant transactions. <b>AXE</b> InstantSend transactions are fully confirmed within four seconds.
 
 #### PrivateSend
 Gives you financial privacy by obscuring the source of funds on the blockchain.
