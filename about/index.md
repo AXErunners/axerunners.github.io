@@ -46,6 +46,7 @@ Gives you financial privacy by obscuring the source of funds on the blockchain.
 {% endcapture %}
 {% include gallery images=images caption="Axe-Qt v1.1.2 regtest on macOS 10.13.4" cols=2 %}
 <hr class="hr-line">
+
 #### Support the development
 axe `PBSFWKt583Xb5t92EPccWnXP2UHMTtCt5F`<br />
 bch `13LAh3RFzQb1aUa9Wzxy1uWwDCrZjBT43g`<br />
