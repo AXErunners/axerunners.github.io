@@ -29,6 +29,7 @@ block reward: defined by Moore's Law with min/max base subsidy 5/25 AXE<br />
 smart contracts: atomic-swap powered/HTLC<br />
 
 strict DER signatures<br />
+relative lock-time
 
 ## Masternodes
 The second tier of <b>AXE</b> network - masternodes. They sustain a certain minimum level of network performance and provide additional privacy (PoSe).
