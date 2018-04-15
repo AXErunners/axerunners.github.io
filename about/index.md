@@ -12,7 +12,7 @@ comments: false
 [Masternodes](https://github.com/AXErunners/axe/wiki/Masternodes){: .btn}
 [Block explorer](http://207.246.65.114:3001){: .btn}
 
-## Features
+## Specifications
 * algorithm: X11
 * ticker: AXE
 * prefix: P
