@@ -49,9 +49,9 @@ Gives you financial privacy by obscuring the source of funds on the blockchain.
 
 #### Support the development
 axe `PBSFWKt583Xb5t92EPccWnXP2UHMTtCt5F`<br />
-bch `13LAh3RFzQb1aUa9Wzxy1uWwDCrZjBT43g`<br />
-ltc `LdihK8mesqJ1Pm11zBqtJW2SmksdgGMuNd`<br />
 btc `14syJXgwoczCKm2E2APMt4td7MozTw1pZF`<br />
+ltc `LdihK8mesqJ1Pm11zBqtJW2SmksdgGMuNd`<br />
+bch `13LAh3RFzQb1aUa9Wzxy1uWwDCrZjBT43g`<br />
 <br />
 <br />
 [![Discord](https://hook.io/geo1088/discord-badge/390063890438029322/JkasDjQ)](https://discord.gg/RKE5PD9)
