@@ -1,6 +1,5 @@
 language: ruby
-rvm:
-- 2.1
+sudo: false
 script: ./script/cibuild
 branches:
   only:
