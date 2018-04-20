@@ -4,4 +4,4 @@ cache: bundler
 install:
 - bundle install
 script:
-- "./build.sh"
+- jekyll serve

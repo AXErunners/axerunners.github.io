@@ -2,7 +2,7 @@
 
 set -e
 
-DEPLOY_REPO="https://${DEPLOY_BLOG_TOKEN}@github.com/axerunners/axerunners.github.io.git"
+DEPLOY_REPO="https://github.com/AXErunners/axerunners.github.io"
 
 function main {
 	clean
@@ -17,7 +17,7 @@ function clean {
 
 function get_current_site {
 	echo "getting latest site"
-	git clone --depth 1 $DEPLOY_REPO _site
+	git clone --depth 1 $DEPLOY_REPO
 }
 
 function build_site {
