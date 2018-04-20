@@ -16,7 +16,7 @@ $(function() {
 });
 
 // All others
-$(document).ready(function() {
+window.onpageshow(function() {
     // zoom in/zoom out animations
     if ($(".container").hasClass('fadeOut')) {
         $(".container").removeClass("fadeOut").addClass("fadeIn");
@@ -50,7 +50,7 @@ $(document).ready(function() {
       tError: '<a href="%url%">Image #%curr%</a> could not be loaded.',
     },
     removalDelay: 300, // Delay in milliseconds before popup is removed
-    // Class that is added to body when popup is open. 
+    // Class that is added to body when popup is open.
     // make it unique to apply your CSS animations just to this exact popup
     mainClass: 'mfp-fade'
   });
