@@ -12,7 +12,7 @@ function main {
 
 function clean {
 	echo "cleaning _site folder"
-	if [ -d "_site" ]; then rm -Rf _site; fi
+	if [ -d "_site" ]; then rm -rf _site; fi
 }
 
 function get_current_site {
@@ -41,8 +41,8 @@ function deploy {
 	fi
 
 	cd _site
-	git config --global user.name "Travis CI"
-    git config --global user.email paul.dambra+travis@gmail.com
+	git config --global user.name "axerunner"
+    git config --global user.email info@axerunners.com
 	git add -A
 	git status
 	git commit -m "Lastest site built on successful travis build $TRAVIS_BUILD_NUMBER auto-pushed to github"
