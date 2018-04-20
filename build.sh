@@ -25,6 +25,8 @@ function build_site {
 	bundle exec jekyll build
 }
 
+main
+
 function deploy {
 	echo "deploying changes"
 
