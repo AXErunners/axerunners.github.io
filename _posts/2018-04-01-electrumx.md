@@ -7,8 +7,6 @@ tags: [linux, guide, backend, spv, service]
 comments: true
 project: true
 ---
-## How to deploy electrumx server for AXE SPV protocol
-
 The current version of electrumx requires precise system configuration and is not fully automated for fast deployment. The script below is used for fast and easy setup of electrumx server on working AXE core node.
 
 To start, input following line:
