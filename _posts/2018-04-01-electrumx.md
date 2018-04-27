@@ -45,4 +45,4 @@ Starting and stopping electrumx server:<br />
 `service electrumx start`<br />
 `service electrumx start`<br /> 
 
-Source https://github.com/kyuupichan/electrumx
+[source](https://github.com/kyuupichan/electrumx)
