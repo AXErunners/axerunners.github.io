@@ -65,6 +65,7 @@ facebook:           axe137
 # Gems
 plugins:
   - jekyll-mentions
+  - jekyll-seo-tag
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-gist
