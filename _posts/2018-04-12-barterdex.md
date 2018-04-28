@@ -6,6 +6,14 @@ excerpt: "How to setup BarterDEX with AXE core"
 tags: [trading, decentralized, exchange, guide, core, linux, windows, mac]
 comments: true
 ---
+<figure>
+	<a href="/assets/img/barterdex-btc-axe-graph.png"><img src="/assets/img/barterdex-btc-axe-graph.png"></a>
+	<figcaption>BarterDEX v1.0.2rc chart</figcaption>
+</figure>
+<figure>
+	<a href="/assets/img/barterdex-btc-axe.png"><img src="/assets/img/barterdex-btc-axe.png"></a>
+	<figcaption></figcaption>
+</figure>
 ## Environment
 Download and install <a href="https://github.com/AXErunners/axe/releases/latest"><b>AXE</b></a> with other wallets you planning to trade with. While your wallets are syncing, download latest <b>BarterDEX</b> binaries <a href="https://github.com/KomodoPlatform/BarterDEX/releases">here</a>. When wallets are synced, close AXE core and edit `axe.conf` as in the example below:
 ```
@@ -21,6 +29,6 @@ port=9937
 If needed, add necessary changes to another wallets.<br />
 _AXE core `native` with Bitcoin `electrum` mode will work out of the box._
 ## First start
-Open <b>BarterDEX</b> and generate your seed. This seed will be associated with your wallet's deposit address. Don't lose it, or you will not be able to access your deposits in watch-only addresses. If you are using AXE core, select `native` mode. For SPV wallets - use `electrum` mode. After adding your coins, click on `exchange`, select pairs you want to trade, and send your first order. 
+Open <b>BarterDEX</b> and generate your seed. This seed will be associated with your wallet's deposit address. Don't lose it, or you will not be able to access your deposits in watch-only addresses. If you are using AXE core, select `native` mode. For SPV wallets - use `electrum` mode. After adding your coins, click on `exchange`, select pairs you want to trade, and send your first order.
 
 [ref](https://komodoplatform.com/decentralized-exchange/)
