@@ -8,7 +8,7 @@ comments: true
 ---
 <figure class="half">
     <a href="BarterDEX graph"><img src="/assets/img/barterdex-btc-axe-graph.png"></a>
-    <a href="/assets/img/image-filename-2-large.jpg"><img src="/images/barterdex-btc-axe.png"></a>
+    <a href="BarterDEX AXE-BTC pair"><img src="/assets/img/barterdex-btc-axe.png"></a>
     <figcaption>BarterDEX with AXE-BTC pairs</figcaption>
 </figure>
 ## Environment
