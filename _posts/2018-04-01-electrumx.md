@@ -43,6 +43,6 @@ sudo ufw allow 50002
 ```
 Starting and stopping electrumx server:<br />
 `service electrumx start`<br />
-`service electrumx start`<br /> 
+`service electrumx start`<br />
 
 [source](https://github.com/kyuupichan/electrumx)
