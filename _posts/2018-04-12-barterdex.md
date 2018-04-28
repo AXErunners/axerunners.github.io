@@ -6,10 +6,13 @@ excerpt: "How to setup BarterDEX with AXE core"
 tags: [trading, decentralized, exchange, guide, core, linux, windows, mac]
 comments: true
 ---
-<figure class="half">
-    <a href="BarterDEX graph"><img src="/assets/img/barterdex-btc-axe-graph.png"></a>
-    <a href="BarterDEX AXE-BTC pair"><img src="/assets/img/barterdex-btc-axe.png"></a>
-    <figcaption>BarterDEX with AXE-BTC pairs</figcaption>
+<figure>
+	<a href="/assets/img/barterdex-btc-axe-graph.png"><img src="/assets/img/barterdex-btc-axe-graph.png"></a>
+	<figcaption>BarterDEX v1.0.2rc chart</figcaption>
+</figure>
+<figure>
+	<a href="/assets/img/barterdex-btc-axe.png"><img src="/assets/img/barterdex-btc-axe.png"></a>
+	<figcaption></figcaption>
 </figure>
 ## Environment
 Download and install <a href="https://github.com/AXErunners/axe/releases/latest"><b>AXE</b></a> with other wallets you planning to trade with. While your wallets are syncing, download latest <b>BarterDEX</b> binaries <a href="https://github.com/KomodoPlatform/BarterDEX/releases">here</a>. When wallets are synced, close AXE core and edit `axe.conf` as in the example below:

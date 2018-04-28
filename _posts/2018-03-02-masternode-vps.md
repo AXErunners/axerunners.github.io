@@ -7,7 +7,6 @@ tags: [core, linux, guide, masternode, vps]
 comments: true
 project: true
 ---
-
 To start AXE masternode on a dedicated server you will need:
 * 1000 AXE collateral
 * server with Ubuntu (16.04) and static IP ([Vultr](https://www.vultr.com/?ref=7231821))
@@ -22,7 +21,6 @@ adduser axerunner
 usermod -aG sudo axerunner
 su axerunner
 ```
-
 #### Prepare the system
 
 Update operating system and install dependencies
