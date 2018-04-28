@@ -147,3 +147,6 @@ Wait until the process is finished (check status with axe-cli mnsync status). Af
 
 #### Start your masternode
 Go to your local wallet's masternode tab (on/off switch in Options) and start your masternode.
+
+If your node shows `WATCHDOG EXPIRED` status - this usually indicates an issue with Sentinel. Check the schedule with `crontab -e` and give it a few hours. It might take a few hours for masternode to switch to `ENABLED`.
+{: .notice}
