@@ -137,7 +137,7 @@ Now you need to add Sentinel to cron. Enter `crontab -e` and insert following li
 ```
 * * * * * cd /home/axerunner/.axecore/sentinel && ./venv/bin/python bin/sentinel.py 2>&1 >> sentinel-cron.log
 ```
-Save changes and close editor with <kbd>esc</kbd>, <kbd>:</kbd><kbd>w</kbd><kbd>q</kbd>
+Save changes and close editor with <kbd>esc</kbd> <kbd>:</kbd><kbd>w</kbd><kbd>q</kbd>
 Check Sentinel:
 ```
 venv/bin/python bin/sentinel.py
