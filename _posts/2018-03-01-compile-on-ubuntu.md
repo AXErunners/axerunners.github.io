@@ -39,7 +39,14 @@ Start GUI client with `axe-qt` or headless version with `axed`
 
 ### Outro (Linux)
 
-Below you can find detailed description how Axe Core on-liner compiles and installs Axe Core (master branch) in your bin directory
+Below you can find the information regarding how Axe Core on-liner compiles and installs Axe Core (master branch) into your bin directory.
+
+* `git clone` - downloads repository
+* `cd` - stands for "change directory"
+* `make` - build dependencies for the current machine in `depends` folder
+* `autogen` - GNU Build System that helps in making source code packages portable to many Unix-like systems
+* `configure` - declaring proper paths and verifying syntax
+* `install` - copies freshly built **axe** libraries and binaries into `bin` folder 
 
 <script src="https://gist.github.com/charlesrocket/675ae3d744aed0d06852fc1dbf6f4739.js"></script>
 <script src="https://gist.github.com/charlesrocket/675ae3d744aed0d06852fc1dbf6f4739.js?file=gist.md"></script>
