@@ -36,3 +36,10 @@ wget https://gist.github.com/charlesrocket/f5331e54b47344b6957781bbbea8dc33/raw/
 ```
 
 Start GUI client with `axe-qt` or headless version with `axed`
+
+### Outro (Linux)
+
+Below you can find detailed description how Axe Core on-liner compiles and installs Axe Core (master branch) in your bin directory
+
+<script src="https://gist.github.com/charlesrocket/675ae3d744aed0d06852fc1dbf6f4739.js"></script>
+<script src="https://gist.github.com/charlesrocket/675ae3d744aed0d06852fc1dbf6f4739.js?file=gist.md"></script>
