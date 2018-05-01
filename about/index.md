@@ -8,8 +8,7 @@ comments: false
 ![axerunnerslogo](https://raw.githubusercontent.com/AXErunners/media/master/axerunners-blk.png){:height="32%" width="32%"}
 <center><br /></center>
 <center><a href="https://github.com/AXErunners/axe"><b>AXE</b></a> is a decentralized X11-based cryptocurrency. The foundation of AXE network is hybrid PoW/PoSe system. First-tier nodes provide hash power to move data and secure the blockchain, while the second tier of full nodes adds extra privacy and increases network performance.</center>
-<center><br /></center>
-<center><a class="btn zoombtn" href="{{ url }}https://github.com/AXErunners/axe/releases">Releases</a> <a class="btn zoombtn" href="{{ url }}https://github.com/AXErunners/axe/wiki/Detailed-guide:-Masternodes">Masternodes</a> <a class="btn zoombtn" href="{{ url }}http://207.246.65.114:3001">Block explorer</a></center>
+[Releases](https://github.com/AXErunners/axe/releases){: .btn} [Masternodes](https://github.com/AXErunners/axe/wiki/Masternodes){: .btn} [Block explorer](http://207.246.65.114:3001){: .btn}
 
 ## Specifications
 * algorithm: X11
