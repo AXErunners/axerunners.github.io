@@ -6,13 +6,15 @@
 * GCC
 * Make
 
-### macOS
-Install Jekyll
+## macOS
+Install Jekyll and Xcode
 ```
+xcode-select --install
 gem install bundler jekyll
 ```
 Install Gems
 ```
 bundle install
 ```
+
 https://jekyllrb.com/docs/installation/
