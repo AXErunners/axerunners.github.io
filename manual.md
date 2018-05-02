@@ -14,7 +14,6 @@ Install Jekyll and Xcode (you also need Bundler to handle plugins)
 xcode-select --install
 gem install bundler jekyll
 ```
-
 Install Gems
 ```
 bundle install
@@ -23,5 +22,8 @@ Update Gems, if necessary
 ```
 bundle update
 ```
-
-https://jekyllrb.com/docs/installation/
+Build the code and host local copy on http://127.0.0.1:4000
+```
+jekyll serve
+```
+[Official documentation](https://jekyllrb.com/docs/installation/)
