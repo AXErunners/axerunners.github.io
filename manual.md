@@ -1,5 +1,7 @@
 # Maintenance instructions for AXErunners website
 
+The website runs on [Jekyll](https://github.com/jekyll/jekyll) and currently hosted on GitHub Pages. Use the protocol below for maintenance and contribution tasks.
+
 ### Requirements
 * Ruby 2.2.5 and above
 * RubyGems
