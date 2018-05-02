@@ -2,7 +2,7 @@
 
 The website runs on [Jekyll](https://github.com/jekyll/jekyll) and currently hosted on GitHub Pages. Use the protocol below for maintenance and contribution tasks.
 
-> Check [Official documentation](https://jekyllrb.com/docs/installation/) for Ubuntu installation
+> Check [official documentation](https://jekyllrb.com/docs/installation/) for Ubuntu installation
 
 ### Requirements
 * Ruby 2.2.5 and above
