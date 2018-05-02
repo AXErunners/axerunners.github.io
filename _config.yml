@@ -69,7 +69,7 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-gist
-  - "jekyll-github-metadata"
+  - jekyll-github-metadata
   - jemoji
 
 jekyll-mentions:
