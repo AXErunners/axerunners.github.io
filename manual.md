@@ -9,7 +9,7 @@ The website runs on [Jekyll](https://github.com/jekyll/jekyll) and currently hos
 * Make
 
 ## macOS
-Install Jekyll and Xcode
+Install Jekyll and Xcode (you also need Bundler to handle plugins)
 ```
 xcode-select --install
 gem install bundler jekyll
