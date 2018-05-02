@@ -16,7 +16,6 @@ wget https://raw.githubusercontent.com/bauerj/electrumx-installer/master/bootstr
 
 Finish the configuration by adding your AXE node's RPC login/pass in DAEMON_URL as `user:pass@<VPS IP>:<RPCPORT>/`
 
-
 Sample:
 ```
 # REQUIRED
@@ -24,7 +23,6 @@ DB_DIRECTORY = /db
 # AXE node RPC credentials
 DAEMON_URL = axerunner:m3hk86m8vw@144.202.40.33:9337/
 DB_ENGINE=rocksdb
-
 SSL_CERTFILE=/etc/electrumx/server.crt
 SSL_KEYFILE=/etc/electrumx/server.key
 TCP_PORT=50001
