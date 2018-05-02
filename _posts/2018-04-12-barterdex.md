@@ -6,10 +6,7 @@ excerpt: "How to setup BarterDEX with AXE core"
 tags: [trading, decentralized, exchange, guide, core, linux, windows, mac]
 comments: true
 ---
-<figure>
-	<a href="/assets/img/barterdex-btc-axe-graph.png"><img src="/assets/img/barterdex-btc-axe-graph.png"></a>
-	<figcaption>BarterDEX v1.0.2rc chart</figcaption>
-</figure>
+## Environment
 <figure>
 	<a href="/assets/img/barterdex-btc-axe.png"><img src="/assets/img/barterdex-btc-axe.png"></a>
 	<figcaption></figcaption>
