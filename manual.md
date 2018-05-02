@@ -2,7 +2,7 @@
 
 The website runs on [Jekyll](https://github.com/jekyll/jekyll) and currently hosted on GitHub Pages. Use the protocol below for maintenance and contribution tasks.
 
-> Check official documentation for Ubuntu installation
+> Check [Official documentation](https://jekyllrb.com/docs/installation/) for Ubuntu installation
 
 ### Requirements
 * Ruby 2.2.5 and above
@@ -29,5 +29,3 @@ Build the code and host its local copy
 jekyll serve
 ```
 Now you can access local deployment with http://127.0.0.1:4000 to test updates/changes. After passing local checks - create PR on GitHub to submit code changes.
-
-[Official documentation](https://jekyllrb.com/docs/installation/)
