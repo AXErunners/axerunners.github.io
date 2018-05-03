@@ -11,20 +11,20 @@ The website runs on [Jekyll](https://github.com/jekyll/jekyll) and currently hos
 * Make
 
 ## macOS
-Install Jekyll and Xcode (you also need Bundler to handle plugins)
+Install Jekyll and Xcode (you also need Bundler to handle plugins):
 ```
 xcode-select --install
 gem install bundler jekyll
 ```
-Install Gems
+Install Gems:
 ```
 bundle install
 ```
-Update Gems, if necessary
+Update Gems, if necessary:
 ```
 bundle update
 ```
-Build the code and host its local copy
+Build the code and host its local copy:
 ```
 jekyll serve
 ```
