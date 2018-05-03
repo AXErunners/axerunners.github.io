@@ -14,7 +14,7 @@ comments: true
 
 Following guide covers AXE core compilation and was tested on Ubuntu 18.04.
 
-To update current client over the outdated version you need to shut down current AXE client with `axe-cli stop` before using any gists. 
+To update current client over the outdated version you need to shut down current AXE client with `axe-cli stop` before using any gists.
 {: .notice}
 ### Prepare the system
 
@@ -63,4 +63,4 @@ wget https://gist.github.com/charlesrocket/675ae3d744aed0d06852fc1dbf6f4739/raw/
 {% gist 675ae3d744aed0d06852fc1dbf6f4739 %}
 
 ### Outro
-If you want to go further - check [masternodes](/masternode-vps) and [p2pool](/p2pool).
+For additional services check [masternodes](/masternode-vps) or [p2pool](/p2pool).
