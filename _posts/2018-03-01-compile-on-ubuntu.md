@@ -10,9 +10,13 @@ comments: true
 	<a href="/assets/img/axecore-ascii-screenshot.png"><img src="/assets/img/axecore-ascii-screenshot.png"></a>
 	<figcaption>Axe Core v1.1.3 compilation</figcaption>
 </figure>
+## Deployment
+
+Following guide covers AXE core compilation and was tested on Ubuntu 18.04.
+
 ### Prepare the system
 
-Update operating system and install dependencies
+Update operating system and install dependencies:
 
 ```
 sudo apt-get update
@@ -28,18 +32,29 @@ sudo apt-get install libdb4.8-dev libdb4.8++-dev -y
 
 ### Install AXE core and launch the client
 
-Use following command to install AXE core
+Use the one-liner to install AXE core:
 
 ```
-wget https://gist.github.com/charlesrocket/f5331e54b47344b6957781bbbea8dc33/raw/34bdba7c2b6dff507af43d544fee1e8d51ad69b4/axecore.sh && bash axecore.sh
+wget https://gist.github.com/charlesrocket/f5331e54b47344b6957781bbbea8dc33/raw/17e4d3d1ce8ee5e45b5b022c32d7fa2616ba5643/axecore.sh && bash axecore.sh
 ```
 
-Start GUI client with `axe-qt` or headless version with `axed`.`
+Now start GUI client with `axe-qt` or headless version with `axed`.
 
 <hr class="hr-line">
 
-### Gist examination
+## Gist examinations
 
-AXE core one-liner gist downloads current master branch, performs dependencies build, system configuration and compilation with standard parameters.
+AXE core one-liner gist downloads current master branch, performs dependencies build, system configuration, compilation with standard parameters and installation info `bin` folder. Perfect for fresh systems.
+
+* `git clone` - downloads the source code
+* ''
+* `./autogen` - preparing system for the source code compilation
+* `./configure` - setting up the environment according to present dependencies
+* `make` - build process
+* `sudo make install` - copies binaries into `bin` folder for quick launch (`axed`/`axe-qt`/etc can be called from any directory) _not necessary_
 
 {% gist f5331e54b47344b6957781bbbea8dc33 %}
+
+AXE core one-liner for VPS will perform same tasks but with headless flag (there is no need for GUI on the server machine).
+
+{% gist 675ae3d744aed0d06852fc1dbf6f4739 %}
