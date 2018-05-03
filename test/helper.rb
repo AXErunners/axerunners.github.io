@@ -107,6 +107,6 @@ class JekyllUnitTest < Minitest::Test
     stderr.rewind
     return stderr.string.to_s
   end
-  alias :capture_stdout, :capture_output
-  alias :capture_stderr, :capture_output
+  alias_method :capture_stdout, :capture_output
+  alias_method :capture_stderr, :capture_output
 end
