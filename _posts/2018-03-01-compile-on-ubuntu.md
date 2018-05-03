@@ -47,7 +47,7 @@ Now start GUI client with `axe-qt` or headless version with `axed`.<br />
 ## Gist examinations
 ### Local
 
-AXE core one-liner gist downloads current master branch, performs dependencies build, system configuration, compilation with standard parameters and installation info `bin` folder. Perfect for fresh systems.
+AXE core one-liner gist downloads master branch, performs dependencies build, system configuration, compilation with standard parameters and installation info `bin` folder. Perfect for fresh systems.
 
 * `git clone` - downloads the source code
 * `./autogen` - preparing system for the source code compilation
