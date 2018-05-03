@@ -35,4 +35,10 @@ Use following command to install AXE core
 wget https://gist.github.com/charlesrocket/f5331e54b47344b6957781bbbea8dc33/raw/34bdba7c2b6dff507af43d544fee1e8d51ad69b4/axecore.sh && bash axecore.sh
 ```
 
-Start GUI client with `axe-qt` or headless version with `axed`
+Start GUI client with `axe-qt` or headless version with `axed`.`
+
+<hr class="hr-line">
+
+### Gist examination
+
+{% gist f5331e54b47344b6957781bbbea8dc33 %}
