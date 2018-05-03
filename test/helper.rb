@@ -1,3 +1,6 @@
+require 'coveralls'
+Coveralls.wear!
+
 require 'rubygems'
 require 'minitest/autorun'
 require 'minitest/reporters'
