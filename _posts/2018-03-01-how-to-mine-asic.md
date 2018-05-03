@@ -4,6 +4,7 @@ title: "Mining with ASICs"
 date: 2018-03-01
 excerpt: "Start mining AXE coin with ASIC miner"
 tags: [mining, linux, windows, guide, asic]
+feature: /assets/img/minerdedication.png
 comments: true
 ---
 
