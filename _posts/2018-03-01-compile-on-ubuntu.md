@@ -45,6 +45,7 @@ Now start GUI client with `axe-qt` or headless version with `axed`.<br />
 <hr class="hr-line">
 
 ## Gist examinations
+### Local
 
 AXE core one-liner gist downloads current master branch, performs dependencies build, system configuration, compilation with standard parameters and installation info `bin` folder. Perfect for fresh systems.
 
@@ -52,9 +53,11 @@ AXE core one-liner gist downloads current master branch, performs dependencies b
 * `./autogen` - preparing system for the source code compilation
 * `./configure` - setting up the environment according to present dependencies
 * `make` - build process
-* `sudo make install` _not necessary_ - copies binaries into `bin` folder for quick launch (`axed`/`axe-qt`/etc can be called from any directory)
+* `sudo make install` - copies binaries into `bin` folder for quick launch (`axed`/`axe-qt`/etc can be called from any directory) _optional_
 
 {% gist f5331e54b47344b6957781bbbea8dc33 %}
+
+### Server
 
 AXE core one-liner for VPS will perform same tasks but with the **headless** flag (there is no need for GUI on the server machine). You can call it with:
 ```
@@ -62,5 +65,5 @@ wget https://gist.github.com/charlesrocket/675ae3d744aed0d06852fc1dbf6f4739/raw/
 ```
 {% gist 675ae3d744aed0d06852fc1dbf6f4739 %}
 
-### Outro
+## Outro
 For additional services check [masternodes](/masternode-vps) or [p2pool](/p2pool).
