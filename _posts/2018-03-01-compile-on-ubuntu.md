@@ -4,12 +4,9 @@ title: "How to compile AXE core on Ubuntu 18"
 date: 2018-03-01
 excerpt: "v1.1.3"
 tags: [core, linux, gist, guide]
+feature: /assets/img/axecore-ascii-screenshot.png
 comments: true
 ---
-<figure>
-	<a href="/assets/img/axecore-ascii-screenshot.png"><img src="/assets/img/axecore-ascii-screenshot.png"></a>
-	<figcaption>Axe Core v1.1.3 compilation</figcaption>
-</figure>
 ## Deployment
 
 Following guide covers AXE core compilation and was tested on Ubuntu 18.04.
