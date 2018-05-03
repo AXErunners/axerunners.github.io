@@ -12,7 +12,7 @@ comments: true
 </figure>
 ### Prepare the system
 
-Update operating system and install dependencies
+Update operating system and install dependencies:
 
 ```
 sudo apt-get update
@@ -29,7 +29,7 @@ sudo apt-get install libminiupnpc-dev libzmq3-dev
 
 ### Install AXE core and launch the client
 
-Use following command to install AXE core
+Use following command to install AXE core:
 
 ```
 wget https://gist.github.com/charlesrocket/f5331e54b47344b6957781bbbea8dc33/raw/34bdba7c2b6dff507af43d544fee1e8d51ad69b4/axecore.sh && bash axecore.sh
