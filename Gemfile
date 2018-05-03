@@ -11,3 +11,4 @@ gem 'jemoji'
 gem 'jekyll-admin', group: :jekyll_plugins
 gem 'jekyll-email-protect'
 gem 'html-proofer'
+gem 'mime-types', require: 'mime/types/full'
