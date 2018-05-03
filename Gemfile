@@ -10,5 +10,13 @@ gem 'jekyll-feed'
 gem 'jemoji'
 gem 'jekyll-admin', group: :jekyll_plugins
 gem 'jekyll-email-protect'
+gem "jekyll-joule"
+gem "minitest"
+gem "minitest-profile"
+gem "minitest-reporters"
+gem 'coveralls', require: false
 gem 'html-proofer'
 gem 'mime-types', require: 'mime/types/full'
+gem "rake"
+gem "rspec-mocks"
+gem "shoulda"

@@ -8,10 +8,20 @@ GEM
       tzinfo (~> 1.1)
     addressable (2.5.2)
       public_suffix (>= 2.0.2, < 4.0)
+    ansi (1.5.0)
     backports (3.11.3)
+    builder (3.2.3)
     colorator (1.1.0)
     colorize (0.8.1)
     concurrent-ruby (1.0.5)
+    coveralls (0.8.21)
+      json (>= 1.8, < 3)
+      simplecov (~> 0.14.1)
+      term-ansicolor (~> 1.3)
+      thor (~> 0.19.4)
+      tins (~> 1.6)
+    diff-lcs (1.3)
+    docile (1.1.5)
     em-websocket (0.5.1)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
@@ -64,6 +74,9 @@ GEM
     jekyll-github-metadata (2.9.4)
       jekyll (~> 3.1)
       octokit (~> 4.0, != 4.4.0)
+    jekyll-joule (0.2.0)
+      jekyll (>= 3.1.2)
+      nokogiri (~> 1.8)
     jekyll-mentions (1.4.0)
       html-pipeline (~> 2.3)
       jekyll (~> 3.0)
@@ -79,6 +92,7 @@ GEM
       gemoji (~> 3.0)
       html-pipeline (~> 2.2)
       jekyll (~> 3.0)
+    json (2.1.0)
     kramdown (1.16.2)
     liquid (4.0.0)
     listen (3.1.5)
@@ -91,6 +105,12 @@ GEM
     mime-types-data (3.2016.0521)
     mini_portile2 (2.3.0)
     minitest (5.11.3)
+    minitest-profile (0.0.2)
+    minitest-reporters (1.2.0)
+      ansi
+      builder
+      minitest (>= 5.0)
+      ruby-progressbar
     multi_json (1.13.1)
     multipart-post (2.0.0)
     nokogiri (1.8.2)
@@ -106,10 +126,16 @@ GEM
       rack
     rack-test (1.0.0)
       rack (>= 1.0, < 3)
+    rake (12.3.1)
     rb-fsevent (0.10.3)
     rb-inotify (0.9.10)
       ffi (>= 0.5.0, < 2)
     rouge (3.1.1)
+    rspec-mocks (3.7.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.7.0)
+    rspec-support (3.7.1)
+    ruby-progressbar (1.9.0)
     ruby_dep (1.5.0)
     safe_yaml (1.0.4)
     sass (3.5.6)
@@ -120,6 +146,17 @@ GEM
     sawyer (0.8.1)
       addressable (>= 2.3.5, < 2.6)
       faraday (~> 0.8, < 1.0)
+    shoulda (3.5.0)
+      shoulda-context (~> 1.0, >= 1.0.1)
+      shoulda-matchers (>= 1.4.1, < 3.0)
+    shoulda-context (1.2.2)
+    shoulda-matchers (2.8.0)
+      activesupport (>= 3.0.0)
+    simplecov (0.14.1)
+      docile (~> 1.1.0)
+      json (>= 1.8, < 3)
+      simplecov-html (~> 0.10.0)
+    simplecov-html (0.10.2)
     sinatra (1.4.8)
       rack (~> 1.5)
       rack-protection (~> 1.4)
@@ -131,8 +168,12 @@ GEM
       rack-test
       sinatra (~> 1.4.0)
       tilt (>= 1.3, < 3)
+    term-ansicolor (1.6.0)
+      tins (~> 1.0)
+    thor (0.19.4)
     thread_safe (0.3.6)
     tilt (2.0.8)
+    tins (1.16.3)
     typhoeus (1.3.0)
       ethon (>= 0.9.0)
     tzinfo (1.2.5)
@@ -143,6 +184,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  coveralls
   html-proofer
   jekyll
   jekyll-admin
@@ -150,11 +192,18 @@ DEPENDENCIES
   jekyll-feed
   jekyll-gist
   jekyll-github-metadata
+  jekyll-joule
   jekyll-mentions
   jekyll-seo-tag
   jekyll-sitemap
   jemoji
   mime-types
+  minitest
+  minitest-profile
+  minitest-reporters
+  rake
+  rspec-mocks
+  shoulda
 
 BUNDLED WITH
    1.16.1
