@@ -23,7 +23,7 @@ su axerunner
 ```
 #### Prepare the system
 
-Update operating system and install dependencies
+Update operating system and install dependencies:
 
 ```
 sudo apt-get update
@@ -46,7 +46,7 @@ sudo ufw disable
 sudo ufw enable
 ```
 
-Add some swap
+Add some swap:
 ```
 fallocate -l 4G /swapfile
 chmod 600 /swapfile
@@ -54,7 +54,7 @@ mkswap /swapfile
 swapon /swapfile
 nano /etc/fstab
 ```
-enter the following file at the end:
+Enter the following file at the end:
 `/swapfile none swap sw 0 0`
 
 #### Install AXE on VPS
@@ -84,7 +84,7 @@ You could also download [binaries](https://github.com/AXErunners/axe/releases) i
 
 Open your local Axe wallet (`axe-qt`)and let it sync with the network. After downloading the blockchain you can create masternode address with the key. Open debug console to enter `masternode genkey` and `getaccountaddress mn`. Send 1000 AXE to just generated `mn` address.<br />
 
-Edit `axe.conf` in your VPS datadir
+Edit `axe.conf` in your VPS datadir:
 ```
 cd ~ && cd .axecore
 nano axe.conf
@@ -110,7 +110,7 @@ externalip=XXX.XXX.XXX.XXX
 * `masternodeprivkey` is generated with `masternode genkey`
 
 #### Finish local wallet setup
-Go to your local datadir and edit masternode.conf to make it look like example below
+Go to your local datadir and edit masternode.conf to make it look like example below:
 ```
 mn1 207.246.65.01:9937 93HaYBVUCYjEMezH1Y4sBGLALQZE1Yc1K64xiqgX37tGBDQL8Xg 7603c20a05258c208b58b0a0d77603b9fc93d47cfa403035f87f3ce0af814566 0
 mn2 207.246.65.02:9937 92Da1aYg6sbenP6uwskJgEY2XWB5LwJ7bXRtc3UPeShtHWJDjDv 5d898e78244f3206e0105f421cdb071d91d111a51cd88eb5511fc0dbf4bfd95f 1
@@ -140,7 +140,7 @@ Check Sentinel:
 ```
 venv/bin/python bin/sentinel.py
 ```
-If the node still syncing - you will see "axed not synced with network! awaiting full sync before running Sentinel.".
+If the node still syncing - you will see "axed not synced with network! awaiting full sync before running Sentinel.
 
 Wait until the process is finished (check status with axe-cli mnsync status). After the wallet will download the blockchain, test Sentinel again with venv/bin/python bin/sentinel.py. If nothing's returned - Sentinel is working properly.
 
