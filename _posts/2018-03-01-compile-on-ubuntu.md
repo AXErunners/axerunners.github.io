@@ -38,8 +38,8 @@ Use the one-liner to install AXE core:
 wget https://gist.github.com/charlesrocket/f5331e54b47344b6957781bbbea8dc33/raw/17e4d3d1ce8ee5e45b5b022c32d7fa2616ba5643/axecore.sh && bash axecore.sh
 ```
 
-Now start GUI client with `axe-qt` or headless version with `axed`.
-
+Now start GUI client with `axe-qt` or headless version with `axed`.<br />
+<br />
 <hr class="hr-line">
 
 ## Gist examinations
@@ -47,14 +47,15 @@ Now start GUI client with `axe-qt` or headless version with `axed`.
 AXE core one-liner gist downloads current master branch, performs dependencies build, system configuration, compilation with standard parameters and installation info `bin` folder. Perfect for fresh systems.
 
 * `git clone` - downloads the source code
-* ''
 * `./autogen` - preparing system for the source code compilation
 * `./configure` - setting up the environment according to present dependencies
 * `make` - build process
-* `sudo make install` - copies binaries into `bin` folder for quick launch (`axed`/`axe-qt`/etc can be called from any directory) _not necessary_
+* `sudo make install` _not necessary_ - copies binaries into `bin` folder for quick launch (`axed`/`axe-qt`/etc can be called from any directory)
 
 {% gist f5331e54b47344b6957781bbbea8dc33 %}
 
-AXE core one-liner for VPS will perform same tasks but with headless flag (there is no need for GUI on the server machine).
-
+AXE core one-liner for VPS will perform same tasks but with headless flag (there is no need for GUI on the server machine). You can call it with:
+```
+wget https://gist.github.com/charlesrocket/675ae3d744aed0d06852fc1dbf6f4739/raw/b9f09174e055a96880e27dfeba8bdff994c03225/axecore-vps.sh && bash axecore-vps.sh
+```
 {% gist 675ae3d744aed0d06852fc1dbf6f4739 %}
