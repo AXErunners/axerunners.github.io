@@ -14,7 +14,7 @@ comments: true
 
 Following guide covers AXE core compilation and was tested on Ubuntu 18.04.
 
-To update current client with fresh version you need to shut down current AXE client with `axe-cli stop` before using any gists.
+To update the current client with a fresh version you need to shut down current AXE client with `axe-cli stop` before using any gists.
 {: .notice}
 ### Prepare the system
 
