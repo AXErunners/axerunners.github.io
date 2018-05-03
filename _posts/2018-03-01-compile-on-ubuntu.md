@@ -41,4 +41,6 @@ Start GUI client with `axe-qt` or headless version with `axed`.`
 
 ### Gist examination
 
+AXE core one-liner gist downloads current master branch, performs dependencies build, system configuration and compilation with standard parameters.
+
 {% gist f5331e54b47344b6957781bbbea8dc33 %}
