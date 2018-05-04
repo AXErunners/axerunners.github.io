@@ -4,6 +4,7 @@ title: "electrumx server"
 date: 2018-04-01
 excerpt: "Deployment of ElectrumX SPV server"
 tags: [linux, guide, backend, spv, service]
+feature: /assets/img/ngtflw2p.jpg
 comments: true
 project: true
 ---
