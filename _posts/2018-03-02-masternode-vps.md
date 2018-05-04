@@ -4,7 +4,7 @@ title: "Masternode on VPS"
 date: 2018-03-02
 excerpt: "How to setup AXE masternode on VPS"
 tags: [core, linux, guide, masternode, vps]
-feature: /assets/img/cdthr.png
+feature: /assets/img/whtslft.jpg
 comments: true
 project: true
 ---
