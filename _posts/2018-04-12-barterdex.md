@@ -24,7 +24,7 @@ _AXE core `native` with Bitcoin `electrum` mode will work out of the box._
 ## First start
 <figure>
 	<a href="/assets/img/barterdex-btc-axe.png"><img src="/assets/img/barterdex-btc-axe.png"></a>
-	<figcaption>first test</figcaption>
+	<figcaption>test trade</figcaption>
 </figure>
 Open <b>BarterDEX</b> and generate your seed. This seed will be associated with your wallet's deposit address. Don't lose it, or you will not be able to access your deposits in watch-only addresses. If you are using AXE core, select `native` mode. For SPV wallets - use `electrum` mode. After adding your coins, click on `exchange`, select pairs you want to trade, and send your first order.
 
