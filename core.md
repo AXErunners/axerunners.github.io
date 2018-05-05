@@ -2,239 +2,53 @@
 title: core
 image: axecore-ascii-screenshot.png
 ---
+<h2>Deployment</h2>
+Following guide covers AXE core compilation and was tested on Ubuntu 18.04.
+<blockquote>To update the current client with a fresh version you need to shut down current AXE client with `axe-cli stop` before using any gists.</blockquote>
+<h3>Prepare the system</h3>
+Update operating system and install dependencies:
+```
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get install git python-virtualenv virtualenv fail2ban ufw -y
+sudo apt-get install build-essential libtool autotools-dev automake pkg-config libssl-dev libevent-dev bsdmainutils -y
+sudo apt-get install libqt5gui5 libqt5core5a libqt5dbus5 qttools5-dev qttools5-dev-tools libprotobuf-dev protobuf-compiler -y
+sudo apt-get install libboost-all-dev libminiupnpc-dev libzmq3-dev libqrencode-dev -y
+sudo add-apt-repository ppa:bitcoin/bitcoin
+sudo apt-get update
+sudo apt-get install libdb4.8-dev libdb4.8++-dev -y
+```
+<h3>Install AXE core and launch the client</h3>
 
-<section>
-	<h3 class="major">Text</h3>
-	<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-	This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-	This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
-	<hr />
-	<h2>Heading Level 2</h2>
-	<h3>Heading Level 3</h3>
-	<h4>Heading Level 4</h4>
-	<h5>Heading Level 5</h5>
-	<h6>Heading Level 6</h6>
-	<hr />
-	<h4>Blockquote</h4>
-	<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
-	<h4>Preformatted</h4>
-	<pre><code>i = 0;
+Use the one-liner to install AXE core:
 
-while (!deck.isInOrder()) {
-print 'Iteration ' + i;
-deck.shuffle();
-i++;
-}
+```
+wget https://gist.github.com/charlesrocket/f5331e54b47344b6957781bbbea8dc33/raw/17e4d3d1ce8ee5e45b5b022c32d7fa2616ba5643/axecore.sh && bash axecore.sh
+```
 
-print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
-</section>
+Now start GUI client with `axe-qt` or headless version with `axed`.<br />
+<br />
+<hr class="hr-line">
+<h2>Gist examinations</h2>
+<h3>Local</h3>
 
-<section>
-	<h3 class="major">Lists</h3>
+AXE core one-liner gist downloads master branch, performs dependencies build, system configuration, compilation with standard parameters and installation info `bin` folder. Perfect for fresh systems.
 
-	<h4>Unordered</h4>
-	<ul>
-		<li>Dolor pulvinar etiam.</li>
-		<li>Sagittis adipiscing.</li>
-		<li>Felis enim feugiat.</li>
-	</ul>
+* `git clone` - downloads the source code
+* `./autogen` - preparing system for the source code compilation
+* `./configure` - setting up the environment according to present dependencies
+* `make` - build process
+* `sudo make install` - copies binaries into `bin` folder for quick launch (`axed`/`axe-qt`/etc can be called from any directory) _optional_
 
-	<h4>Alternate</h4>
-	<ul class="alt">
-		<li>Dolor pulvinar etiam.</li>
-		<li>Sagittis adipiscing.</li>
-		<li>Felis enim feugiat.</li>
-	</ul>
+{% gist f5331e54b47344b6957781bbbea8dc33 %}
 
-	<h4>Ordered</h4>
-	<ol>
-		<li>Dolor pulvinar etiam.</li>
-		<li>Etiam vel felis viverra.</li>
-		<li>Felis enim feugiat.</li>
-		<li>Dolor pulvinar etiam.</li>
-		<li>Etiam vel felis lorem.</li>
-		<li>Felis enim et feugiat.</li>
-	</ol>
-	<h4>Icons</h4>
-	<ul class="icons">
-		<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-		<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-		<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-		<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
-	</ul>
+<h3>Server</h3>
 
-	<h4>Actions</h4>
-	<ul class="actions">
-		<li><a href="#" class="button special">Default</a></li>
-		<li><a href="#" class="button">Default</a></li>
-	</ul>
-	<ul class="actions vertical">
-		<li><a href="#" class="button special">Default</a></li>
-		<li><a href="#" class="button">Default</a></li>
-	</ul>
-</section>
+AXE core one-liner for VPS will perform same tasks but with the **headless** flag (there is no need for GUI on the server machine). You can ignore **Qt** dependencies and call the gist with:
+```
+wget https://gist.github.com/charlesrocket/675ae3d744aed0d06852fc1dbf6f4739/raw/b9f09174e055a96880e27dfeba8bdff994c03225/axecore-vps.sh && bash axecore-vps.sh
+```
+{% gist 675ae3d744aed0d06852fc1dbf6f4739 %}
 
-<section>
-	<h3 class="major">Table</h3>
-	<h4>Default</h4>
-	<div class="table-wrapper">
-		<table>
-			<thead>
-				<tr>
-					<th>Name</th>
-					<th>Description</th>
-					<th>Price</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>Item One</td>
-					<td>Ante turpis integer aliquet porttitor.</td>
-					<td>29.99</td>
-				</tr>
-				<tr>
-					<td>Item Two</td>
-					<td>Vis ac commodo adipiscing arcu aliquet.</td>
-					<td>19.99</td>
-				</tr>
-				<tr>
-					<td>Item Three</td>
-					<td> Morbi faucibus arcu accumsan lorem.</td>
-					<td>29.99</td>
-				</tr>
-				<tr>
-					<td>Item Four</td>
-					<td>Vitae integer tempus condimentum.</td>
-					<td>19.99</td>
-				</tr>
-				<tr>
-					<td>Item Five</td>
-					<td>Ante turpis integer aliquet porttitor.</td>
-					<td>29.99</td>
-				</tr>
-			</tbody>
-			<tfoot>
-				<tr>
-					<td colspan="2"></td>
-					<td>100.00</td>
-				</tr>
-			</tfoot>
-		</table>
-	</div>
-
-	<h4>Alternate</h4>
-	<div class="table-wrapper">
-		<table class="alt">
-			<thead>
-				<tr>
-					<th>Name</th>
-					<th>Description</th>
-					<th>Price</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>Item One</td>
-					<td>Ante turpis integer aliquet porttitor.</td>
-					<td>29.99</td>
-				</tr>
-				<tr>
-					<td>Item Two</td>
-					<td>Vis ac commodo adipiscing arcu aliquet.</td>
-					<td>19.99</td>
-				</tr>
-				<tr>
-					<td>Item Three</td>
-					<td> Morbi faucibus arcu accumsan lorem.</td>
-					<td>29.99</td>
-				</tr>
-				<tr>
-					<td>Item Four</td>
-					<td>Vitae integer tempus condimentum.</td>
-					<td>19.99</td>
-				</tr>
-				<tr>
-					<td>Item Five</td>
-					<td>Ante turpis integer aliquet porttitor.</td>
-					<td>29.99</td>
-				</tr>
-			</tbody>
-			<tfoot>
-				<tr>
-					<td colspan="2"></td>
-					<td>100.00</td>
-				</tr>
-			</tfoot>
-		</table>
-	</div>
-</section>
-
-<section>
-	<h3 class="major">Buttons</h3>
-	<ul class="actions">
-		<li><a href="#" class="button special">Special</a></li>
-		<li><a href="#" class="button">Default</a></li>
-	</ul>
-	<ul class="actions">
-		<li><a href="#" class="button">Default</a></li>
-		<li><a href="#" class="button small">Small</a></li>
-	</ul>
-	<ul class="actions">
-		<li><a href="#" class="button special icon fa-download">Icon</a></li>
-		<li><a href="#" class="button icon fa-download">Icon</a></li>
-	</ul>
-	<ul class="actions">
-		<li><span class="button special disabled">Disabled</span></li>
-		<li><span class="button disabled">Disabled</span></li>
-	</ul>
-</section>
-
-<section>
-	<h3 class="major">Form</h3>
-	<form method="post" action="#">
-		<div class="field half first">
-			<label for="demo-name">Name</label>
-			<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
-		</div>
-		<div class="field half">
-			<label for="demo-email">Email</label>
-			<input type="email" name="demo-email" id="demo-email" value="" placeholder="jane@untitled.tld" />
-		</div>
-		<div class="field">
-			<label for="demo-category">Category</label>
-			<div class="select-wrapper">
-				<select name="demo-category" id="demo-category">
-					<option value="">-</option>
-					<option value="1">Manufacturing</option>
-					<option value="1">Shipping</option>
-					<option value="1">Administration</option>
-					<option value="1">Human Resources</option>
-				</select>
-			</div>
-		</div>
-		<div class="field half first">
-			<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-			<label for="demo-priority-low">Low</label>
-		</div>
-		<div class="field half">
-			<input type="radio" id="demo-priority-high" name="demo-priority">
-			<label for="demo-priority-high">High</label>
-		</div>
-		<div class="field half first">
-			<input type="checkbox" id="demo-copy" name="demo-copy">
-			<label for="demo-copy">Email me a copy</label>
-		</div>
-		<div class="field half">
-			<input type="checkbox" id="demo-human" name="demo-human" checked>
-			<label for="demo-human">Not a robot</label>
-		</div>
-		<div class="field">
-			<label for="demo-message">Message</label>
-			<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-		</div>
-		<ul class="actions">
-			<li><input type="submit" value="Send Message" class="special" /></li>
-			<li><input type="reset" value="Reset" /></li>
-		</ul>
-	</form>
-</section>
+<h2>Outro</h2>
+For additional services check with [Masternodes](/masternode-vps) or [p2pool](/p2pool) section.
