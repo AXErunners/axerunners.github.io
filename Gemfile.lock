@@ -26,6 +26,7 @@ GEM
       multipart-post (>= 1.2, < 3)
     ffi (1.9.23)
     forwardable-extended (2.6.0)
+    gemoji (3.0.0)
     html-pipeline (2.8.0)
       activesupport (>= 2)
       nokogiri (>= 1.4)
@@ -58,6 +59,9 @@ GEM
       jekyll (~> 3.3)
     jekyll-gist (1.5.0)
       octokit (~> 4.2)
+    jekyll-github-metadata (2.9.4)
+      jekyll (~> 3.1)
+      octokit (~> 4.0, != 4.4.0)
     jekyll-mentions (1.4.0)
       html-pipeline (~> 2.3)
       jekyll (~> 3.0)
@@ -69,6 +73,10 @@ GEM
       jekyll (~> 3.3)
     jekyll-watch (2.0.0)
       listen (~> 3.0)
+    jemoji (0.10.0)
+      gemoji (~> 3.0)
+      html-pipeline (~> 2.2)
+      jekyll (~> 3.0)
     kramdown (1.16.2)
     liquid (4.0.0)
     listen (3.1.5)
@@ -118,9 +126,11 @@ DEPENDENCIES
   jekyll (~> 3.3)
   jekyll-feed
   jekyll-gist
+  jekyll-github-metadata
   jekyll-mentions
   jekyll-seo-tag
   jekyll-sitemap
+  jemoji
 
 BUNDLED WITH
    1.16.1

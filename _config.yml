@@ -14,6 +14,8 @@ plugins:
   - jekyll-mentions
   - jekyll-feed
   - jekyll-sitemap
+  - jekyll-github-metadata
+  - jemoji
 
 
 # Social settings
