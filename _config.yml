@@ -3,7 +3,7 @@ title: AXErunners
 email:
 description: AXE is a decentralized X11-based cryptocurrency.
 baseurl: "/axerunners-local-build" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site
+url: "https://www.axerunners.com"
 author: charlie137
 
 icon: fa-times # Font Awesome class for your site's icon
@@ -12,8 +12,6 @@ plugins:
   - jekyll-seo-tag
   - jekyll-gist
   - jekyll-mentions
-  - jekyll-feed
-  - jekyll-sitemap
   - jekyll-github-metadata
   - jemoji
 
@@ -33,3 +31,5 @@ twitter_url: https://twitter.com/axerunners
 markdown: kramdown
 sass:
 sass_dir: _sass
+
+exclude: [manual.md, Gemfile, Gemfile.lock, node_modules, gulpfile.js, package.json, _site, src, vendor, CNAME, LICENSE, Rakefile]
