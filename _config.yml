@@ -13,6 +13,7 @@ plugins:
   - jekyll-gist
   - jekyll-mentions
   - jekyll-feed
+  - jekyll-sitemap
 
 
 # Social settings
