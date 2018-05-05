@@ -1,5 +1,6 @@
 ---
 title: core
+image: axecore-ascii-screenshot.png
 ---
 
 <section>
