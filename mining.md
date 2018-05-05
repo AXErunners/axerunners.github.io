@@ -16,14 +16,13 @@ Generate a new address and input it on your account page to receive payments.
 <h3>Configure your miner</h3>
 
 If you want to mine on a Windows Operating System, then you'll need to create a batch file to start your miner.
-
 Simply open notepad and then copy and paste the following:<br />
 
-SGMiner<br />
+SGMiner
 ```
 sgminer --kernel darkcoin-mod -o stratum+tcp://eu1.arcpool.com:1208 -u PBSFWKt583Xb5t92EPccWnXP2UHMTtCt5F -p x
 ```
-CCminer<br />
+CCminer
 ```
 ccminer -a x11 -o stratum+tcp://eu1.arcpool.com:1208 -u PBSFWKt583Xb5t92EPccWnXP2UHMTtCt5F -p x
 ```
