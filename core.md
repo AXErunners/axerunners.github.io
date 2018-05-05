@@ -1,5 +1,5 @@
 ---
-title: "get axe"
+title: core
 ---
 
 <section>
