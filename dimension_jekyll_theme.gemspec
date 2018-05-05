@@ -3,8 +3,8 @@
 Gem::Specification.new do |spec|
   spec.name          = "dimension_jekyll_theme"
   spec.version       = "1.2"
-  spec.authors       = ["Andrew Banchich"]
-  spec.email         = ["andrewbanchich@gmail.com"]
+  spec.authors       = ["Kirill Orlov, Andrew Banchich"]
+  spec.email         = ["info@axerunners.com"]
 
   spec.summary       = %q{A Jekyll version of the "Dimension" theme by HTML5 UP.}
   spec.homepage      = "https://gitlab.com/andrewbanchich/dimension-jekyll-theme"
