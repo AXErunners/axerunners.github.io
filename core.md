@@ -36,7 +36,7 @@ AXE core one-liner gist downloads master branch, performs dependencies build, sy
 
 * `git clone` - downloads the source code
 * `./autogen` - preparing system for the source code compilation
-* `./configure` - setting up the environment according to present dependencies
+* `./configure` - preparing environment
 * `make` - build process
 * `sudo make install` - copies binaries into `bin` folder for quick launch (`axed`/`axe-qt`/etc can be called from any directory) _optional_
 
