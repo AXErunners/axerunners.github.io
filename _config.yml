@@ -1,0 +1,34 @@
+# Site settings
+title: AXErunners
+email:
+description: AXE is a decentralized X11-based cryptocurrency.
+baseurl: "/axerunners-local-build" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site
+author: charlie137
+street_address: 1234 Somewhere Road
+city: Nashville
+state: TN
+zip_code: 55555
+country: United States of America
+phone: (716) 555-5555
+
+icon: fa-times # Font Awesome class for your site's icon
+
+plugins:
+  - jekyll-gist
+
+# Social settings
+facebook_url: https://www.facebook.com/axe137
+github_url: https://github.com/AXErunners
+#gitlab_url:
+#googleplus_url:
+#instagram_url:
+linkedin_url: https://www.linkedin.com/company/axerunners/
+#pinterest_url:
+slack_url:
+twitter_url: https://twitter.com/axerunners
+
+# Build settings
+markdown: kramdown
+sass:
+sass_dir: _sass
