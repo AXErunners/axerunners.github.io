@@ -29,13 +29,6 @@ Allows for near-instant transactions. <b>AXE</b> InstantSend transactions are fu
 #### PrivateSend
 Gives you financial privacy by obscuring the source of funds on the blockchain.
 
-## GUI
-{% capture images %}
-    https://raw.githubusercontent.com/AXErunners/media/master/etc/axe-qt-v112macos-scrnsht.png
-{% endcapture %}
-{% include gallery images=images caption="Axe-Qt v1.1.2 regtest on macOS 10.13.4" cols=2 %}
-<hr class="hr-line">
-
 #### Support the development
 axe `PBSFWKt583Xb5t92EPccWnXP2UHMTtCt5F`<br />
 btc `14syJXgwoczCKm2E2APMt4td7MozTw1pZF`<br />
