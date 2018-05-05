@@ -1,5 +1,5 @@
 ---
-title: work
+title: mining
 image: minerdedication.png
 ---
 wip
