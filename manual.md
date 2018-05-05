@@ -35,4 +35,3 @@ Now you can access local deployment with http://127.0.0.1:4000 to test updates/c
 To access GUI admin panel use http://127.0.0.1:4000/admin address.
 
 Admin panel is still under development, it is recommended to manually change Jekyll settings and use the plugin for posting only.
-{: .notice}
