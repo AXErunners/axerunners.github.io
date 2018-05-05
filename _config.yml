@@ -9,8 +9,11 @@ author: charlie137
 icon: fa-times # Font Awesome class for your site's icon
 
 plugins:
+  - jekyll-seo-tag
   - jekyll-gist
   - jekyll-mentions
+  - jekyll-feed
+
 
 # Social settings
 facebook_url: https://www.facebook.com/axe137
