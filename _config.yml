@@ -10,6 +10,7 @@ icon: fa-times # Font Awesome class for your site's icon
 
 plugins:
   - jekyll-gist
+  - jekyll-mentions
 
 # Social settings
 facebook_url: https://www.facebook.com/axe137

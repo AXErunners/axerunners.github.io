@@ -26,6 +26,9 @@ GEM
       multipart-post (>= 1.2, < 3)
     ffi (1.9.23)
     forwardable-extended (2.6.0)
+    html-pipeline (2.8.0)
+      activesupport (>= 2)
+      nokogiri (>= 1.4)
     html-proofer (3.8.0)
       activesupport (>= 4.2, < 6.0)
       addressable (~> 2.3)
@@ -53,6 +56,9 @@ GEM
       safe_yaml (~> 1.0)
     jekyll-gist (1.5.0)
       octokit (~> 4.2)
+    jekyll-mentions (1.4.0)
+      html-pipeline (~> 2.3)
+      jekyll (~> 3.0)
     jekyll-sass-converter (1.5.2)
       sass (~> 3.4)
     jekyll-watch (2.0.0)
@@ -105,6 +111,7 @@ DEPENDENCIES
   html-proofer
   jekyll (~> 3.3)
   jekyll-gist
+  jekyll-mentions
 
 BUNDLED WITH
    1.16.1
