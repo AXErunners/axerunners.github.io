@@ -1,5 +1,6 @@
 source "https://rubygems.org"
 gemspec
+gem 'jekyll'
 gem 'jekyll-seo-tag'
 gem 'jekyll-gist'
 gem 'jekyll-mentions'
