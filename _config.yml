@@ -20,3 +20,6 @@ twitter_url: https://twitter.com/axerunners
 markdown: kramdown
 sass:
 sass_dir: _sass
+
+plugins:
+  - jekyll-gist
