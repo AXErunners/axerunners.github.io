@@ -95,45 +95,38 @@ externalip=XXX.XXX.XXX.XXX</pre></code>
 <li><code>masternodeprivkey</code> is generated with <code>masternode genkey</code></li>
 </ul>
 <ul>
-<h4>Finish local wallet setup</h4>
-Go to your local datadir and edit masternode.conf to make it look like example below:
-```
-mn1 207.246.65.01:9937 93HaYBVUCYjEMezH1Y4sBGLALQZE1Yc1K64xiqgX37tGBDQL8Xg 7603c20a05258c208b58b0a0d77603b9fc93d47cfa403035f87f3ce0af814566 0
-mn2 207.246.65.02:9937 92Da1aYg6sbenP6uwskJgEY2XWB5LwJ7bXRtc3UPeShtHWJDjDv 5d898e78244f3206e0105f421cdb071d91d111a51cd88eb5511fc0dbf4bfd95f 1
-```
-<li>`mn1` is the alias of your masternode</li>
-<li>`207.246.65.01:9937` is the IP address of your VPS and Axe RPC port `9337`</li>
-<li>`93HaYBVUCYjEMezH1Y4sBGLALQZE1Yc1K64xiqgX37tGBDQL8Xg` is your masternode private key</li>
-<li>`5d898e78244f3206e0105f421cdb071d91d111a51cd88eb5511fc0dbf4bfd95f 1` is the mn transaction output from `masternode outputs`</li>
+<h4 class="major">Finish local wallet setup</h4>
+Go to your local datadir and edit <code>masternode.conf</code> to make it look like example below:
+<pre><code>mn1 207.246.65.01:9937 93HaYBVUCYjEMezH1Y4sBGLALQZE1Yc1K64xiqgX37tGBDQL8Xg 7603c20a05258c208b58b0a0d77603b9fc93d47cfa403035f87f3ce0af814566 0
+mn2 207.246.65.02:9937 92Da1aYg6sbenP6uwskJgEY2XWB5LwJ7bXRtc3UPeShtHWJDjDv 5d898e78244f3206e0105f421cdb071d91d111a51cd88eb5511fc0dbf4bfd95f 1</pre></code>
+<li><code>mn1</code> is the alias of your masternode</li>
+<li><code>207.246.65.01:9937</code> is the IP address of your VPS and Axe RPC port <code>9337</code></li>
+<li><code>93HaYBVUCYjEMezH1Y4sBGLALQZE1Yc1K64xiqgX37tGBDQL8Xg</code> is your masternode private key</li>
+<li><code>5d898e78244f3206e0105f421cdb071d91d111a51cd88eb5511fc0dbf4bfd95f 1</code> is the mn transaction output from <code>masternode outputs</code></li>
 </ul>
 <ul>
-<h4>Install Sentinel on the VPS</h4>
-```
-sudo apt-get update
+<h4 class="major">Install Sentinel on the VPS</h4>
+<pre><code>sudo apt-get update
 sudo apt-get install python-virtualenv
 sudo apt-get install virtualenv
 cd ~ && cd .axecore
 git clone https://github.com/AXErunners/sentinel.git
 cd sentinel
 virtualenv venv
-venv/bin/pip install -r requirements.txt
-```
-Now you need to add Sentinel to cron. Enter `crontab -e` and insert following line:
-```
-* * * * * cd /home/axerunner/.axecore/sentinel && ./venv/bin/python bin/sentinel.py 2>&1 >> sentinel-cron.log
-```
-Save changes and close editor with <kbd>esc</kbd> <kbd>:</kbd><kbd>w</kbd><kbd>q</kbd>
-Check Sentinel:
-```
-venv/bin/python bin/sentinel.py
-```
-If the node still syncing - you will see "axed not synced with network! awaiting full sync before running Sentinel.
+venv/bin/pip install -r requirements.txt</pre></code>
+Now you need to add Sentinel to cron. Enter <code>crontab -e</code> and insert following line:
+<pre><code>* * * * * cd /home/axerunner/.axecore/sentinel && ./venv/bin/python bin/sentinel.py 2>&1 >> sentinel-cron.log</pre></code>
+<ul>Save changes and close editor with <strong>esc</strong> <strong>:</strong><strong>w</strong><strong>q</strong></ul>
 
-Wait until the process is finished (check status with axe-cli mnsync status). After the wallet will download the blockchain, test Sentinel again with venv/bin/python bin/sentinel.py. If nothing's returned - Sentinel is working properly.
+<h4 class="major">Check Sentinel</h4>
+<pre><code>venv/bin/python bin/sentinel.py</pre></code>
+If the node still syncing - you will see "axed not synced with network! awaiting full sync before running Sentinel"
+
+Wait until the process is finished (check status with <code>axe-cli mnsync status</code>). After the wallet will download the blockchain, test Sentinel again with <code>venv/bin/python bin/sentinel.py</code>. If nothing's returned - Sentinel is working properly.
 </ul>
 <ul>
-<h4>Start your masternode</h4>
+<h4 class="major">Start your masternode</h4>
 Go to your local wallet's masternode tab (on/off switch in Options) and start your masternode.
 
-If your node shows `WATCHDOG EXPIRED` status - this usually indicates an issue with Sentinel. Check the schedule with `crontab -e` and give it a few hours. It might take a few hours for masternode to switch to `ENABLED`.
+If your node shows <code>WATCHDOG EXPIRED</code> status - this usually indicates an issue with Sentinel. Check the schedule with <code>crontab -e</code> and give it a few hours. It might take a few hours for masternode to switch to <code>ENABLED</code>.
 </ul>
