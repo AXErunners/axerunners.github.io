@@ -23,5 +23,4 @@ exclude:
   - CNAME
   - README
   - manual.md
-  - _site
   - LICENSE.md
