@@ -103,7 +103,7 @@ DEPENDENCIES
   bundler (~> 1.12)
   dimension_jekyll_theme!
   html-proofer
-  jekyll (~> 3.3)
+  jekyll
   jekyll-gist
 
 BUNDLED WITH
