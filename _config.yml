@@ -24,4 +24,18 @@ sass_dir: _sass
 plugins:
   - jekyll-gist
 
-exclude: [README.md, Gemfile, Gemfile.lock, node_modules, gulpfile.js, package.json, _site, src, vendor, CNAME, LICENSE.md, Rakefile]
+exclude: [README.md, Gemfile, Gemfile.lock, vendor, CNAME, LICENSE.md, Rakefile]
+exclude:
+    - ".cache"
+    - ".pkg"
+    - ".rbenv-version"
+    - "AUTHORS"
+    - "CNAME"
+    - "Gemfile"
+    - "Gemfile.lock"
+    - "LICENSE"
+    - "Makefile"
+    - "Makefile.local"
+    - "README.md"
+    - "changelog.md"
+    - "configure"
