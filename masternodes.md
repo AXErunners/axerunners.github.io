@@ -5,7 +5,7 @@ image: whtslft.jpg
 <ul>
 To start AXE masternode on a dedicated server you will need:
 <li>1000 AXE collateral</li>
-<li>server with Ubuntu (16.04) and static IP ([Vultr](https://www.vultr.com/?ref=7231821))</li>
+<li>server with Ubuntu (18.04) and static IP (<a href="https://www.vultr.com/?ref=7231821">Vultr</a>)</li>
 <li>Axe Core on local machine</li>
 <li>basic Linux skills</li>
 </ul>
@@ -17,9 +17,8 @@ usermod -aG sudo axerunner
 su axerunner</pre></code>
 </ul>
 <ul>
-<h4>Prepare the system</h4>
+<h3 class="major">Prepare the system</h3>
 Update operating system and install dependencies:
-
 <pre><code>sudo apt-get update
 sudo apt-get upgrade
 sudo apt-get install git python-virtualenv virtualenv fail2ban
@@ -45,22 +44,20 @@ mkswap /swapfile
 swapon /swapfile
 nano /etc/fstab</pre></code>
 Enter the following file at the end:
-`/swapfile none swap sw 0 0`
+<code>/swapfile none swap sw 0 0</code>
 </ul>
 <ul>
-<h4>Install AXE on VPS</h4>
-```
-git clone https://github.com/axerunners/axe
+<h4 class="major">Install AXE on VPS</h4>
+<pre><code>git clone https://github.com/axerunners/axe
 cd axe && cd depends && make
 cd .. && ./autogen.sh && ./configure --without-gui && make && sudo make install
 axed -daemon
 axe-cli stop
-```
+</pre></code>
 </ul>
 <ul>
-<h4>Build AXE on local machine</h4>
-```
-sudo apt-get install git build-essential libtool autotools-dev automake pkg-config libssl-dev libevent-dev bsdmainutils
+<h4 class="major">Build AXE on local machine</h4>
+<pre><code>sudo apt-get install git build-essential libtool autotools-dev automake pkg-config libssl-dev libevent-dev bsdmainutils
 sudo apt-get install libminiupnpc-dev
 sudo apt-get install libzmq3-dev
 sudo apt-get install libboost-all-dev
@@ -71,20 +68,16 @@ git clone https://github.com/axerunners/axe
 cd axe && cd depends && make
 cd .. && ./autogen.sh && ./configure && make && sudo make install
 axed -daemon
-axe-cli stop
-```
-You could also download [binaries](https://github.com/AXErunners/axe/releases) instead of building the source.
+axe-cli stop</pre></code>
+You could also download <a href="https://github.com/AXErunners/axe/releases">binaries</a> instead of building the source.
 
-Open your local Axe wallet (`axe-qt`)and let it sync with the network. After downloading the blockchain you can create masternode address with the key. Open debug console to enter `masternode genkey` and `getaccountaddress mn`. Send 1000 AXE to just generated `mn` address.
+Open your local Axe wallet (<code>axe-qt</code>)and let it sync with the network. After downloading the blockchain you can create masternode address with the key. Open debug console to enter <code>masternode genkey</code> and <code>getaccountaddress mn</code>. Send 1000 AXE to just generated <code>mn</code> address.
 
-Edit `axe.conf` in your VPS datadir:
-```
-cd ~ && cd .axecore
-nano axe.conf
-```
+Edit <code>axe.conf</code> in your VPS datadir:
+<pre><code>cd ~ && cd .axecore
+nano axe.conf</pre></code>
 Insert following:
-```
-#- - - -
+<pre><code>#- - - -
 rpcuser=XXX
 rpcpassword=XXX
 rpcallowip=127.0.0.1
@@ -96,8 +89,7 @@ daemon=1
 #- - - -
 masternode=1
 masternodeprivkey=XXX
-externalip=XXX.XXX.XXX.XXX
-```
+externalip=XXX.XXX.XXX.XXX</pre></code>
 <li>`rpcuser/password` might be random</li>
 <li>`externalip` is your VPS static address</li>
 <li>`masternodeprivkey` is generated with `masternode genkey`</li>
