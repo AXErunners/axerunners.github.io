@@ -2,7 +2,7 @@ title: AXErunners
 email: info@axerunners.com
 description: AXE is a decentralized X11-based cryptocurrency.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://www.axerunners.com"
+url: https://www.axerunners.com
 author: charlie137
 
 icon: fa-times
