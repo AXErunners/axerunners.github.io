@@ -1,25 +1,6 @@
 ---
 title: contact
 ---
-
-<form action="https://formspree.io/{{ site.email }}" method="POST">
-	<div class="field half first">
-		<label for="name">Name</label>
-		<input type="text" name="name" id="name" />
-	</div>
-	<div class="field half">
-		<label for="email">Email</label>
-		<input type="text" name="_replyto" id="email" />
-	</div>
-	<div class="field">
-		<label for="message">Message</label>
-		<textarea name="message" id="message" rows="4"></textarea>
-	</div>
-	<ul class="actions">
-		<li><input type="submit" value="Send Message" class="special" /></li>
-		<li><input type="reset" value="Reset" /></li>
-	</ul>
-</form>
 <ul class="icons">
 
 	{% if site.twitter_url %}
@@ -51,4 +32,23 @@ title: contact
 				{% endif %}
 
 </ul>
-<iframe src="https://discordapp.com/widget?id=390063890438029322&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
+<form action="https://formspree.io/{{ site.email }}" method="POST">
+	<div class="field half first">
+		<label for="name">Name</label>
+		<input type="text" name="name" id="name" />
+	</div>
+	<div class="field half">
+		<label for="email">Email</label>
+		<input type="text" name="_replyto" id="email" />
+	</div>
+	<div class="field">
+		<label for="message">Message</label>
+		<textarea name="message" id="message" rows="4"></textarea>
+	</div>
+	<ul class="actions">
+		<li><input type="submit" value="Send Message" class="special" /></li>
+		<li><input type="reset" value="Reset" /></li>
+	</ul>
+</form>
+<hr />
+<center><iframe src="https://discordapp.com/widget?id=390063890438029322&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe></center>
