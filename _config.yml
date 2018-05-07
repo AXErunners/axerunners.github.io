@@ -23,7 +23,5 @@ exclude:
   - CNAME
   - README
   - manual.md
-  - Gemfile
-  - Gemfile.lock
   - _site
   - LICENSE.md
