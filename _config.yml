@@ -1,79 +1,27 @@
-# Site
-title:              AXERUNNERS
-bio:                'AXE is a decentralized X11-based cryptocurrency'
-description:        "Decentralized cryptocurrency"
-reading_time:       false
-words_per_minute:   200
-logo:               'assets/img/logo.png'
-background:         'assets/img/placeholder-big.jpg'
-tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
-locale:             en_US
-url:                https://www.axerunners.com
+title: AXErunners
+email: info@axerunners.com
+description: AXE is a decentralized X11-based cryptocurrency
+baseurl: ""
+url: https://www.axerunners.com
+author: charlie137
 
-# Jekyll
-permalink:          /:title/
-markdown:           kramdown
-highlighter:        rouge
-kramdown:
-  auto_ids:         true
-  footnote_nr:      1
-  entity_output:    as_char
-  toc_levels:       1..6
-  enable_coderay:   false
-mathjax:            true
+icon: fa-times
+
+facebook_url: https://www.facebook.com/axe137
+github_url: https://github.com/AXErunners
+#gitlab_url:
+#googleplus_url:
+#instagram_url:
+linkedin_url: https://www.linkedin.com/company/axerunners/
+#pinterest_url:
+slack_url: https://axe-slack.herokuapp.com
+twitter_url: https://twitter.com/axerunners
+
+markdown: kramdown
 sass:
-  sass_dir:         _sass
-  style:            compressed
+sass_dir: _sass
 
-# Comments
-disqus_shortname:   axerunners
-
-# Social
-# if you don't have any of social below, comment the line.
-google:
-  #plus:            #axerunners
-  #analytics:
-   #verify:          ZZQ2EXNJm1J2YeFEV9Tckqm7Bdir7OvHcNEu_ypPl2w
-  #ad-client:
-  #ad-slot:
-#bing-verify:
-#email:
-twitter:            axerunners
-github-url:         AXErunners
-facebook:           axe137
-#stackoverflow:     123456/username   from a "http://stackoverflow.com/users/123456/username" link
-#linkedin:          username
-#xing:              username
-#instagram:          username
-#lastfm:            username
-#tumblr:            username
-#medium:            '@username'
-#pinterest:         username
-#foursquare:        username
-#steam:              username
-#dribbble:          username
-#youtube:           username
-#youtube-channel:   channel
-#soundcloud:        username
-#weibo:             username
-#flickr:            username
-#codepen:           username
-#keybase:           username
-#xmpp:              username@server.com
-#hackernews:        username
-
-# Gems
 plugins:
-  - jekyll-mentions
-  - jekyll-seo-tag
-  - jekyll-feed
-  - jekyll-sitemap
   - jekyll-gist
-  - jekyll-github-metadata
-  - jemoji
 
-jekyll-mentions:
-    base_url: https://github.com
-
-# Exclude list
 exclude: [README.md, Gemfile, Gemfile.lock, node_modules, gulpfile.js, package.json, _site, src, vendor, CNAME, LICENSE, Rakefile]

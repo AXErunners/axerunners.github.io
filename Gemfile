@@ -1,14 +1,5 @@
 source "https://rubygems.org"
-
+gemspec
 gem "jekyll"
-gem 'jekyll-seo-tag'
-gem "jekyll-github-metadata"
-gem "jekyll-sitemap"
 gem "jekyll-gist"
-gem 'jekyll-mentions'
-gem 'jekyll-feed'
-gem 'jemoji'
-gem 'jekyll-admin', group: :jekyll_plugins
-gem 'jekyll-email-protect'
-gem 'html-proofer'
-gem 'mime-types', require: 'mime/types/full'
+gem "html-proofer"
