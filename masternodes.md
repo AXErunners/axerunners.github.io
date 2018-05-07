@@ -20,8 +20,7 @@ su axerunner</pre></code>
 <h4>Prepare the system</h4>
 Update operating system and install dependencies:
 
-```
-sudo apt-get update
+<pre><code>sudo apt-get update
 sudo apt-get upgrade
 sudo apt-get install git python-virtualenv virtualenv fail2ban
 sudo apt-get install ufw
@@ -38,16 +37,13 @@ sudo ufw allow 9936/tcp
 sudo ufw allow 9337/tcp
 sudo ufw logging on
 sudo ufw disable
-sudo ufw enable
-```
+sudo ufw enable</code>
 Add some swap:
-```
-fallocate -l 4G /swapfile
+<code>fallocate -l 4G /swapfile
 chmod 600 /swapfile
 mkswap /swapfile
 swapon /swapfile
-nano /etc/fstab
-```
+nano /etc/fstab</pre></code>
 Enter the following file at the end:
 `/swapfile none swap sw 0 0`
 </ul>

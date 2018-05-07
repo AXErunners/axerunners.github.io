@@ -4,7 +4,7 @@ image: axecore-ascii-screenshot.png
 ---
 <h2>Deployment</h2>
 Following guide covers AXE core compilation and was tested on Ubuntu 18.04.
-<blockquote>To update the current client with a fresh version you need to shut down current AXE client with `axe-cli stop` before using any gists.</blockquote>
+<blockquote>To update the current client with a fresh version you need to shut down current AXE client with <code>axe-cli stop</code> before using any gists.</blockquote>
 <h3>Prepare the system</h3>
 Update operating system and install dependencies:
 ```
