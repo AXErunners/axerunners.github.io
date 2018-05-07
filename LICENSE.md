@@ -1,7 +1,6 @@
 
 The MIT License (MIT)
 
-Copyright (c) 2016 Taylan Tatlı
 Copyright (c) 2018 AXErunners
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
