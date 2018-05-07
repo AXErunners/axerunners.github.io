@@ -3,13 +3,12 @@ title: mining
 image: minerdedication.png
 ---
 <h2>Download a miner</h2>
-SGminer for Windows - download <a href="https://github.com/nicehash/sgminer/releases"><b>here</b></a>
-SGminer Source - download <a href="https://github.com/nicehash/sgminer/releases"><b>here</b></a>
-CCminer 1.2 (Nvidia - Compute 2.5+) - download <a href="https://github.com/cbuchner1/ccminer/releases/download/v1.2/ccminer-v1.2.zip"><b>here</b></a>
+SGminer for Windows - download <a href="https://github.com/nicehash/sgminer/releases"><b>here</b></a><br />
+SGminer Source - download <a href="https://github.com/nicehash/sgminer/releases"><b>here</b></a><br />
+CCminer 1.2 (Nvidia - Compute 2.5+) - download <a href="https://github.com/cbuchner1/ccminer/releases/download/v1.2/ccminer-v1.2.zip"><b>here</b></a><br />
 
 <h3>Create AXE address to receive payments</h3>
-Download the AXE client from <a href="https://github.com/AXErunners/axe/releases"><b>here</b></a>
-Generate a new address and input it on your account page to receive payments.
+Download the AXE client from <a href="https://github.com/AXErunners/axe/releases"><b>here</b></a>. Generate a new address and input it on your account page to receive payments.
 
 <h3>Configure your miner</h3>
 If you want to mine on a Windows Operating System, then you'll need to create a batch file to start your miner.
