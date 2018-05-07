@@ -12,11 +12,9 @@ To start AXE masternode on a dedicated server you will need:
 <ul>
 <h4>Setup VPS</h4>
 Switch to dedicated user AXERUNNER:
-```
-adduser axerunner
+<pre><code>adduser axerunner
 usermod -aG sudo axerunner
-su axerunner
-```
+su axerunner</pre></code>
 </ul>
 <ul>
 <h4>Prepare the system</h4>
