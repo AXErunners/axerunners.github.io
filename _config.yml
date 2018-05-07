@@ -21,6 +21,3 @@ plugins:
 
 exclude:
   - CNAME
-  - README
-  - manual.md
-  - LICENSE.md
