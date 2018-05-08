@@ -20,8 +20,8 @@
 			b.push(
 				'<a ' +
 					'class="link depth-' + indent + '"' +
-					( (typeof target !== 'undefined' && target != '') ? ' target="' + target + '"' : '') +
-					( (typeof href !== 'undefined' && href != '') ? ' href="' + href + '"' : '') +
+					( (typeof target !== 'undefined' && target !== '') ? ' target="' + target + '"' : '') +
+					( (typeof href !== 'undefined' && href !== '') ? ' href="' + href + '"' : '') +
 				'>' +
 					'<span class="indent-' + indent + '"></span>' +
 					$this.text() +
@@ -42,7 +42,7 @@
 	$.fn.panel = function(userConfig) {
 
 		// No elements?
-			if (this.length == 0)
+			if (this.length === 0)
 				return $this;
 
 		// Multiple elements?
