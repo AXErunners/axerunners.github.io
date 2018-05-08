@@ -20,8 +20,8 @@
 			b.push(
 				'<a ' +
 					'class="link depth-' + indent + '"' +
-					( (typeof target !== 'undefined' && target != '') ? ' target="' + target + '"' : '') +
-					( (typeof href !== 'undefined' && href != '') ? ' href="' + href + '"' : '') +
+					( (typeof target !== 'undefined' && target !== '') ? ' target="' + target + '"' : '') +
+					( (typeof href !== 'undefined' && href !== '') ? ' href="' + href + '"' : '') +
 				'>' +
 					'<span class="indent-' + indent + '"></span>' +
 					$this.text() +
@@ -42,9 +42,9 @@
 	$.fn.panel = function(userConfig) {
 
 		// No elements?
-			if (this.length == 0)
+			if (this.length === 0) {
 				return $this;
-
+				}
 		// Multiple elements?
 			if (this.length > 1) {
 
@@ -97,7 +97,8 @@
 			// Expand "target" if it's not a jQuery object already.
 				if (typeof config.target != 'jQuery')
 					config.target = $(config.target);
-
+				}
+				
 		// Panel.
 
 			// Methods.
@@ -153,7 +154,7 @@
 								href = $a.attr('href'),
 								target = $a.attr('target');
 
-							if (!href || href == '#' || href == '' || href == '#' + id)
+							if (!href || href === '#' || href === '' || href === '#' + id)
 								return;
 
 							// Cancel original event.
@@ -166,7 +167,7 @@
 							// Redirect to href.
 								window.setTimeout(function() {
 
-									if (target == '_blank')
+									if (target === '_blank')
 										window.open(href);
 									else
 										window.location.href = href;
@@ -307,8 +308,9 @@
 				return $(this);
 
 		// No elements?
-			if (this.length == 0)
+			if (this.length === 0) {
 				return $this;
+			}
 
 		// Multiple elements?
 			if (this.length > 1) {
