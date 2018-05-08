@@ -18,5 +18,6 @@ sass_dir: _sass
 
 plugins:
   - jekyll-gist
+  - jekyll-sitemap
 
-exclude: [manual.md, Gemfile, Gemfile.lock, node_modules, gulpfile.js, package.json, _site, src, vendor, CNAME, LICENSE.md, Rakefile]
+exclude: [manual.md, sitemap.xml, Gemfile, Gemfile.lock, node_modules, gulpfile.js, package.json, _site, src, vendor, CNAME, LICENSE.md, Rakefile]
