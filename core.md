@@ -51,4 +51,4 @@ wget https://gist.github.com/charlesrocket/675ae3d744aed0d06852fc1dbf6f4739/raw/
 {% gist 675ae3d744aed0d06852fc1dbf6f4739 %}
 
 <h2>Outro</h2>
-For additional services check with [Masternodes](/masternode-vps) or [p2pool](/mining.md) section.
+For additional services check with [Masternodes](/#masternodes)  or [p2pool](/#p2pool) section.
