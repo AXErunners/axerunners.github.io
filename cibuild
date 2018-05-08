@@ -2,4 +2,4 @@
 set -e
 bundle exec jekyll build --verbose
 gem build dimension_jekyll_theme.gemspec
-bundle exec htmlproofer ./_site --http-status-ignore "999" --url-swap "https?\:\/\/(127\.0\.0\.1\:4000|localhost\:4000|axerunners\.github.io):" --only-4xx --enforce-https --check-html --check-favicon --allow-hash-href --empty-alt-ignore
+bundle exec htmlproofer ./_site --http-status-ignore "999" --url-swap "https?\:\/\/(127\.0\.0\.1\:4000|localhost\:4000|axerunners\.github.io):" --only-4xx --allow-hash-href --empty-alt-ignore --url-ignore "https://axerunners.github.io/axe-wallet-generator"
