@@ -307,9 +307,10 @@
 				return $(this);
 
 		// No elements?
-			if (this.length === 0)
+			if (this.length === 0) {
 				return $this;
-
+			}
+			
 		// Multiple elements?
 			if (this.length > 1) {
 
