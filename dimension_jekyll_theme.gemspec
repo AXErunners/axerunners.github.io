@@ -12,6 +12,4 @@ Gem::Specification.new do |spec|
 
   spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r{^(assets|_layouts|_includes|_sass|LICENSE|README)}i) }
 
-  spec.add_development_dependency "jekyll", '~> 0'
-  spec.add_development_dependency "bundler", '~> 0'
 end
