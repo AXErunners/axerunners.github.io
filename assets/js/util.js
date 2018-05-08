@@ -166,7 +166,7 @@
 							// Redirect to href.
 								window.setTimeout(function() {
 
-									if (target == '_blank')
+									if (target === '_blank')
 										window.open(href);
 									else
 										window.location.href = href;
