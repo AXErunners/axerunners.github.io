@@ -20,6 +20,7 @@ title: resources
 <li><a href="https://github.com/AXErunners/p2pool-axe">p2pool-axe</a></li>
 <li><a href="https://github.com/kyuupichan/electrumx">electrumx</a></li>
 <li><a href="https://axerunners.github.io/axe-wallet-generator">wallet generator</a></li>
+<li><a href="https://github.com/iancoleman/bip39">bip39</a></li>
 <li><a href="https://github.com/richardkiss/pycoin">pycoin</a></li>
 <li><a href="https://github.com/exploitagency/vanitygen-plus">vanitygen</a></li>
 <br />
