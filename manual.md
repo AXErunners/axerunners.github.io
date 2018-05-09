@@ -29,9 +29,3 @@ Build the code and host its local copy:
 jekyll serve
 ```
 Now you can access local deployment with http://127.0.0.1:4000 to test updates/changes. After passing local checks - create PR on GitHub to submit code changes.
-
-### Admin panel
-
-To access GUI admin panel use http://127.0.0.1:4000/admin address.
-
-Admin panel is still under development. It is recommended to manually change Jekyll settings and use the plugin for posting only.
