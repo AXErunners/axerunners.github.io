@@ -1,4 +1,5 @@
 ---
+layout: default
 title: trading
 image: dgma.jpg
 ---
@@ -12,8 +13,9 @@ rpcbind=127.0.0.1
 bind=127.0.0.1
 rpcport=9337
 port=9937</code></pre>
-If needed, add necessary changes to another wallets.<br />
+If needed, add necessary changes to another wallets.
 <i>AXE core <code>native</code> with Bitcoin <code>electrum</code> mode will work out of the box.</i>
+<hr class="hr-line">
 <h3 class="major">First start</h3>
 <figure>
 	<a href="/assets/images/barterdex-btc-axe.png"><img src="/assets/images/barterdex-btc-axe.png" style="width: 100%;"></a>
