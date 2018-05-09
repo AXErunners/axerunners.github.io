@@ -2,6 +2,9 @@
 title: electrum
 image: cntrls.jpg
 ---
+<h2>electrum-axe</h2>
+Thin client for AXE network is available at AXErunners <a href="https://github.com/AXErunners/electrum-axe">GitHub</a>.
+
 <h2>electrumx</h2>
 The current version of electrumx requires precise system configuration and is not fully automated for fast deployment. The script below is used for fast and easy setup of electrumx server on working AXE core node.
 
