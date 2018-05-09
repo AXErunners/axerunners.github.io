@@ -26,6 +26,6 @@ bundle update
 ```
 Build the code and host its local copy:
 ```
-jekyll serve
+jekyll build && jekyll serve
 ```
 Now you can access local deployment with http://127.0.0.1:4000 to test updates/changes. After passing local checks - create PR on GitHub to submit code changes.
