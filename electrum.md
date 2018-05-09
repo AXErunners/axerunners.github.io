@@ -1,6 +1,6 @@
 ---
 title: electrum
-image: axecore-ascii-screenshot.png
+image: brntnwrk.jpg
 ---
 The current version of electrumx requires precise system configuration and is not fully automated for fast deployment. The script below is used for fast and easy setup of electrumx server on working AXE core node.
 
