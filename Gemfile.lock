@@ -1,8 +1,3 @@
-PATH
-  remote: .
-  specs:
-    dimension_jekyll_theme (1.2)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -117,7 +112,6 @@ PLATFORMS
 
 DEPENDENCIES
   bundler
-  dimension_jekyll_theme!
   html-proofer
   jekyll
   jekyll-gist
