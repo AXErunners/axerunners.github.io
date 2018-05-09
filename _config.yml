@@ -20,5 +20,6 @@ plugins:
   - jekyll-gist
   - jekyll-sitemap
   - jekyll-github-metadata
+  - jekyll-seo-tag
 
 exclude: [manual.md, Gemfile, Gemfile.lock, node_modules, gulpfile.js, package.json, _site, src, vendor, CNAME, LICENSE.md, Rakefile]
