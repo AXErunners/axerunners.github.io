@@ -64,7 +64,7 @@
 				$nav_li = $nav.find('li');
 
 			// Add "middle" alignment classes if we're dealing with an even number of items.
-				if ($nav_li.length % 2 == 0) {
+				if ($nav_li.length % 2 === 0) {
 
 					$nav.addClass('use-middle');
 					$nav_li.eq( ($nav_li.length / 2) ).addClass('is-middle');
@@ -81,7 +81,7 @@
 					var $article = $main_articles.filter('#' + id);
 
 					// No such article? Bail.
-						if ($article.length == 0)
+						if ($article.length === 0)
 							return;
 
 					// Handle lock.
