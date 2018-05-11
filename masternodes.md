@@ -96,6 +96,7 @@ externalip=XXX.XXX.XXX.XXX</pre></code>
 <li><code>masternodeprivkey</code> is generated with <code>masternode genkey</code></li>
 </ul>
 <ul>
+<br />
 <h4 class="major">Finish local wallet setup</h4>
 Go to your local datadir and edit <code>masternode.conf</code> to make it look like example below:
 <pre><code>mn1 207.246.65.01:9937 93HaYBVUCYjEMezH1Y4sBGLALQZE1Yc1K64xiqgX37tGBDQL8Xg 7603c20a05258c208b58b0a0d77603b9fc93d47cfa403035f87f3ce0af814566 0
@@ -106,6 +107,7 @@ mn2 207.246.65.02:9937 92Da1aYg6sbenP6uwskJgEY2XWB5LwJ7bXRtc3UPeShtHWJDjDv 5d898
 <li><code>5d898e78244f3206e0105f421cdb071d91d111a51cd88eb5511fc0dbf4bfd95f 1</code> is the mn transaction output from <code>masternode outputs</code></li>
 </ul>
 <ul>
+<br />
 <h4 class="major">Install Sentinel on the VPS</h4>
 <pre><code>sudo apt-get update
 sudo apt-get install python-virtualenv
