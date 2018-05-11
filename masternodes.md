@@ -128,6 +128,7 @@ If the node still syncing - you will see "axed not synced with network! awaiting
 Wait until the process is finished (check status with <code>axe-cli mnsync status</code>). After the wallet will download the blockchain, test Sentinel again with <code>venv/bin/python bin/sentinel.py</code>. If nothing's returned - Sentinel is working properly.
 </ul>
 <ul>
+<br />
 <h4 class="major">Start your masternode</h4>
 Go to your local wallet's masternode tab (on/off switch in Options) and start your masternode.
 
