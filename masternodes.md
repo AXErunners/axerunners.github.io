@@ -44,10 +44,10 @@ mkswap /swapfile
 swapon /swapfile
 nano /etc/fstab</pre></code>
 <br />
-Enter the following file at the end:
-<code>/swapfile none swap sw 0 0</code>
+Enter the following file at the end: <code>/swapfile none swap sw 0 0</code><br /> 
 </ul>
 <ul>
+<br />
 <h4 class="major">Install AXE on VPS</h4>
 <pre><code>git clone https://github.com/axerunners/axe
 cd axe && cd depends && make
