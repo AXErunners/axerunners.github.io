@@ -43,6 +43,7 @@ chmod 600 /swapfile
 mkswap /swapfile
 swapon /swapfile
 nano /etc/fstab</pre></code>
+<br />
 Enter the following file at the end:
 <code>/swapfile none swap sw 0 0</code>
 </ul>
