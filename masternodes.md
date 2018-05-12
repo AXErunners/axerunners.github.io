@@ -119,15 +119,14 @@ virtualenv venv
 venv/bin/pip install -r requirements.txt</pre></code>
 Now you need to add Sentinel to cron. Enter <code>crontab -e</code> and insert following line:
 <pre><code>* * * * * cd /home/axerunner/.axecore/sentinel && ./venv/bin/python bin/sentinel.py 2>&1 >> sentinel-cron.log</pre></code>
-<ul>Save changes and close editor with <strong>esc</strong> <strong>:</strong><strong>w</strong><strong>q</strong></ul>
+Save changes and close editor with <strong>esc</strong> <strong>:</strong><strong>w</strong><strong>q</strong>
 
 <h4 class="major">Check Sentinel</h4>
 <pre><code>venv/bin/python bin/sentinel.py</pre></code>
 If the node still syncing - you will see "axed not synced with network! awaiting full sync before running Sentinel"
 
 Wait until the process is finished (check status with <code>axe-cli mnsync status</code>). After the wallet will download the blockchain, test Sentinel again with <code>venv/bin/python bin/sentinel.py</code>. If nothing's returned - Sentinel is working properly.
-</ul>
-<br />
+<hr class="hr-line">
 <h4 class="major">Start your masternode</h4>
 Go to your local wallet's masternode tab (on/off switch in Options) and start your masternode.
 
