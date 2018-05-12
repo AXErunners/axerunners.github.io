@@ -2,6 +2,10 @@
 title: core
 image: axecore-ascii-screenshot.png
 ---
+<section><ul class="actions">
+<li><a href="https://github.com/AXErunners/axe/releases/latest" class="button icon fa-download">binaries</a></li>
+</ul>
+</section>
 <h2>Deployment</h2>
 Following guide covers AXE core compilation and was tested on Ubuntu 18.04.
 <blockquote>To update the current client with a fresh version you need to shut down current AXE client with <code>axe-cli stop</code> before using any gists.</blockquote>
