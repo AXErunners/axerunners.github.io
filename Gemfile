@@ -1,5 +1,6 @@
 source "https://rubygems.org"
 gem "jekyll"
+gem "jekyll-assets", group: :jekyll_plugins
 gem "bundler"
 gem "jekyll-gist"
 gem "jekyll-sitemap"
