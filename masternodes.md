@@ -117,10 +117,12 @@ git clone https://github.com/AXErunners/sentinel.git
 cd sentinel
 virtualenv venv
 venv/bin/pip install -r requirements.txt</pre></code>
+<section>
 Now you need to add Sentinel to cron. Enter <code>crontab -e</code> and insert following line:
 <pre><code>* * * * * cd /home/axerunner/.axecore/sentinel && ./venv/bin/python bin/sentinel.py 2>&1 >> sentinel-cron.log</pre></code>
-Save changes and close editor with <strong>esc</strong> <strong>:</strong><strong>w</strong><strong>q</strong>
+Save changes and close editor with <strong>esc</strong> <strong>:</strong><strong>w</strong><strong>q</strong><br />
 <br />
+</section>
 <h4 class="major">Check Sentinel</h4>
 <pre><code>venv/bin/python bin/sentinel.py</pre></code>
 If the node still syncing - you will see "axed not synced with network! awaiting full sync before running Sentinel"
