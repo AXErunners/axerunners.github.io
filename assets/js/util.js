@@ -289,7 +289,7 @@
 				if (config.hideOnEscape)
 					$window.on('keydown', function(event) {
 
-						if (event.keyCode == 27)
+						if (event.keyCode === 27)
 							$this._hide(event);
 
 					});
@@ -332,8 +332,8 @@
 
 					var i = $(this);
 
-					if (i.val() == ''
-					||  i.val() == i.attr('placeholder'))
+					if (i.val() === ''
+					||  i.val() === i.attr('placeholder'))
 						i
 							.addClass('polyfill-placeholder')
 							.val(i.attr('placeholder'));
@@ -346,7 +346,7 @@
 					if (i.attr('name').match(/-polyfill-field$/))
 						return;
 
-					if (i.val() == '')
+					if (i.val() === '')
 						i
 							.addClass('polyfill-placeholder')
 							.val(i.attr('placeholder'));
@@ -359,7 +359,7 @@
 					if (i.attr('name').match(/-polyfill-field$/))
 						return;
 
-					if (i.val() == i.attr('placeholder'))
+					if (i.val() === i.attr('placeholder'))
 						i
 							.removeClass('polyfill-placeholder')
 							.val('');
@@ -380,10 +380,10 @@
 									.replace(/type=password/i, 'type=text')
 					);
 
-					if (i.attr('id') != '')
+					if (i.attr('id') !== '')
 						x.attr('id', i.attr('id') + '-polyfill-field');
 
-					if (i.attr('name') != '')
+					if (i.attr('name') !== '')
 						x.attr('name', i.attr('name') + '-polyfill-field');
 
 					x.addClass('polyfill-placeholder')
@@ -401,7 +401,7 @@
 
 							var x = i.parent().find('input[name=' + i.attr('name') + '-polyfill-field]');
 
-							if (i.val() == '') {
+							if (i.val() === '') {
 
 								i.hide();
 								x.show();
@@ -445,7 +445,7 @@
 							if (i.attr('name').match(/-polyfill-field$/))
 								i.attr('name', '');
 
-							if (i.val() == i.attr('placeholder')) {
+							if (i.val() === i.attr('placeholder')) {
 
 								i.removeClass('polyfill-placeholder');
 								i.val('');
@@ -541,7 +541,7 @@
 					$parent = $e.parent();
 
 				// No parent? Bail.
-					if ($parent.length == 0)
+					if ($parent.length === 0)
 						return;
 
 				// Not moved? Move it.
@@ -555,7 +555,7 @@
 							$p = $e.prev();
 
 							// Couldn't find anything? Means this element's already at the top, so bail.
-								if ($p.length == 0)
+								if ($p.length === 0)
 									return;
 
 						// Move element to top of parent.
