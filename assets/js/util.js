@@ -346,11 +346,11 @@
 					if (i.attr('name').match(/-polyfill-field$/))
 						return;
 
-					if (i.val() === '')
+					if (i.val() === '') {
 						i
 							.addClass('polyfill-placeholder')
 							.val(i.attr('placeholder'));
-
+						}
 				})
 				.on('focus', function() {
 
