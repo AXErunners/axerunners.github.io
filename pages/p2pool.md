@@ -7,9 +7,8 @@ image: tmbr.jpg
 <li>Python >= 2.7</li>
 <li>Twisted >= 13.0.0</li>
 <li>Zope.interface >= 3.8.0</li>
-
+<br />
 <h2 class="major">Automatic deployment</h2>
-
 Create user <code>axerunner</code>:
 <pre><code>adduser axerunner && usermod -aG sudo axerunner
 su axerunner</pre></code>
@@ -26,10 +25,10 @@ Edit the script to match your setup:
 <li><code>USER_NAME</code> linux user name</li>
 <li><code>RPCUSER</code> enter a random alphanumeric rpc user name</li>
 <li><code>RPCPASSWORD</code> enter a random alphanumeric rpc password</li>
-
+<br />
 Start deployment script:
 <pre><code>bash ./p2pool-axe-deploy/p2pool.deploy.sh</pre></code>
-<hr class="hr-line">
+
 <h2 class="major">Manual deployment</h2>
 After installing AXE core, open ports for p2pool:
 <pre><code>sudo ufw allow 7903/tcp
@@ -52,6 +51,7 @@ mv web-static.old web-static/legacy
 cd web-static
 git clone https://github.com/johndoe75/p2pool-node-status status
 git clone https://github.com/hardcpp/P2PoolExtendedFrontEnd ext</pre></code>
+<br />
 Start p2pool:
 <pre><code>python run_p2pool.py --external-ip 256.271.13.349 -f 0 --give-author 0 -a PDAze8QNvLLQE5KS6FEfedmgTgs1uMCbf8X</pre></code>
 <li><code>-f</code> pool fees</li>

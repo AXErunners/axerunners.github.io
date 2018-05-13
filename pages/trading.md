@@ -1,5 +1,4 @@
 ---
-layout: default
 title: trading
 image: dgma.jpg
 ---
