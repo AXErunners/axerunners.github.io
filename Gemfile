@@ -7,5 +7,6 @@ gem "jekyll-sitemap"
 gem "jekyll-github-metadata"
 gem 'jekyll-seo-tag'
 gem 'jekyll-mentions'
+gem 'jemoji'
 gem "html-proofer"
 gem 'mime-types', require: 'mime/types/full'

@@ -22,6 +22,7 @@ plugins:
   - jekyll-github-metadata
   - jekyll-seo-tag
   - jekyll-mentions
+  - jemoji
 
 jekyll-mentions:
     base_url: https://github.com
