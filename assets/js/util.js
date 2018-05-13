@@ -123,8 +123,9 @@
 						window.setTimeout(function() {
 
 							// Reset scroll position.
-								if (config.resetScroll)
+								if (config.resetScroll) {
 									$this.scrollTop(0);
+								}
 
 							// Reset forms.
 								if (config.resetForms)
