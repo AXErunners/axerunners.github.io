@@ -33,13 +33,14 @@ COIN=AXE
 #BANNER_FILE = /etc/electrumx/electrum.banner
 #Uncomment the above line if you want to have a banner and create the banner file
 ```
-Add the ports in the firewall exception:<br />
+Add the ports in the firewall exception:
 ```
 sudo ufw allow 50001
 sudo ufw allow 50002
 ```
-Starting and stopping electrumx server:<br />
-`service electrumx start`<br />
-`service electrumx start`<br />
+<h2>Launch</h2>
+Starting and stopping electrumx server<br>
+`service electrumx start`<br>
+`service electrumx start`<br>
 
 [source](https://github.com/kyuupichan/electrumx)
