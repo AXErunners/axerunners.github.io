@@ -390,7 +390,7 @@
 					x.addClass('polyfill-placeholder')
 						.val(x.attr('placeholder')).insertAfter(i);
 
-					if (i.val() == '')
+					if (i.val() === '')
 						i.hide();
 					else
 						x.hide();
