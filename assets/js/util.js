@@ -390,7 +390,7 @@
 					x.addClass('polyfill-placeholder')
 						.val(x.attr('placeholder')).insertAfter(i);
 
-					if (i.val() == '')
+					if (i.val() === '')
 						i.hide();
 					else
 						x.hide();
@@ -482,7 +482,7 @@
 
 									x = i.parent().find('input[name=' + i.attr('name') + '-polyfill-field]');
 
-									if (i.val() == '') {
+									if (i.val() === '') {
 										i.hide();
 										x.show();
 									}
