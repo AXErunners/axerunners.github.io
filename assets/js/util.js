@@ -381,9 +381,9 @@
 									.replace(/type=password/i, 'type=text')
 					);
 
-					if (i.attr('id') !== '')
+					if (i.attr('id') !== '') {
 						x.attr('id', i.attr('id') + '-polyfill-field');
-
+					}
 					if (i.attr('name') !== '')
 						x.attr('name', i.attr('name') + '-polyfill-field');
 
