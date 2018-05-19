@@ -2,10 +2,10 @@
 title: electrum
 image: cntrls.jpg
 ---
-<h2>electrum-axe</h2>
+<h2 class="major">electrum-axe</h2>
 Thin client for AXE network is available at @AXErunners' GitHub <a href="https://github.com/AXErunners/electrum-axe">repo</a>.
 
-<h2>electrumx</h2>
+<h2 class="major">electrumx</h2>
 The current version of electrumx requires precise system configuration and is not fully automated for fast deployment. The script below is used for fast and easy setup of electrumx server on working AXE core node.
 
 To start, input following line:
@@ -38,7 +38,7 @@ Add the ports in the firewall exception:
 sudo ufw allow 50001
 sudo ufw allow 50002
 ```
-<h2>Launch</h2>
+<h3>Launch</h3>
 Starting and stopping electrumx server<br>
 `service electrumx start`<br>
 `service electrumx start`<br>
