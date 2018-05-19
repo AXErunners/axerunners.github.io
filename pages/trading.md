@@ -4,6 +4,7 @@ image: dgma.jpg
 ---
 <h3 class="major">Trading with BarterDEX</h3>
 Download and install <a href="https://github.com/AXErunners/axe/releases/latest"><b>AXE</b></a> with other wallets you planning to trade with. While your wallets are syncing, download latest <b>BarterDEX</b> binaries <a href="https://github.com/KomodoPlatform/BarterDEX/releases">here</a>. When wallets are synced, close AXE core and edit <code>axe.conf</code> as in the example below (SPV clients should work without any configuration):
+<br />
 <pre><code>rpcuser=axerunner283723
 rpcpassword=warp2178302
 server=1
