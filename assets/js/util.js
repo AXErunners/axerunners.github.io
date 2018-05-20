@@ -502,7 +502,7 @@
 								case 'textarea':
 									i.val(i.attr('defaultValue'));
 
-									if (i.val() == '') {
+									if (i.val() === '') {
 										i.addClass('polyfill-placeholder');
 										i.val(i.attr('placeholder'));
 									}
