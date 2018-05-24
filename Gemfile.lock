@@ -20,7 +20,7 @@ GEM
     execjs (2.7.0)
     extras (0.3.0)
       forwardable-extended (~> 2.5)
-    faraday (0.15.1)
+    faraday (0.15.2)
       multipart-post (>= 1.2, < 3)
     fastimage (2.1.3)
     ffi (1.9.23)
