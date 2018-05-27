@@ -8,6 +8,10 @@ Electrum-AXE is a lightweight client for AXE network. The source code is availab
 	<a href="https://raw.githubusercontent.com/AXErunners/media/master/etc/electrum-axe-v3064macos-scrnsht.png"><img src="https://raw.githubusercontent.com/AXErunners/media/master/etc/electrum-axe-v3064macos-scrnsht.png" alt="electrum-axe on macOS" style="width: 100%;"></a>
 	<figcaption>Electrum-AXE on macOS</figcaption>
 </figure>
+<figure>
+	<a href="https://raw.githubusercontent.com/AXErunners/media/master/etc/electrum-axe-wzd-v3064macos-scrnsht.png"><img src="https://raw.githubusercontent.com/AXErunners/media/master/etc/electrum-axe-wzd-v3064macos-scrnsht.png" alt="Install wizard" style="width: 50%;"></a>
+	<figcaption>Install wizard</figcaption>
+</figure>
 <br />
 <h2 class="major">electrumx</h2>
 The current version of electrumx requires precise system configuration and is not fully automated for fast deployment. The script below is used for fast and easy setup of electrumx server on working AXE core node.
