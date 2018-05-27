@@ -5,11 +5,11 @@ image: cntrls.jpg
 <h2 class="major">electrum-axe</h2>
 Electrum-AXE is a lightweight client for AXE network. The source code is available at @AXErunners' GitHub <a href="https://github.com/AXErunners/electrum-axe">repo</a><br />
 <figure>
-	<a href="https://raw.githubusercontent.com/AXErunners/media/master/etc/electrum-axe-v3064macos-scrnsht.png"><img src="https://raw.githubusercontent.com/AXErunners/media/master/etc/electrum-axe-v3064macos-scrnsht.png" alt="electrum-axe on macOS" style="width: 100%;"></a>
+	<a href="https://raw.githubusercontent.com/AXErunners/media/master/etc/electrum-axe-v3064macos-scrnsht.png"><img src="https://raw.githubusercontent.com/AXErunners/media/master/etc/electrum-axe-v3064macos-scrnsht.png" alt="electrum-axe on macOS" style="width: 95%;"></a>
 	<figcaption>Electrum-AXE on macOS</figcaption>
 </figure>
 <figure>
-	<a href="https://raw.githubusercontent.com/AXErunners/media/master/etc/electrum-axe-wzd-v3064macos-scrnsht.png"><img src="https://raw.githubusercontent.com/AXErunners/media/master/etc/electrum-axe-wzd-v3064macos-scrnsht.png" alt="Install wizard" style="width: 50%;"></a>
+	<a href="https://raw.githubusercontent.com/AXErunners/media/master/etc/electrum-axe-wzd-v3064macos-scrnsht.png"><img src="https://raw.githubusercontent.com/AXErunners/media/master/etc/electrum-axe-wzd-v3064macos-scrnsht.png" alt="Install wizard" style="width: 65%;"></a>
 	<figcaption>Install wizard</figcaption>
 </figure>
 <br />
