@@ -4,6 +4,10 @@ image: cntrls.jpg
 ---
 <section>
 <h2 class="major">electrum-axe</h2>
+<section><ul class="actions">
+<li><a href="https://github.com/AXErunners/electrum-axe/releases/latest" class="button icon fa-download">binaries</a></li>
+</ul>
+</section>
 Electrum-AXE is a lightweight client for AXE network. The source code is available at @AXErunners' GitHub <a href="https://github.com/AXErunners/electrum-axe">repository</a>.<br />
 <br />
 <figure>
