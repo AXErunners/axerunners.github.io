@@ -1,6 +1,6 @@
 ---
 title: mining
-image: minerdedication.png
+image: minerdedication.jpg
 ---
 <h3 class="major">Download a miner</h3>
 SGminer for Windows - download <a href="https://github.com/nicehash/sgminer/releases"><b>here</b></a><br />
