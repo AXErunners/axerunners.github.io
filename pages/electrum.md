@@ -20,7 +20,7 @@ Electrum-AXE is a lightweight client for AXE network. The source code is availab
 </figure>
 </section>
 <h3>Usage</h3>
-Follow the <a href="https://github.com/AXErunners/electrum-axe#getting-started">guide</a> to install Electrum-AXE on your system.
+Download binaries or follow <a href="https://github.com/AXErunners/electrum-axe#getting-started">this</a> guide to install Electrum-AXE from source on your system.
 <br />
 <h2 class="major">electrumx</h2>
 The current version of electrumx requires precise system configuration and is not fully automated for fast deployment. The script below is used for fast and easy setup of electrumx server on working AXE core node.
