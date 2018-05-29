@@ -8,7 +8,7 @@ image: cntrls.jpg
 <li><a href="https://github.com/AXErunners/electrum-axe/releases/latest" class="button icon fa-download">binaries</a></li>
 </ul>
 </section>
-Electrum-AXE is a lightweight client for AXE network. The source code is available at @AXErunners' GitHub <a href="https://github.com/AXErunners/electrum-axe">repository</a>.<br />
+Electrum-AXE is a lightweight client for AXE network. Check with AXE<a href="https://github.com/AXErunners/axe/wiki/SPV">wiki</a> for more details. The source code is available at @AXErunners' GitHub <a href="https://github.com/AXErunners/electrum-axe">repository</a>.<br />
 <br />
 <figure>
 	<a href="https://raw.githubusercontent.com/AXErunners/media/master/etc/electrum-axe-v3064macos-scrnsht.png"><img src="https://raw.githubusercontent.com/AXErunners/media/master/etc/electrum-axe-v3064macos-scrnsht.png" alt="electrum-axe on macOS" style="width: 95%;"></a>
