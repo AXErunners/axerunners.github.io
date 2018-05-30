@@ -23,7 +23,7 @@ Electrum-AXE is a lightweight client for AXE network. Check with AXE <a href="ht
 Download binaries or follow <a href="https://github.com/AXErunners/electrum-axe#getting-started">this</a> guide to install Electrum-AXE from source on your system.
 <br />
 <h2 class="major">electrumx</h2>
-ElectrumX is a server-side application for the AXE <a href="https://github.com/AXErunners/axe/wiki/SPV">SPV</a> protocol. The current version requires precise system configuration and is not fully automated for fast deployment. The script below is used for fast and easy setup of electrumx server on working AXE core node.
+ElectrumX is a server-side application for AXE <a href="https://github.com/AXErunners/axe/wiki/SPV">SPV</a> protocol. The current version requires precise system configuration and is not fully automated for fast deployment. The script below is used for fast and easy setup of electrumx server on working AXE core node.
 
 To start, input following line:
 ```
