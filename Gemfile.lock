@@ -85,7 +85,7 @@ GEM
       gemoji (~> 3.0)
       html-pipeline (~> 2.2)
       jekyll (~> 3.0)
-    kramdown (1.16.2)
+    kramdown (1.17.0)
     liquid (4.0.0)
     liquid-tag-parser (1.9.0)
       extras (~> 0.3)
