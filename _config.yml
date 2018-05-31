@@ -20,7 +20,6 @@ plugins:
   - jekyll-gist
   - jekyll-sitemap
   - jekyll-github-metadata
-  - jekyll-seo-tag
   - jekyll-mentions
   - jemoji
 
