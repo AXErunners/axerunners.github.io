@@ -43,7 +43,7 @@ Gives you financial privacy by obscuring the source of funds on the blockchain.
 <hr class="hr-line">
 <h4>Support the development<h4>
 <ul>
-axe <code>PBSFWKt583Xb5t92EPccWnXP2UHMTtCt5F</code><br />
+axe <code>7mLZCucekeWCXYaiR93BThq9TdYc1ZS7Tw</code><br />
 btc <code>14syJXgwoczCKm2E2APMt4td7MozTw1pZF</code><br />
 ltc <code>LdihK8mesqJ1Pm11zBqtJW2SmksdgGMuNd</code><br />
 bch <code>13LAh3RFzQb1aUa9Wzxy1uWwDCrZjBT43g</code><br />
