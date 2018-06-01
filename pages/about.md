@@ -13,7 +13,7 @@ image: axerunners-wht.png
 <h2>Specifications</h2>
 * algorithm: X11
 * ticker: AXE
-* prefix: P
+* prefix: P, 7
 * supply: 21000000
 * maturity: 101
 * confirmations: 6
