@@ -10,6 +10,8 @@ image: axerunners-wht.png
 </ul>
 </section>
 
+AXE core clients are full nodes, upgradeable to Masternodes and the most secure way to access the network. Full node client downloads a complete copy of the blockchain and participating in transactions verification. Thin clients using SPV protocol to communicate with full nodes and perform operations without downloading a full copy of the blockchain.<br />
+
 <h2>Specifications</h2>
 * algorithm: X11
 * ticker: AXE
