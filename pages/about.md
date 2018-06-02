@@ -2,7 +2,7 @@
 title: about
 image: axerunners-wht.png
 ---
-<a href="https://github.com/AXErunners/axe"><b>AXE</b></a> is a decentralized X11-based cryptocurrency. The foundation of AXE network is hybrid PoW/PoSe system. First-tier nodes provide hash power to move data and secure the blockchain, while the second tier of full nodes adds extra privacy and increases network performance.
+<a href="https://github.com/AXErunners/axe"><b>AXE</b></a> is a decentralized X11-based cryptocurrency. The foundation of <b>AXE</b> network is hybrid PoW/PoSe system. First-tier nodes provide hash power to move data and secure the blockchain, while the second tier of full nodes adds extra privacy and increases network performance.
 
 <section><ul class="actions">
 <li><a href="https://github.com/AXErunners/axe/releases/latest" class="button icon fa-download">core client</a></li>
@@ -10,7 +10,7 @@ image: axerunners-wht.png
 </ul>
 </section>
 
-AXE core clients are full nodes, upgradeable to Masternodes and the most secure way to access the network. Full node client downloads a complete copy of the blockchain and participating in transactions verification. Thin clients using SPV protocol to communicate with full nodes and perform operations without downloading a full copy of the blockchain.<br />
+<b>AXE</b> core clients are full nodes, upgradeable to <b>Masternodes</b> and the most secure way to access the network. Full node client downloads a complete copy of the blockchain and participating in transactions verification. Thin clients using SPV protocol to communicate with full nodes and perform operations without downloading a full copy of the blockchain.<br />
 
 <h2>Specifications</h2>
 * algorithm: X11
