@@ -38,15 +38,14 @@ Allows for near-instant transactions. <b>AXE</b> InstantSend transactions are fu
 Gives you financial privacy by obscuring the source of funds on the blockchain.
 
 <h2>GUI</h2>
-<figure>
+<ul><figure>
 	<a href="https://raw.githubusercontent.com/AXErunners/media/master/etc/axe-qt-v112macos-scrnsht.png"><img src="https://raw.githubusercontent.com/AXErunners/media/master/etc/axe-qt-v112macos-scrnsht.png" alt="Axe-Qt on macOS" style="width: 100%;"></a>
 	<figcaption>Axe-Qt v1.1.2 regtest on macOS 10.13.4</figcaption>
-</figure>
-<br />
+</figure><br />
 <figure>
 	<a href="https://raw.githubusercontent.com/AXErunners/media/master/etc/electrum-axe-v3064macos-scrnsht.png"><img src="https://raw.githubusercontent.com/AXErunners/media/master/etc/electrum-axe-v3064macos-scrnsht.png" alt="electrum-axe on macOS" style="width: 100%;"></a>
 	<figcaption>electrum-axe v3.0.6.4 on macOS 10.13.4</figcaption>
-</figure>
+</figure></ul>
 <hr class="hr-line">
 <h4>Support the development</h4>
 <ul>
