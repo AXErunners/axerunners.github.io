@@ -41,10 +41,10 @@ Gives you financial privacy by obscuring the source of funds on the blockchain.
 	<figcaption>Axe-Qt v1.1.2 regtest on macOS 10.13.4</figcaption>
 </figure>
 <hr class="hr-line">
-<h4>Support the development<h4>
+<h4>Support the development</h4>
 <ul>
-axe <code>7mLZCucekeWCXYaiR93BThq9TdYc1ZS7Tw</code><br />
-btc <code>14syJXgwoczCKm2E2APMt4td7MozTw1pZF</code><br />
-ltc <code>LdihK8mesqJ1Pm11zBqtJW2SmksdgGMuNd</code><br />
-bch <code>13LAh3RFzQb1aUa9Wzxy1uWwDCrZjBT43g</code><br />
+AXE <code>7mLZCucekeWCXYaiR93BThq9TdYc1ZS7Tw</code><br />
+BTC <code>14syJXgwoczCKm2E2APMt4td7MozTw1pZF</code><br />
+LTC <code>LdihK8mesqJ1Pm11zBqtJW2SmksdgGMuNd</code><br />
+BCH <code>13LAh3RFzQb1aUa9Wzxy1uWwDCrZjBT43g</code><br />
 </ul>
