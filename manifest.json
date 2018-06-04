@@ -1,5 +1,6 @@
 {
   "name": "AXErunners",
+  "short_name": "AXErunners",
   "lang": "en-US",
   "start_url": "/",
   "display": "minimal-ui",
