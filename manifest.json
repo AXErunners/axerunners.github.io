@@ -15,7 +15,7 @@
     }
   ],
   "lang": "en-US",
-  "start_url": "./",
+  "start_url": "./index.html",
   "display": "minimal-ui",
   "background_color": "#131313",
   "theme_color": "#f62e1a"
