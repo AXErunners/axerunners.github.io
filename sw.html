@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Installing Service Worker</title>
+    <script type="text/javascript">
+        var swsource = "/sw.js";
+        if("serviceWorker" in navigator) {
+          navigator.serviceWorker.register(swsource)
+            .then(function(reg){
+              console.log('SW scope: ', reg.scope);
+            })
+            .catch(function(err) {
+              console.log('SW registration failed: ', err);
+            });
+        };
+    </script>
+  </head>
+  <!-- Install Service Worker -->
+  <amp-install-serviceworker src="/sw.js"
+  data-iframe-src="https://axerunners.com/sw.html"
+  layout="nodisplay">
+  </amp-install-serviceworker>
+  <body></body>
+</html>
