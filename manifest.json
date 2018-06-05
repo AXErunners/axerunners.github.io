@@ -2,6 +2,18 @@
   "name": "AXErunners",
   "short_name": "AXErunners",
   "description": "Decentralized blockchain",
+  "icons": [
+    {
+      "src": "/assets/images/splsh192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/assets/images/splsh512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
   "lang": "en-US",
   "start_url": "/",
   "display": "minimal-ui",
