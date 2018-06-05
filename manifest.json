@@ -1,6 +1,7 @@
 {
   "name": "AXErunners",
   "short_name": "AXErunners",
+  "description": "Decentralized blockchain",
   "lang": "en-US",
   "start_url": "/",
   "display": "minimal-ui",
