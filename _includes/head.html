@@ -7,6 +7,15 @@
   gtag('js', new Date());
   gtag('config', 'UA-119169070-1');
   </script>
+  <script type="text/javascript">
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("/sw.js").then(function(registration) {
+      console.log("Service Worker registration successful with scope: ", registration.scope);
+    }).catch(function(err) {
+      console.log("Service Worker registration failed: ", err);
+    });
+  }
+  </script>
   <link rel="manifest" href="manifest.json">
   <title>{{ site.title }}</title>
   <meta name="description" content="Decentralized blockchain">
