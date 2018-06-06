@@ -3,7 +3,7 @@ layout: null
 ---
 var urlsToCache = [];
 
-var CACHE_NAME = 'axerunners-cache-v3';
+var CACHE_NAME = 'axerunners-cache-v13';
 
 self.addEventListener('install', function(event) {
   // Perform install steps
@@ -63,7 +63,7 @@ var filesToCache = [
   '/assets/js/util.js'
 ];
 
-var staticCacheName = 'axerunners-cache-v7';
+var staticCacheName = 'axerunners-cache-v13';
 
 self.addEventListener('install', function(event) {
   console.log('Attempting to install service worker and cache static assets');
