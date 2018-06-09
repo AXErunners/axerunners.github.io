@@ -18,10 +18,5 @@
   "display": "standalone",
   "background_color": "#131313",
   "theme_color": "#f62e1a",
-  "start_url": "/",
-  "serviceworker": {
-   "src": "sw.js",
-   "scope": "/",
-   "update_via_cache": "none"
+  "start_url": "./"
  }
-}
