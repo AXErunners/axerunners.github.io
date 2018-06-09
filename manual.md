@@ -1,6 +1,6 @@
 # Maintenance instructions for AXErunners website
 
-The website runs on [Jekyll](https://github.com/jekyll/jekyll) and currently hosted on GitHub Pages. Use the protocol below for maintenance and contribution tasks.
+This website runs on [Jekyll](https://github.com/jekyll/jekyll) and hosted on GitHub Pages. Use the protocol below for maintenance tasks and contribution.
 
 > Check [official documentation](https://jekyllrb.com/docs/installation/) for Ubuntu installation
 
