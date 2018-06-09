@@ -19,21 +19,25 @@
     "gulp-clean": "^0.3.2",
     "gulp-concat": "^2.6.1",
     "gulp-cssnano": "^2.1.2",
-    "gulp-replace": "^0.6.1",
     "gulp-gh-pages": "^0.5.4",
     "gulp-htmlmin": "3.0.0",
     "gulp-imagemin": "^4.0.0",
     "gulp-load-plugins": "1.5.0",
+    "gulp-replace": "^0.6.1",
     "gulp-sass": "^3.1.0",
     "gulp-shell": "^0.6.3",
     "gulp-uglify": "^3.0.0",
     "lighthouse": "^2.7.0",
+    "run-sequence": "^2.2.0",
     "sw-precache": "^5.2.0",
-    "sw-toolbox": "^3.6.0",
-    "run-sequence": "^2.2.0"
+    "sw-toolbox": "^3.6.0"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/AXErunners/axerunners.github.io"
+  },
+  "dependencies": {
+    "babel": "^6.23.0",
+    "babel-register": "^6.26.0"
   }
 }
