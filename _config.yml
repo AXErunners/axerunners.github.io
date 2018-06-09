@@ -26,4 +26,17 @@ plugins:
 jekyll-mentions:
     base_url: https://github.com
 
-exclude: [manual.md, Gemfile, Gemfile.lock, node_modules, gulpfile.js, package.json, _site, src, vendor, CNAME, LICENSE.md, Rakefile]
+exclude: [
+  "node_modules",
+  "LICENSE",
+  "package.json",
+  "manual.md",
+  "Gemfile",
+  "Gemfile.lock",
+  "gulpfile.babel.js",
+  ".babelrc",
+  ".gitignore",
+  "validate",
+  "CNAME",
+  "LICENSE.md"
+]

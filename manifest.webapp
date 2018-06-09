@@ -1,0 +1,25 @@
+{
+  "version": "2.2.3",
+  "name": "AXErunners",
+  "launch_path": "/index.html",
+  "description": "AXE is a decentralized X11-based cryptocurrency",
+  "icons": {
+    "128": "/assets/images/splsh128.png"
+  },
+  "developer": {
+    "name": "charlie137",
+    "url": "https://github.com/AXErunners"
+  },
+  "installs_allowed_from": [
+    "*"
+  ],
+  "default_locale": "en",
+  "permissions": {
+  },
+  "locales": {
+    "en": {
+      "name": "AXErunners",
+      "description": "AXE is a decentralized X11-based cryptocurrency"
+    }
+  }
+}
