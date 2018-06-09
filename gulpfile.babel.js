@@ -160,15 +160,7 @@ gulp.task('build', () =>
 // Depoly website to gh-pages.
 gulp.task('gh-pages', () => {
   return gulp.src('./_site/**/*')
-    .pipe($.ghPages());
-});
-
-var gulp   = require('gulp');
-var deploy = require('gulp-gh-pages');
-
-gulp.task('deploy', function () {
-  return gulp.src('./_site/**/*')
-    .pipe(deploy({
+    .pipe($.ghPages({
       remoteUrl: "https://github.com/AXErunners/axerunners.github.io",
       branch: "master"
     }))
