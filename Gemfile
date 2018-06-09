@@ -10,4 +10,3 @@ gem 'jekyll-mentions'
 gem 'jemoji'
 gem "html-proofer"
 gem 'mime-types', require: 'mime/types/full'
-end
