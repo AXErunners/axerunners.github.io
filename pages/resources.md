@@ -20,7 +20,7 @@ title: resources
 <li><a href="https://axerunners.github.io/axe-wallet-generator">wallet generator</a></li>
 <li><a href="https://github.com/iancoleman/bip39">bip39</a></li>
 <li><a href="https://github.com/richardkiss/pycoin">pycoin</a></li>
-<li><a href="https://github.com/exploitagency/vanitygen-plus">vanitygen</a></li></ul>
+<li><a href="https://github.com/exploitagency/vanitygen-plus">vanitygen</a></li>
 <li><a href="https://nodemarketcap.com/coins/axe.html">nodemarketcap</a></li></ul>
 <h3>Misc</h3>
 <ul><li><a href="https://github.com/bitcoinbook/bitcoinbook">mastering bitcoin</a></li>
