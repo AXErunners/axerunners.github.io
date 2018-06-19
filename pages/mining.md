@@ -8,10 +8,10 @@ SGminer Source <a href="https://github.com/nicehash/sgminer/releases"><b>downloa
 CCminer 1.2 (Nvidia - Compute 2.5+) <a href="https://github.com/cbuchner1/ccminer/releases/download/v1.2/ccminer-v1.2.zip"><b>download</b></a><br />
 <br />
 <h3>Create AXE address to receive payments</h3>
-Download the <a href="https://github.com/AXErunners/axe/releases"><b>AXE core</b></a> client. Generate a new address and input it on your account page to receive payments.<br />
+Download the <a href="https://github.com/AXErunners/axe/releases"><b>AXE core</b></a> or <a href="https://github.com/AXErunners/electrum-axe/releases"><b>Electrum-AXE</b></a> thin client. Generate a new address and input it on your account page to receive payments.<br />
 <br />
-<h3>Configure your miner (Win)</h3>
-Create a `bat` file to start your miner by opening the notepad and pasting one of the lines:<br />
+<h3>Configure your miner (Windows)</h3>
+Create a `bat` file by opening the notepad and pasting one of the lines below that matches your setup. <br />
 <br />
 <h4>SGMiner</h4>
 <pre><code>sgminer --kernel darkcoin-mod -o stratum+tcp://eu1.arcpool.com:1208 -u PBSFWKt583Xb5t92EPccWnXP2UHMTtCt5F -p x
