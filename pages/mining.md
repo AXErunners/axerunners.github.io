@@ -3,7 +3,8 @@ title: mining
 image: minerdedication.jpg
 ---
 <h3>Create AXE address to receive payments</h3>
-Download the <a href="https://github.com/AXErunners/axe/releases"><b>AXE core</b></a> or <a href="https://github.com/AXErunners/electrum-axe/releases"><b>Electrum-AXE</b></a> thin client. Generate a new address and input it on your account page to receive payments.
+Download the <a href="https://github.com/AXErunners/axe/releases"><b>AXE core</b></a> or <a href="https://github.com/AXErunners/electrum-axe/releases"><b>Electrum-AXE</b></a> thin client. Generate a new address and input it on your account page to receive payments.<br />
+<br />
 <h2 class="major">CPU/GPU</h2>
 <h3>Download a miner</h3>
 SGminer for Windows <a href="https://github.com/nicehash/sgminer/releases"><b>download</b></a><br />
