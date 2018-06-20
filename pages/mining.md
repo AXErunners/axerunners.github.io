@@ -2,7 +2,8 @@
 title: mining
 image: minerdedication.jpg
 ---
-<h3 class="major">Download a miner</h3>
+<h2 class="major">CPU/GPU</h2>
+<h3>Download a miner</h3>
 SGminer for Windows <a href="https://github.com/nicehash/sgminer/releases"><b>download</b></a><br />
 SGminer Source <a href="https://github.com/nicehash/sgminer/releases"><b>download</b></a><br />
 CCminer 1.2 (Nvidia - Compute 2.5+) <a href="https://github.com/cbuchner1/ccminer/releases/download/v1.2/ccminer-v1.2.zip"><b>download</b></a><br />
@@ -26,3 +27,10 @@ ccminer -a x11 -o stratum+tcp://cryptonova.eu:3533 -u PBSFWKt583Xb5t92EPccWnXP2U
 ccminer -a x11 -o stratum+tcp://smithpool.dynu.net:3533 -u PBSFWKt583Xb5t92EPccWnXP2UHMTtCt5F -p c=AXE
 ccminer -a x11 -o stratum+tcp://eu2.multipool.es:3542 -u PBSFWKt583Xb5t92EPccWnXP2UHMTtCt5F -p c=AXE</pre></code>
 You then need to change -u <code>PBSFWKt583Xb5t92EPccWnXP2UHMTtCt5F</code> to reflect your own address. Replace <code>stratum+tcp://POOLADDRESS:PORT</code> to another pool if needed. Finally, go to "File > Save as" and save the file as `start.bat` in the same folder containing your miners application files. You are now ready to mine, double click on <code>start.bat</code> to start the operation.
+<hr class="hr-line">
+<h2 class="major">ASICs</h2>
+Connect to your ASIC miner and enter values according to following sample:<br />
+<br />
+<pre><code>Url: POOLADDRESS:PORT
+Worker: WALLETADDRESS
+Password: X</pre></code>
