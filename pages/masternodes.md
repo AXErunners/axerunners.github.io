@@ -2,21 +2,18 @@
 title: masternodes
 image: whtslft.jpg
 ---
-<ul>
 To start AXE masternode on a dedicated server you will need:
 <li>1000 AXE collateral</li>
 <li>server with Ubuntu (18.04) and static IP (<a href="https://www.vultr.com/?ref=7231821">Vultr</a>)</li>
 <li>Axe Core on local machine</li>
 <li>basic Linux skills</li>
-</ul>
-<ul>
+<br />
 <h4>Setup VPS</h4>
 Switch to dedicated user AXERUNNER:
 <pre><code>adduser axerunner
 usermod -aG sudo axerunner
 su axerunner</pre></code>
-</ul>
-<ul>
+
 <h3 class="major">Prepare the system</h3>
 Update operating system and install dependencies:
 <pre><code>sudo apt-get update
@@ -44,9 +41,8 @@ mkswap /swapfile
 swapon /swapfile
 nano /etc/fstab</pre></code>
 <br />
-Enter the following file at the end: <code>/swapfile none swap sw 0 0</code><br /> 
-</ul>
-<ul>
+Enter the following file at the end: <code>/swapfile none swap sw 0 0</code><br />
+
 <br />
 <h4 class="major">Install AXE on VPS</h4>
 <pre><code>git clone https://github.com/axerunners/axe
@@ -55,8 +51,8 @@ cd .. && ./autogen.sh && ./configure --without-gui && make && sudo make install
 axed -daemon
 axe-cli stop
 </pre></code>
-</ul>
-<ul>
+
+
 <h4 class="major">Build AXE on local machine</h4>
 <pre><code>sudo apt-get install git build-essential libtool autotools-dev automake pkg-config libssl-dev libevent-dev bsdmainutils
 sudo apt-get install libminiupnpc-dev
@@ -71,9 +67,9 @@ cd .. && ./autogen.sh && ./configure && make && sudo make install
 axed -daemon
 axe-cli stop</pre></code>
 You could also download <a href="https://github.com/AXErunners/axe/releases">binaries</a> instead of building the source.
-<ul>
+
 Open your local Axe wallet (<code>axe-qt</code>)and let it sync with the network. After downloading the blockchain you can create masternode address with the key. Open debug console to enter <code>masternode genkey</code> and <code>getaccountaddress mn</code>. Send 1000 AXE to just generated <code>mn</code> address.
-</ul>
+
 Then edit <code>axe.conf</code> in your VPS datadir:
 <pre><code>cd ~ && cd .axecore
 nano axe.conf</pre></code>
@@ -106,7 +102,6 @@ mn2 207.246.65.02:9937 92Da1aYg6sbenP6uwskJgEY2XWB5LwJ7bXRtc3UPeShtHWJDjDv 5d898
 <li><code>93HaYBVUCYjEMezH1Y4sBGLALQZE1Yc1K64xiqgX37tGBDQL8Xg</code> is your masternode private key</li>
 <li><code>5d898e78244f3206e0105f421cdb071d91d111a51cd88eb5511fc0dbf4bfd95f 1</code> is the mn transaction output from <code>masternode outputs</code></li>
 </ul>
-<ul>
 <br />
 <h4 class="major">Install Sentinel on the VPS</h4>
 <pre><code>sudo apt-get update
@@ -123,13 +118,13 @@ Now you need to add Sentinel to cron. Enter <code>crontab -e</code> and insert f
 Save changes and close editor with <strong>esc</strong> <strong>:</strong><strong>w</strong><strong>q</strong><br />
 <br />
 </section>
-<h4 class="major">Check Sentinel</h4>
+<section><h4 class="major">Check Sentinel</h4>
 <pre><code>venv/bin/python bin/sentinel.py</pre></code>
 If the node still syncing - you will see "axed not synced with network! awaiting full sync before running Sentinel"
 
-Wait until the process is finished (check status with <code>axe-cli mnsync status</code>). After the wallet will download the blockchain, test Sentinel again with <code>venv/bin/python bin/sentinel.py</code>. If nothing's returned - Sentinel is working properly.
-<hr class="hr-line">
-<h4 class="major">Start your masternode</h4>
+Wait until the process is finished (check status with <code>axe-cli mnsync status</code>). After the wallet will download the blockchain, test Sentinel again with <code>venv/bin/python bin/sentinel.py</code>. If nothing's returned - Sentinel is working properly.</section>
+<br />
+<section><h4 class="major">Start your masternode</h4>
 Go to your local wallet's masternode tab (on/off switch in Options) and start your masternode.
 
-If your node shows <code>WATCHDOG EXPIRED</code> status - this usually indicates an issue with Sentinel. Check the schedule with <code>crontab -e</code> and give it a few hours. It might take a few hours for masternode to switch to <code>ENABLED</code>.
+If your node shows <code>WATCHDOG EXPIRED</code> status - this usually indicates an issue with Sentinel. Check the schedule with <code>crontab -e</code> and give it a few hours. It might take a few hours for masternode to switch to <code>ENABLED</code>.</section>
