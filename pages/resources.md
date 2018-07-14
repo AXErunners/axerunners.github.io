@@ -10,6 +10,7 @@ title: resources
 <li><a href="https://www.bountysource.com/teams/axe">bountysource</a></li>
 <li><a href="https://axe-slack.herokuapp.com/">slack</a></li>
 <li><a href="https://discordapp.com/invite/BqhteaU">discord</a></li>
+<li><a href="https://www.crunchbase.com/organization/axerunners">crunchbase</a></li>
 <li><a href="https://bitcointalk.org/index.php?topic=2569112">bitcointalk</a></li>
 <li><a href="https://www.reddit.com/r/AXErunners">reddit</a></li></ul>
 <h3>Tools & Services</h3>
