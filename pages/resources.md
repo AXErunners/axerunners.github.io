@@ -5,7 +5,7 @@ title: resources
 <ul><li><a href="https://github.com/AXErunners/axe/tree/master/doc">documentation</a></li>
 <li><a href="https://github.com/AXErunners">repositories</a></li>
 <li><a href="https://github.com/AXErunners/axe/wiki">wiki</a></li>
-<li><a href="https://travis-ci.org/AXErunners">travis-ci</a></li>
+<li><a href="https://travis-ci.com/AXErunners">travis-ci</a></li>
 <li><a href="https://www.bountysource.com/teams/axe">bountysource</a></li>
 <li><a href="https://axe-slack.herokuapp.com/">slack</a></li>
 <li><a href="https://discordapp.com/invite/BqhteaU">discord</a></li>
