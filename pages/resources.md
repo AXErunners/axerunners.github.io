@@ -4,7 +4,6 @@ title: resources
 <h3>Official</h3>
 <ul><li><a href="https://github.com/AXErunners/axe/tree/master/doc">documentation</a></li>
 <li><a href="https://github.com/AXErunners">repositories</a></li>
-<li><a href="https://github.com/AXErunners/axe/releases">downloads</a></li>
 <li><a href="https://github.com/AXErunners/axe/wiki">wiki</a></li>
 <li><a href="https://travis-ci.org/AXErunners">travis-ci</a></li>
 <li><a href="https://www.bountysource.com/teams/axe">bountysource</a></li>
