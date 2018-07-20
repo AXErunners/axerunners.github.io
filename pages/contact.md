@@ -50,6 +50,7 @@ title: contact
 		<li><input type="reset" value="Reset" /></li>
 	</ul>
 </form>
+<hr class="hr-line">
 <ul class="actions">
-		<li><a href="https://subscribe.axerunners.com" class="button">newsletter subscription</a></li>
+		<li><a href="https://subscribe.axerunners.com" class="button">newsletter</a></li>
 		</ul>
