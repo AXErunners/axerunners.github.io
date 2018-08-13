@@ -27,3 +27,5 @@ Connect to your ASIC miner and enter values according to the following sample:<b
 <pre><code>Url: POOLADDRESS:PORT
 Worker: WALLETADDRESS
 Password: X</pre></code></section>
+<hr class="hr-line">
+<a href="https://axerunners.github.io/#p2pool">p2pool</a>
