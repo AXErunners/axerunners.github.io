@@ -43,8 +43,8 @@ Gives you financial privacy by obscuring the source of funds on the blockchain.
 	<figcaption>Axe-Qt v1.1.2 regtest on macOS 10.13.4</figcaption>
 </figure><br />
 <figure>
-	<a href="https://raw.githubusercontent.com/AXErunners/media/master/etc/electrum-axe-v30641macos-scrnsht.png"><img src="https://raw.githubusercontent.com/AXErunners/media/master/etc/electrum-axe-v30641macos-scrnsht.png" alt="electrum-axe on macOS" style="width: 100%;"></a>
-	<figcaption>electrum-axe v3.0.6.4.1 on macOS 10.13.5</figcaption>
+	<a href="https://raw.githubusercontent.com/AXErunners/media/master/etc/electrum-axe-v30641macos-scrnsht.png"><img src="https://raw.githubusercontent.com/AXErunners/media/master/etc/electrum-axe-v322macos-scrnsht.png" alt="electrum-axe on macOS" style="width: 100%;"></a>
+	<figcaption>electrum-axe v3.2.2 on macOS 10.13.6</figcaption>
 </figure></ul>
 <hr class="hr-line">
 <h4>Support the development</h4>
