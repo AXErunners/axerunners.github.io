@@ -18,6 +18,10 @@ Electrum-AXE is a lightweight client for AXE network. Check with AXE <a href="ht
 	<a href="https://raw.githubusercontent.com/AXErunners/media/master/etc/electrum-axe-wzd-seed-v322macos-scrnsht.png"><img src="https://raw.githubusercontent.com/AXErunners/media/master/etc/electrum-axe-wzd-seed-v322macos-scrnsht.png" alt="Install wizard" style="width: 65%;"></a>
 	<figcaption>Install wizard</figcaption>
 </figure>
+<figure>
+	<a href="https://raw.githubusercontent.com/AXErunners/media/master/etc/electrum-axe-wzd-v322macos-scrnsht.png"><img src="https://raw.githubusercontent.com/AXErunners/media/master/etc/electrum-axe-wzd-v322macos-scrnsht.png" alt="Install wizard" style="width: 65%;"></a>
+	<figcaption>Install wizard</figcaption>
+</figure>
 </section>
 <h3>Usage</h3>
 Download binaries or follow this <a href="https://github.com/AXErunners/electrum-axe#getting-started">guide</a> to install Electrum-AXE from source on your system.
