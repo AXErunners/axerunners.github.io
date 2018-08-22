@@ -15,12 +15,12 @@ Electrum-AXE is a lightweight client for AXE network. Check with AXE <a href="ht
 	<figcaption>Electrum-AXE on macOS</figcaption>
 </figure>
 <figure>
-	<a href="https://raw.githubusercontent.com/AXErunners/media/master/etc/electrum-axe-wzd-seed-v322macos-scrnsht.png"><img src="https://raw.githubusercontent.com/AXErunners/media/master/etc/electrum-axe-wzd-seed-v322macos-scrnsht.png" alt="Install wizard" style="width: 65%;"></a>
-	<figcaption>Install wizard</figcaption>
+	<a href="https://raw.githubusercontent.com/AXErunners/media/master/etc/electrum-axe-wzd-seed-v322macos-scrnsht.png"><img src="https://raw.githubusercontent.com/AXErunners/media/master/etc/electrum-axe-wzd-seed-v322macos-scrnsht.png" alt="Seed" style="width: 65%;"></a>
+	<figcaption>Seed</figcaption>
 </figure>
 <figure>
-	<a href="https://raw.githubusercontent.com/AXErunners/media/master/etc/electrum-axe-wzd-v322macos-scrnsht.png"><img src="https://raw.githubusercontent.com/AXErunners/media/master/etc/electrum-axe-wzd-v322macos-scrnsht.png" alt="Install wizard" style="width: 65%;"></a>
-	<figcaption>Install wizard</figcaption>
+	<a href="https://raw.githubusercontent.com/AXErunners/media/master/etc/electrum-axe-wzd-v322macos-scrnsht.png"><img src="https://raw.githubusercontent.com/AXErunners/media/master/etc/electrum-axe-wzd-v322macos-scrnsht.png" alt="Install wizard" style="width: 50%;"></a>
+	<figcaption>Wallet</figcaption>
 </figure>
 </section>
 <h3>Usage</h3>
