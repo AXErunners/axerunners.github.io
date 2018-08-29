@@ -4,20 +4,20 @@
   "description": "Decentralized blockchain",
   "icons": [
     {
-      "src": "/assets/images/splsh192.png",
-      "type": "image/png",
-      "sizes": "192x192"
+        "src": "/android-chrome-192x192.png?v=2",
+        "sizes": "192x192",
+        "type": "image/png"
     },
     {
-      "src": "/assets/images/splsh512.png",
-      "type": "image/png",
-      "sizes": "512x512"
+        "src": "/android-chrome-512x512.png?v=2",
+        "sizes": "512x512",
+        "type": "image/png"
     }
   ],
   "lang": "en-US",
   "display": "standalone",
-  "background_color": "#131313",
-  "theme_color": "#f62e1a",
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
   "start_url": "/",
   "serviceworker": {
    "src": "sw.js",
