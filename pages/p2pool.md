@@ -3,7 +3,7 @@ title: p2pool
 image: tmbr.jpg
 ---
 <h2 class="major">Requirments</h2>
-<li>axed >= 1.1.3</li>
+<li>axed >= 1.1.5</li>
 <li>Python >= 2.7</li>
 <li>Twisted >= 13.0.0</li>
 <li>Zope.interface >= 3.8.0</li>
