@@ -7,6 +7,7 @@ title: resources
 <li><a href="https://github.com/AXErunners/axe/wiki">wiki</a></li>
 <li><a href="https://travis-ci.com/AXErunners">travis-ci</a></li>
 <li><a href="https://www.bountysource.com/teams/axe">bountysource</a></li>
+<li><a href="https://coinlib.io/coin/AXE/Axe">coinlib</a></li>
 <li><a href="https://axe-slack.herokuapp.com/">slack</a></li>
 <li><a href="https://discordapp.com/invite/BqhteaU">discord</a></li>
 <li><a href="https://t.me/joinchat/JYMQHxCcNWkbYWZYFTQ8-w">telegram</a></li>
