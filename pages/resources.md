@@ -20,6 +20,7 @@ title: resources
 <ul><li><a href="http://207.246.65.114:3001">block explorer</a></li>
 <li><a href="https://github.com/KomodoPlatform/BarterDEX">barterdex</a></li>
 <li><a href="https://github.com/AXErunners/p2pool-axe">p2pool-axe</a></li>
+<li><a href="https://github.com/AXErunners/axe-gitian">axe-gitian</a></li>
 <li><a href="https://github.com/kyuupichan/electrumx">electrumx</a></li>
 <li><a href="https://axerunners.com/wallet-generator/">wallet generator</a></li>
 <li><a href="https://github.com/iancoleman/bip39">bip39</a></li>
