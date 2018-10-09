@@ -25,6 +25,15 @@
 			$main = $('#main'),
 			$main_articles = $main.children('article');
 
+		// Disable animations/transitions until the page has loaded.
+			$body.addClass('is-loading');
+
+			$window.on('load', function() {
+				window.setTimeout(function() {
+					$body.removeClass('is-loading');
+				}, 100);
+			});
+
 		// Fix: Placeholder polyfill.
 			$('form').placeholder();
 
@@ -55,7 +64,7 @@
 				$nav_li = $nav.find('li');
 
 			// Add "middle" alignment classes if we're dealing with an even number of items.
-				if ($nav_li.length % 2 === 0) {
+				if ($nav_li.length % 2 == 0) {
 
 					$nav.addClass('use-middle');
 					$nav_li.eq( ($nav_li.length / 2) ).addClass('is-middle');
@@ -72,7 +81,7 @@
 					var $article = $main_articles.filter('#' + id);
 
 					// No such article? Bail.
-						if ($article.length === 0)
+						if ($article.length == 0)
 							return;
 
 					// Handle lock.
@@ -333,8 +342,8 @@
 				$window.on('hashchange', function(event) {
 
 					// Empty hash?
-						if (location.hash === ''
-						||	location.hash === '#') {
+						if (location.hash == ''
+						||	location.hash == '#') {
 
 							// Prevent default.
 								event.preventDefault();
@@ -389,8 +398,8 @@
 					$main_articles.hide();
 
 				// Initial article.
-					if (location.hash !== ''
-					&&	location.hash !== '#')
+					if (location.hash != ''
+					&&	location.hash != '#')
 						$window.on('load', function() {
 							$main._show(location.hash.substr(1), true);
 						});

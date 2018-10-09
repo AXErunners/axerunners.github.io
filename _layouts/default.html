@@ -1,18 +1,19 @@
----
-layout: default
----
-
 <!DOCTYPE HTML>
-
-<html lang="en">
+<!--
+	Dimension by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
 
 {% include head.html %}
 
+  <body>
 
 {% include header.html %}
 
 {% for page in site.pages  %}
-{% unless page.path == "index.md" or page.path == "assets/css/style.scss" %}
+{% if page.title %}
 
 <!-- {{ page.title }} -->
 <article id="{{ page.title }}">
@@ -23,11 +24,10 @@ layout: default
 </p>
 </article>
 
-{% endunless %}
+{% endif %}
 {% endfor %}
 
 {% include footer.html %}
-
 
   </body>
 

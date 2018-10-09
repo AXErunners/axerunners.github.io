@@ -20,8 +20,8 @@
 			b.push(
 				'<a ' +
 					'class="link depth-' + indent + '"' +
-					( (typeof target !== 'undefined' && target !== '') ? ' target="' + target + '"' : '') +
-					( (typeof href !== 'undefined' && href !== '') ? ' href="' + href + '"' : '') +
+					( (typeof target !== 'undefined' && target != '') ? ' target="' + target + '"' : '') +
+					( (typeof href !== 'undefined' && href != '') ? ' href="' + href + '"' : '') +
 				'>' +
 					'<span class="indent-' + indent + '"></span>' +
 					$this.text() +
@@ -42,9 +42,9 @@
 	$.fn.panel = function(userConfig) {
 
 		// No elements?
-			if (this.length === 0) {
+			if (this.length == 0)
 				return $this;
-				}
+
 		// Multiple elements?
 			if (this.length > 1) {
 
@@ -95,9 +95,8 @@
 			}, userConfig);
 
 			// Expand "target" if it's not a jQuery object already.
-				if (typeof config.target != "jQuery") {
+				if (typeof config.target != 'jQuery')
 					config.target = $(config.target);
-				}
 
 		// Panel.
 
@@ -123,9 +122,8 @@
 						window.setTimeout(function() {
 
 							// Reset scroll position.
-								if (config.resetScroll) {
+								if (config.resetScroll)
 									$this.scrollTop(0);
-								}
 
 							// Reset forms.
 								if (config.resetForms)
@@ -155,9 +153,8 @@
 								href = $a.attr('href'),
 								target = $a.attr('target');
 
-							if (!href || href === '#' || href === '' || href === '#' + id) {
+							if (!href || href == '#' || href == '' || href == '#' + id)
 								return;
-								}
 
 							// Cancel original event.
 								event.preventDefault();
@@ -169,12 +166,11 @@
 							// Redirect to href.
 								window.setTimeout(function() {
 
-									if (target === '_blank') {
+									if (target == '_blank')
 										window.open(href);
-									}
-									else {
+									else
 										window.location.href = href;
-									}
+
 								}, config.delay + 10);
 
 						});
@@ -187,7 +183,7 @@
 					$this.touchPosX = event.originalEvent.touches[0].pageX;
 					$this.touchPosY = event.originalEvent.touches[0].pageY;
 
-				});
+				})
 
 				$this.on('touchmove', function(event) {
 
@@ -291,7 +287,7 @@
 				if (config.hideOnEscape)
 					$window.on('keydown', function(event) {
 
-						if (event.keyCode === 27)
+						if (event.keyCode == 27)
 							$this._hide(event);
 
 					});
@@ -311,9 +307,8 @@
 				return $(this);
 
 		// No elements?
-			if (this.length === 0) {
+			if (this.length == 0)
 				return $this;
-			}
 
 		// Multiple elements?
 			if (this.length > 1) {
@@ -334,8 +329,8 @@
 
 					var i = $(this);
 
-					if (i.val() === ''
-					||  i.val() === i.attr('placeholder'))
+					if (i.val() == ''
+					||  i.val() == i.attr('placeholder'))
 						i
 							.addClass('polyfill-placeholder')
 							.val(i.attr('placeholder'));
@@ -348,11 +343,11 @@
 					if (i.attr('name').match(/-polyfill-field$/))
 						return;
 
-					if (i.val() === '') {
+					if (i.val() == '')
 						i
 							.addClass('polyfill-placeholder')
 							.val(i.attr('placeholder'));
-						}
+
 				})
 				.on('focus', function() {
 
@@ -361,7 +356,7 @@
 					if (i.attr('name').match(/-polyfill-field$/))
 						return;
 
-					if (i.val() === i.attr('placeholder'))
+					if (i.val() == i.attr('placeholder'))
 						i
 							.removeClass('polyfill-placeholder')
 							.val('');
@@ -382,16 +377,16 @@
 									.replace(/type=password/i, 'type=text')
 					);
 
-					if (i.attr('id') !== '') {
+					if (i.attr('id') != '')
 						x.attr('id', i.attr('id') + '-polyfill-field');
-					}
-					if (i.attr('name') !== '')
+
+					if (i.attr('name') != '')
 						x.attr('name', i.attr('name') + '-polyfill-field');
 
 					x.addClass('polyfill-placeholder')
 						.val(x.attr('placeholder')).insertAfter(i);
 
-					if (i.val() === '')
+					if (i.val() == '')
 						i.hide();
 					else
 						x.hide();
@@ -403,7 +398,7 @@
 
 							var x = i.parent().find('input[name=' + i.attr('name') + '-polyfill-field]');
 
-							if (i.val() === '') {
+							if (i.val() == '') {
 
 								i.hide();
 								x.show();
@@ -447,7 +442,7 @@
 							if (i.attr('name').match(/-polyfill-field$/))
 								i.attr('name', '');
 
-							if (i.val() === i.attr('placeholder')) {
+							if (i.val() == i.attr('placeholder')) {
 
 								i.removeClass('polyfill-placeholder');
 								i.val('');
@@ -483,7 +478,7 @@
 
 									x = i.parent().find('input[name=' + i.attr('name') + '-polyfill-field]');
 
-									if (i.val() === '') {
+									if (i.val() == '') {
 										i.hide();
 										x.show();
 									}
@@ -503,7 +498,7 @@
 								case 'textarea':
 									i.val(i.attr('defaultValue'));
 
-									if (i.val() === '') {
+									if (i.val() == '') {
 										i.addClass('polyfill-placeholder');
 										i.val(i.attr('placeholder'));
 									}
@@ -543,7 +538,7 @@
 					$parent = $e.parent();
 
 				// No parent? Bail.
-					if ($parent.length === 0)
+					if ($parent.length == 0)
 						return;
 
 				// Not moved? Move it.
@@ -557,7 +552,7 @@
 							$p = $e.prev();
 
 							// Couldn't find anything? Means this element's already at the top, so bail.
-								if ($p.length === 0)
+								if ($p.length == 0)
 									return;
 
 						// Move element to top of parent.
