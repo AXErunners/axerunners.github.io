@@ -32,6 +32,68 @@ wget https://gist.github.com/charlesrocket/f5331e54b47344b6957781bbbea8dc33/raw/
 
 Now start GUI client with `axe-qt` or headless version with `axed`.<br />
 <br />
+
+<hr class="hr-line">
+<h2>Gitian builds</h2>
+<img src="https://raw.githubusercontent.com/AXErunners/media/master/etc/axe-gitian-mojave.png" width="425">
+
+Use [AXE-gitian](https://github.com/AXErunners/axe-gitian) to perform deterministic binary builds using [Vagrant](https://www.vagrantup.com/) and [VirtualBox](https://www.virtualbox.org/) with [Ansible](https://www.ansible.com/) on macOS. Gitian provides a way to be reasonably certain that the AXE executables are really built from the exact source on GitHub and have not been tampered with. It also makes sure that the same, tested dependencies are used and statically built into the executable.
+
+Multiple developers build from source code by following a specific descriptor ("recipe"), cryptographically sign the result, and upload the resulting signature. These results are compared and only if they match is the build is accepted.
+
+<h4>Vagrant</h4>
+
+Download and install the latest version of Vagrant from their [website](https://www.vagrantup.com/downloads.html).
+
+<h4>VirtualBoX</h4>
+
+Download and install the latest version of VirtualBox from their [website](https://www.virtualbox.org/wiki/Downloads).
+
+<h4>Ansible</h4>
+
+Install prerequisites
+```
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+brew doctor
+brew install git
+sudo easy_install pip
+```
+Setup Ansible
+
+`sudo pip install ansible`
+
+<h3>axe-gitian</h3>
+```
+git clone https://github.com/AXErunners/axe-gitian
+cd axe-gitian
+```
+Edit your `gitian.yml` file:
+```
+# URL of repository containing AXE source code.
+axe_git_repo_url: 'https://github.com/AXErunners/axe'
+
+# Specific tag or branch you want to build.
+axe_version: 'master'
+
+# The name@ in the e-mail address of your GPG key, alternatively a key ID.
+gpg_key_name: 'F16219F4C23F91112E9C734A8DFCBF8E5A4D8019'
+
+# OPTIONAL set to import your SSH key into the VM. Example: id_rsa, id_ed25519. Assumed to reside in ~/.ssh
+ssh_key_name: ''
+```
+Start the build with `vagrant up --provision axe-build`. When environment is ready - connect with `vagrant ssh axe-build` and download Apple [SDK](https://github.com/AXErunners/axe/blob/master/doc/README_osx.md) into `gitian-builder/inputs` (`wget` + dropbox).
+
+Then prepare container and start the build with:
+```
+#replace $SIGNER and $VERSION to match your gitian.yml
+./gitian-build.py --setup $signer $version
+./gitian-build.py -B $SIGNER $VERSION
+```
+
+Copy files with [plugin](https://github.com/AXErunners/axe-gitian#copying-files).
+
+<i>guide for [linux](https://github.com/AXErunners/axe-gitian#requirements)</i>
+
 <hr class="hr-line">
 <h2>Gist examinations</h2>
 <h3>Local</h3>
