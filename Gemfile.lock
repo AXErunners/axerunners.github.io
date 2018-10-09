@@ -81,7 +81,7 @@ GEM
     jekyll-watch (2.0.0)
       listen (~> 3.0)
     kramdown (1.17.0)
-    liquid (4.0.0)
+    liquid (4.0.1)
     liquid-tag-parser (1.9.0)
       extras (~> 0.3)
       liquid (>= 3.0, < 5.0)
