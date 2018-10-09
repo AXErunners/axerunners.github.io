@@ -8,9 +8,6 @@ layout: default
 
 {% include head.html %}
 
-  <body onload="spnrfnc()" style="margin:0;">
-    <div id="loader"></div>
-    <div style="display:none;" id="spnr" class="animate-bottom">
 
 {% include header.html %}
 
@@ -30,19 +27,6 @@ layout: default
 {% endfor %}
 
 {% include footer.html %}
-</div>
-<script>
-var myVar;
-
-function spnrfnc() {
-    myVar = setTimeout(showPage);
-}
-
-function showPage() {
-  document.getElementById("loader").style.display = "none";
-  document.getElementById("spnr").style.display = "block";
-}
-</script>
 
 
   </body>
