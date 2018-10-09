@@ -86,7 +86,7 @@ Start the build with `vagrant up --provision axe-build`. When environment is rea
 Then prepare container and start the build with:
 ```
 #replace $SIGNER and $VERSION to match your gitian.yml
-./gitian-build.py --setup $signer $version -d
+./gitian-build.py --setup $signer $version
 ./gitian-build.py -B $SIGNER $VERSION
 ```
 
