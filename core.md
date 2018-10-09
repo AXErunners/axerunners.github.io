@@ -35,7 +35,6 @@ Now start GUI client with `axe-qt` or headless version with `axed`.<br />
 
 <hr class="hr-line">
 <h2>Gitian builds</h2>
-<img src="https://raw.githubusercontent.com/AXErunners/media/master/etc/axe-gitian-mojave.png" width="425">
 
 Use [AXE-gitian](https://github.com/AXErunners/axe-gitian) to perform deterministic binary builds using [Vagrant](https://www.vagrantup.com/) and [VirtualBox](https://www.virtualbox.org/) with [Ansible](https://www.ansible.com/) on macOS. Gitian provides a way to be reasonably certain that the AXE executables are really built from the exact source on GitHub and have not been tampered with. It also makes sure that the same, tested dependencies are used and statically built into the executable.
 
