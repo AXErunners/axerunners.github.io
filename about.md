@@ -52,5 +52,4 @@ Gives you financial privacy by obscuring the source of funds on the blockchain.
 AXE <code>7mLZCucekeWCXYaiR93BThq9TdYc1ZS7Tw</code><br />
 BTC <code>32NDo6qd8KxvnDizseqBAAox5TM8rLmMiJ</code><br />
 LTC <code>LdihK8mesqJ1Pm11zBqtJW2SmksdgGMuNd</code><br />
-BCH <code>13LAh3RFzQb1aUa9Wzxy1uWwDCrZjBT43g</code><br />
 </ul>
