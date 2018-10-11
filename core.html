@@ -11,8 +11,7 @@ Following guide covers AXE core compilation and was tested on Ubuntu 18.04.
 <blockquote>To update the current client with a fresh version you need to shut down current AXE client with <code>axe-cli stop</code> before using any gists.</blockquote>
 <h3>Prepare the system</h3>
 Update operating system and install dependencies:
-```
-sudo apt-get update
+<pre><code>sudo apt-get update
 sudo apt-get upgrade
 sudo apt-get install git python-virtualenv virtualenv fail2ban ufw -y
 sudo apt-get install build-essential libtool autotools-dev automake pkg-config libssl-dev libevent-dev bsdmainutils -y
@@ -21,17 +20,15 @@ sudo apt-get install libboost-all-dev libminiupnpc-dev libzmq3-dev libqrencode-d
 sudo add-apt-repository ppa:bitcoin/bitcoin
 sudo apt-get update
 sudo apt-get install libdb4.8-dev libdb4.8++-dev -y
-```
+</pre></code>
+
 <h3>Install AXE core and launch the client</h3>
 
 Use the one-liner to install AXE core:
 
-```
-wget https://gist.github.com/charlesrocket/f5331e54b47344b6957781bbbea8dc33/raw/17e4d3d1ce8ee5e45b5b022c32d7fa2616ba5643/axecore.sh && bash axecore.sh
-```
+<pre><code>wget https://gist.github.com/charlesrocket/f5331e54b47344b6957781bbbea8dc33/raw/17e4d3d1ce8ee5e45b5b022c32d7fa2616ba5643/axecore.sh && bash axecore.sh</pre></code>
 
-Now start GUI client with `axe-qt` or headless version with `axed`.<br />
-<br />
+Now start GUI client with <code>axe-qt</code> or headless version with <code>axed</code>.<br />
 
 <hr class="hr-line">
 <h2>Gitian builds</h2>
@@ -51,23 +48,21 @@ Download and install the latest version of VirtualBox from their [website](https
 <h4>Ansible</h4>
 
 Install prerequisites
-```
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+<pre><code>ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew doctor
 brew install git
 sudo easy_install pip
-```
+</pre></code>
 Setup Ansible
 
-`sudo pip install ansible`
+<pre><code>sudo pip install ansible</pre></code>
 
 <h3>axe-gitian</h3>
-```
-git clone https://github.com/AXErunners/axe-gitian
+<pre><code>git clone https://github.com/AXErunners/axe-gitian
 cd axe-gitian
-```
+</pre></code>
 Edit your `gitian.yml` file:
-```
+<pre><code>
 # URL of repository containing AXE source code.
 axe_git_repo_url: 'https://github.com/AXErunners/axe'
 
@@ -79,15 +74,14 @@ gpg_key_name: 'F16219F4C23F91112E9C734A8DFCBF8E5A4D8019'
 
 # OPTIONAL set to import your SSH key into the VM. Example: id_rsa, id_ed25519. Assumed to reside in ~/.ssh
 ssh_key_name: ''
-```
+</pre></code>
 Start the build with `vagrant up --provision axe-build`. When environment is ready - connect with `vagrant ssh axe-build` and download Apple [SDK](https://github.com/AXErunners/axe/blob/master/doc/README_osx.md) into `gitian-builder/inputs` (`wget` + dropbox).
 
 Then prepare container and start the build with:
-```
-#replace $SIGNER and $VERSION to match your gitian.yml
+<pre><code>#replace $SIGNER and $VERSION to match your gitian.yml
 ./gitian-build.py --setup $signer $version
 ./gitian-build.py -B $SIGNER $VERSION
-```
+</pre></code>
 
 Copy files with [plugin](https://github.com/AXErunners/axe-gitian#copying-files).
 
@@ -110,9 +104,8 @@ AXE core one-liner gist downloads master branch, performs dependencies build, sy
 <h3>Server</h3>
 
 AXE core one-liner for VPS will perform same tasks but with the **headless** flag (there is no need for GUI on the server machine). You can ignore **Qt** dependencies and call the gist with:
-```
-wget https://gist.github.com/charlesrocket/675ae3d744aed0d06852fc1dbf6f4739/raw/b9f09174e055a96880e27dfeba8bdff994c03225/axecore-vps.sh && bash axecore-vps.sh
-```
+<pre><code>wget https://gist.github.com/charlesrocket/675ae3d744aed0d06852fc1dbf6f4739/raw/b9f09174e055a96880e27dfeba8bdff994c03225/axecore-vps.sh && bash axecore-vps.sh
+</pre></code>
 {% gist 675ae3d744aed0d06852fc1dbf6f4739 %}
 
 <h2>Outro</h2>
