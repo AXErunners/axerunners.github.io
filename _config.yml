@@ -1,20 +1,15 @@
 title: AXE
-email: info@axerunners.com
-description: Decentralized X11-based cryptocurrency
-url: ""
-author: AXErunners
-lang: en-US
-icon: fa-times
-
-facebook_url: https://www.facebook.com/axe137
-github_url: https://github.com/AXErunners
-linkedin_url: https://www.linkedin.com/company/axerunners/
-slack_url: https://axe-slack.herokuapp.com
-twitter_url: https://twitter.com/axerunners
+tagline: Decentralized X11-based cryptocurrency
+description: Decentralized blockchain
+baseurl: ""
+url: "https://axerunners.com"
 
 markdown: kramdown
 sass:
-sass_dir: _sass
+  sass_dir: assets/sass
+
+collections:
+  - panels
 
 plugins:
   - jekyll-gist
@@ -26,7 +21,6 @@ jekyll-mentions:
     base_url: https://github.com
 
 exclude: [
-   "manual.md",
    "Gemfile",
    "node_modules",
    "gulpfile.js",

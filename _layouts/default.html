@@ -1,34 +1,98 @@
+{% comment %}
+
+
+
+
+
+	Name:
+
+		Default layout
+
+	Description:
+
+		Basic HTML foundation for all pages.
+
+	Example:
+
+		---
+		layout: default
+		---
+
+{% endcomment %}
+
 <!DOCTYPE HTML>
-<!--
-	Dimension by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html lang="en">
+	<head>
+		<title>AXE</title>
+		<meta charset="utf-8" />
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+ 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-119169070-1"></script>
+ 		<script>
+ 		window.dataLayer = window.dataLayer || [];
+ 		function gtag(){dataLayer.push(arguments);}
+ 		gtag('js', new Date());
+ 		gtag('config', 'UA-119169070-1');
+ 		</script>
+ 		<script type="text/javascript">
+ 		if ("serviceWorker" in navigator) {
+	 	 	navigator.serviceWorker.register("/sw.js").then(function(registration) {
+		   	console.log("Service Worker registration successful with scope: ", registration.scope);
+	   	}).catch(function(err) {
+		  	console.log("Service Worker registration failed: ", err);
+	  	});
+  	}
+ 		</script>
+ 		<link rel="manifest" href="manifest.json">
+		<meta name="msapplication-navbutton-color" content="#F62E1A">
+  	<meta name="theme-color" content="#F62E1A" />
+		<meta http-equiv="content-language" content="en-us" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+		<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="{{ site.baseurl }}/assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
 
-{% include head.html %}
+		<!-- Wrapper -->
+			<div id="wrapper">
 
-  <body>
+				<!-- Header -->
+					<header id="header">
+						<div class="logo">
+							<span class="icon fa-times"></span>
+						</div>
+						<div class="content">
+							<div class="inner">
+								<h1>AXE</h1>
+								<p>DECENTRALIZED X11-BASED CRYPTOCURRENCY</p>
+							</div>
+						</div>
+						<nav>
+							<ul>
+								{% for panel in site.panels %}
+									<li><a href="#{{ panel.html_id }}">{{ panel.title }}</a></li>
+								{% endfor %}
+							</ul>
+						</nav>
+					</header>
 
-{% include header.html %}
+				{{ content }}
 
-{% for page in site.pages  %}
-{% if page.title %}
+				<!-- Footer -->
+					<footer id="footer">
+					</footer>
 
-<!-- {{ page.title }} -->
-<article id="{{ page.title }}">
-	<h2 class="major">{{ page.title }}</h2>
-	{% if page.image %}<span class="image main"><img src="assets/images/{{ page.image }}" alt="" /></span>{% endif %}
-<p>
-{{ page.content }}
-</p>
-</article>
+			</div>
 
-{% endif %}
-{% endfor %}
+		<!-- BG -->
+			<div id="bg"></div>
 
-{% include footer.html %}
+		<!-- Scripts -->
+			<script src="{{ site.baseurl }}/assets/js/jquery.min.js"></script>
+			<script src="{{ site.baseurl }}/assets/js/browser.min.js"></script>
+			<script src="{{ site.baseurl }}/assets/js/breakpoints.min.js"></script>
+			<script src="{{ site.baseurl }}/assets/js/util.js"></script>
+			<script src="{{ site.baseurl }}/assets/js/main.js"></script>
 
-  </body>
-
+	</body>
 </html>
