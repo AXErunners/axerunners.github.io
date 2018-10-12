@@ -63,7 +63,7 @@ Setup Ansible
 <pre><code>git clone https://github.com/AXErunners/axe-gitian
 cd axe-gitian
 </pre></code>
-Edit your `gitian.yml` file:
+Edit your <code>gitian.yml</code> file:
 <pre><code>
 # URL of repository containing AXE source code.
 axe_git_repo_url: 'https://github.com/AXErunners/axe'
@@ -77,7 +77,7 @@ gpg_key_name: 'F16219F4C23F91112E9C734A8DFCBF8E5A4D8019'
 # OPTIONAL set to import your SSH key into the VM. Example: id_rsa, id_ed25519. Assumed to reside in ~/.ssh
 ssh_key_name: ''
 </pre></code>
-Start the build with `vagrant up --provision axe-build`. When environment is ready - connect with `vagrant ssh axe-build` and download Apple [SDK](https://github.com/AXErunners/axe/blob/master/doc/README_osx.md) into `gitian-builder/inputs` (`wget` + dropbox).
+Start the build with <code>vagrant up --provision axe-build</code>. When environment is ready - connect with <code>vagrant ssh axe-build</code> and download <a href="https://github.com/AXErunners/axe/blob/master/doc/README_osx.md">Apple SDK</a> into <code>gitian-builder/inputs</code> (<code>wget</code> + dropbox).
 
 Then prepare container and start the build with:
 <pre><code>#replace $SIGNER and $VERSION to match your gitian.yml
@@ -85,9 +85,10 @@ Then prepare container and start the build with:
 ./gitian-build.py -B $SIGNER $VERSION
 </pre></code>
 
-Copy files with [plugin](https://github.com/AXErunners/axe-gitian#copying-files).
-
-<i>guide for [linux](https://github.com/AXErunners/axe-gitian#requirements)</i>
+Copy files with <a href="https://github.com/AXErunners/axe-gitian#copying-files">plugin</a>
+<br />
+<br />
+<i>guide for <a href="https://github.com/AXErunners/axe-gitian#requirements">linux</a></i>
 
 <hr class="hr-line">
 <h2>Gist examinations</h2>
@@ -95,11 +96,11 @@ Copy files with [plugin](https://github.com/AXErunners/axe-gitian#copying-files)
 
 AXE core one-liner gist downloads master branch, performs dependencies build, system configuration, compilation with standard parameters and installation info `bin` folder. Perfect for fresh systems.
 
-* `git clone` - downloads the source code
-* `./autogen` - preparing system for the source code compilation
-* `./configure` - preparing environment
-* `make` - build process
-* `sudo make install` - copies binaries into `bin` folder for quick launch (`axed`/`axe-qt`/etc can be called from any directory) _optional_
+<ul><li><code>git clone</code></li> - downloads the source code
+<li><code>./autogen</code></li> - preparing system for the source code compilation
+<li><code>./configure</code></li> - preparing environment
+<li><code>make</code></li> - build process
+<li><code>sudo make install</code></li> - copies binaries into <code>bin</code> folder for quick launch (<code>axed</code>/<code>axe-qt</code>/etc can be called from any directory) <i>optional</i>
 
 {% gist f5331e54b47344b6957781bbbea8dc33 %}
 
@@ -109,6 +110,3 @@ AXE core one-liner for VPS will perform same tasks but with the **headless** fla
 <pre><code>wget https://gist.github.com/charlesrocket/675ae3d744aed0d06852fc1dbf6f4739/raw/b9f09174e055a96880e27dfeba8bdff994c03225/axecore-vps.sh && bash axecore-vps.sh
 </pre></code>
 {% gist 675ae3d744aed0d06852fc1dbf6f4739 %}
-
-<h2>Outro</h2>
-For additional services check with [Masternodes](/#masternodes)  or [p2pool](/#p2pool) section.
