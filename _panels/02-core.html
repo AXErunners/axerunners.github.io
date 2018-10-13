@@ -35,17 +35,17 @@ Now start GUI client with <code>axe-qt</code> or headless version with <code>axe
 <hr class="hr-line">
 <h2>Gitian builds</h2>
 
-Use <a href="https://github.com/AXErunners/axe-gitian">AXE-gitian</a> to perform deterministic binary builds using <a href="https://www.vagrantup.com/">Vagrant</a> and <a href="https://www.virtualbox.org/">VirtualBox</a> with <a href="https://www.ansible.com/">Ansible</a> on macOS. Gitian provides a way to be reasonably certain that the AXE executables are really built from the exact source on GitHub and have not been tampered with. It also makes sure that the same, tested dependencies are used and statically built into the executable.
+<p>Use <a href="https://github.com/AXErunners/axe-gitian">AXE-gitian</a> to perform deterministic binary builds using <a href="https://www.vagrantup.com/">Vagrant</a> and <a href="https://www.virtualbox.org/">VirtualBox</a> with <a href="https://www.ansible.com/">Ansible</a> on macOS. Gitian provides a way to be reasonably certain that the AXE executables are really built from the exact source on GitHub and have not been tampered with. It also makes sure that the same, tested dependencies are used and statically built into the executable.
 
-Multiple developers build from source code by following a specific descriptor ("recipe"), cryptographically sign the result, and upload the resulting signature. These results are compared and only if they match is the build is accepted.
+Multiple developers build from source code by following a specific descriptor ("recipe"), cryptographically sign the result, and upload the resulting signature. These results are compared and only if they match is the build is accepted.</p>
 
 <h4>Vagrant</h4>
 
-Download and install the latest version of Vagrant from their <a href="https://www.vagrantup.com/downloads.html">website</a>.
+<p>Download and install the latest version of Vagrant from their <a href="https://www.vagrantup.com/downloads.html">website</a>.</p>
 
 <h4>VirtualBoX</h4>
 
-Download and install the latest version of VirtualBox from their <a href="https://www.virtualbox.org/wiki/Downloads">website</a>.
+<p>Download and install the latest version of VirtualBox from their <a href="https://www.virtualbox.org/wiki/Downloads">website</a>.</p>
 
 <h4>Ansible</h4>
 
@@ -94,7 +94,7 @@ Copy files with <a href="https://github.com/AXErunners/axe-gitian#copying-files"
 <h2>Gist examinations</h2>
 <h3>Local</h3>
 
-AXE core one-liner gist downloads master branch, performs dependencies build, system configuration, compilation with standard parameters and installation info `bin` folder. Perfect for fresh systems.
+<p>AXE core one-liner gist downloads master branch, performs dependencies build, system configuration, compilation with standard parameters and installation info `bin` folder. Perfect for fresh systems.</p>
 
 <ul><li><code>git clone</code></li> - downloads the source code
 <li><code>./autogen</code></li> - preparing system for the source code compilation
