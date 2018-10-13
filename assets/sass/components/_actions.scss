@@ -1,7 +1,7 @@
 ///
-/// 
-/// 
-/// 
+///
+///
+///
 ///
 
 /* Actions */
@@ -61,7 +61,7 @@
 			}
 		}
 
-		@include breakpoint('<=xsmall') {
+		@include breakpoint('<=medium') {
 			&:not(.fixed) {
 				@include vendor('flex-direction', 'column');
 				margin-left: 0;

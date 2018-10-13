@@ -1,7 +1,7 @@
 ///
-/// 
-/// 
-/// 
+///
+///
+///
 ///
 
 /* Wrapper */
@@ -26,11 +26,11 @@
 			padding: 3rem 2rem;
 		}
 
-		@include breakpoint('<=small') {
+		@include breakpoint('<=medium') {
 			padding: 2rem 1rem;
 		}
 
-		@include breakpoint('<=xsmall') {
+		@include breakpoint('<=small') {
 			padding: 1rem;
 		}
 	}
