@@ -79,7 +79,7 @@ ssh_key_name: ''
 </pre></code>
 Start the build with <code>vagrant up --provision axe-build</code>. When environment is ready - connect with <code>vagrant ssh axe-build</code> and download <a href="https://github.com/AXErunners/axe/blob/master/doc/README_osx.md">Apple SDK</a> into <code>gitian-builder/inputs</code> (<code>wget</code> + dropbox).
 
-Then prepare container and start the build with:
+Then prepare the container and start building with:
 <pre><code>#replace $SIGNER and $VERSION to match your gitian.yml
 ./gitian-build.py --setup $signer $version
 ./gitian-build.py -B $SIGNER $VERSION
