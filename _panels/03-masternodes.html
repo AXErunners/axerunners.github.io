@@ -55,7 +55,8 @@ axe-cli stop
 </pre></code>
 
 
-<h4 class="major">Build AXE on local machine</h4>
+<h4 class="major">Generate masternode key on local machine</h4>
+Download AXE core from <a href="https://github.com/AXErunners/axe/releases">releases</a> or build from source:
 <pre><code>sudo apt-get install git build-essential libtool autotools-dev automake pkg-config libssl-dev libevent-dev bsdmainutils
 sudo apt-get install libminiupnpc-dev
 sudo apt-get install libzmq3-dev
@@ -68,11 +69,10 @@ cd axe && cd depends && make
 cd .. && ./autogen.sh && ./configure && make && sudo make install
 axed -daemon
 axe-cli stop</pre></code>
-You could also download <a href="https://github.com/AXErunners/axe/releases">binaries</a> instead of building the source.
 
 Open your local Axe wallet (<code>axe-qt</code>)and let it sync with the network. After downloading the blockchain you can create masternode address with the key. Open debug console to enter <code>masternode genkey</code> and <code>getaccountaddress mn</code>. Send 1000 AXE to just generated <code>mn</code> address.
 
-Then edit <code>axe.conf</code> in your VPS datadir:
+<h4 class="major">Go back to VPS to edit the configuration file
 <pre><code>cd ~ && cd .axecore
 nano axe.conf</pre></code>
 Insert following:
