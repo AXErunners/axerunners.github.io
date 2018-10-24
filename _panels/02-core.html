@@ -77,8 +77,16 @@ gpg_key_name: 'F16219F4C23F91112E9C734A8DFCBF8E5A4D8019'
 # OPTIONAL set to import your SSH key into the VM. Example: id_rsa, id_ed25519. Assumed to reside in ~/.ssh
 ssh_key_name: ''
 </pre></code>
-Start the build with <code>vagrant up --provision axe-build</code>. When environment is ready - connect with <code>vagrant ssh axe-build</code> and download <a href="https://github.com/AXErunners/axe/blob/master/doc/README_osx.md">Apple SDK</a> into <code>gitian-builder/inputs</code> (<code>wget</code> + dropbox).
 
+Start the build with <code>vagrant up --provision axe-build</code>. When environment is ready - download <a href="https://github.com/AXErunners/axe/blob/master/doc/README_osx.md">Apple SDK</a> and create the tar file (MacOSX10.11.sdk.tar.gz). Place MacOSX10.11.sdk.tar.gz into axe-gitian folder and copy it to <code>gitian-builder/inputs</code> using plugin:
+<pre><code>vagrant plugin install vagrant-scp
+vagrant scp MacOSX10.11.sdk.tar.gz MacOSX10.11.sdk.tar.gz
+</pre></code>
+Then connect with <code>vagrant ssh axe-build</code> and move SDK file into <code>gitian-builder/inputs</code>:
+<pre><code>cd gitian-builder
+mkdir inputs
+cd ~ && mv MacOSX10.11.sdk.tar.gz gitian-builder/inputs/MacOSX10.11.sdk.tar.gz
+</pre></code>
 Then prepare the container and start building with:
 <pre><code>#replace $SIGNER and $VERSION to match your gitian.yml
 ./gitian-build.py --setup $signer $version
