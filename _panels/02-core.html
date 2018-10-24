@@ -87,7 +87,7 @@ Then connect with <code>vagrant ssh axe-build</code> and move SDK file into <cod
 mkdir inputs
 cd ~ && mv MacOSX10.11.sdk.tar.gz gitian-builder/inputs/MacOSX10.11.sdk.tar.gz
 </pre></code>
-Then prepare the container and start building with:
+Prepare the container and start building with:
 <pre><code>#replace $SIGNER and $VERSION to match your gitian.yml
 ./gitian-build.py --setup $signer $version
 ./gitian-build.py -B $SIGNER $VERSION
