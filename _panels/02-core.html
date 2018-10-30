@@ -85,29 +85,5 @@ Prepare the container and start building with:
 ./gitian-build.py --setup $signer $version
 ./gitian-build.py -B $SIGNER $VERSION
 </pre></code>
-
-Copy files with <a href="https://github.com/AXErunners/axe-gitian#copying-files">plugin</a>
-<br />
-<br />
-<i>guide for <a href="https://github.com/AXErunners/axe-gitian#requirements">linux</a></i>
-
-<hr class="hr-line">
-<h2>Gist examinations</h2>
-<h3>Local</h3>
-
-<p>AXE core one-liner gist downloads master branch, performs dependencies build, system configuration, compilation with standard parameters and installation info `bin` folder. Perfect for fresh systems.</p>
-
-<ul><li><code>git clone</code></li> - downloads the source code
-<li><code>./autogen</code></li> - preparing system for the source code compilation
-<li><code>./configure</code></li> - preparing environment
-<li><code>make</code></li> - build process
-<li><code>sudo make install</code></li> - copies binaries into <code>bin</code> folder for quick launch (<code>axed</code>/<code>axe-qt</code>/etc can be called from any directory) <i>optional</i>
-
-{% gist f5331e54b47344b6957781bbbea8dc33 %}
-
-<h3>Server</h3>
-
-AXE core one-liner for VPS will perform same tasks but with the **headless** flag (there is no need for GUI on the server machine). You can ignore **Qt** dependencies and call the gist with:
-<pre><code>wget https://gist.github.com/charlesrocket/675ae3d744aed0d06852fc1dbf6f4739/raw/b9f09174e055a96880e27dfeba8bdff994c03225/axecore-vps.sh && bash axecore-vps.sh
-</pre></code>
-{% gist 675ae3d744aed0d06852fc1dbf6f4739 %}
+<p>Copy files with <a href="https://github.com/AXErunners/axe-gitian#copying-files">plugin</a></p>
+<p><i>guide for <a href="https://github.com/AXErunners/axe-gitian#requirements">linux</a></i></p>
