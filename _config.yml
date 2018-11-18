@@ -12,7 +12,6 @@ collections:
   - panels
 
 plugins:
-  - jekyll-gist
   - jekyll-sitemap
   - jekyll-github-metadata
   - jekyll-mentions
