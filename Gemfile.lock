@@ -64,8 +64,6 @@ GEM
       nokogiri (~> 1.8)
       pathutil (~> 0.16)
       sprockets (>= 3.3, < 4.1.beta)
-    jekyll-gist (1.5.0)
-      octokit (~> 4.2)
     jekyll-github-metadata (2.9.4)
       jekyll (~> 3.1)
       octokit (~> 4.0, != 4.4.0)
@@ -137,7 +135,6 @@ DEPENDENCIES
   html-proofer
   jekyll
   jekyll-assets
-  jekyll-gist
   jekyll-github-metadata
   jekyll-mentions
   jekyll-sitemap
