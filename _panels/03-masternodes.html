@@ -38,11 +38,11 @@ sudo ufw logging on
 sudo ufw disable
 sudo ufw enable</code>
 Add some swap:
-<code>fallocate -l 2G /swapfile
-chmod 600 /swapfile
-mkswap /swapfile
-swapon /swapfile
-nano /etc/fstab</pre></code>
+<code>sudo fallocate -l 2G /swapfile
+sudo chmod 600 /swapfile
+sudo mkswap /swapfile
+sudo swapon /swapfile
+sudo nano /etc/fstab</pre></code>
 <br />
 Enter the following file at the end: <code>/swapfile none swap sw 0 0</code><br />
 
