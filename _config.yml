@@ -21,6 +21,7 @@ jekyll-mentions:
 
 exclude: [
    "Gemfile",
+   "Gemfile.lock",
    "node_modules",
    "gulpfile.js",
    "package.json",
