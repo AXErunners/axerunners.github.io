@@ -23,6 +23,7 @@ exclude: [
    "Gemfile",
    "Gemfile.lock",
    "node_modules",
+   "cibuild",
    "gulpfile.js",
    "package.json",
    "_site",
