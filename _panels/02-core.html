@@ -8,30 +8,6 @@ title: core
 <li><a href="https://github.com/AXErunners/axe/releases/latest" class="button icon fa-download">binaries</a></li>
 </ul>
 </section>
-<h2>Deployment</h2>
-<p>Following guide covers AXE core compilation and was tested on Ubuntu 18.04.</p>
-<h3>Prepare the system</h3>
-Update operating system and install dependencies:
-<pre><code>sudo apt-get update
-sudo apt-get upgrade
-sudo apt-get install git python-virtualenv virtualenv fail2ban ufw -y
-sudo apt-get install build-essential libtool autotools-dev automake pkg-config libssl-dev libevent-dev bsdmainutils -y
-sudo apt-get install libqt5gui5 libqt5core5a libqt5dbus5 qttools5-dev qttools5-dev-tools libprotobuf-dev protobuf-compiler -y
-sudo apt-get install libboost-all-dev libminiupnpc-dev libzmq3-dev libqrencode-dev -y
-sudo add-apt-repository ppa:bitcoin/bitcoin
-sudo apt-get update
-sudo apt-get install libdb4.8-dev libdb4.8++-dev -y
-</pre></code>
-
-<h3>Install AXE core and launch the client</h3>
-
-Use the one-liner to install AXE core:
-
-<pre><code>wget https://gist.github.com/charlesrocket/f5331e54b47344b6957781bbbea8dc33/raw/17e4d3d1ce8ee5e45b5b022c32d7fa2616ba5643/axecore.sh && bash axecore.sh</pre></code>
-
-Now start GUI client with <code>axe-qt</code> or headless version with <code>axed</code>.<br />
-
-<hr class="hr-line">
 <h2>Gitian builds</h2>
 
 <p>Use <a href="https://github.com/AXErunners/axe-gitian">AXE-gitian</a> to perform deterministic binary builds using <a href="https://www.vagrantup.com/">Vagrant</a> and <a href="https://www.virtualbox.org/">VirtualBox</a> with <a href="https://www.ansible.com/">Ansible</a>. This section covers build process on macOS (<a href="https://github.com/AXErunners/axe-gitian#requirements">linux</a> instructions). Gitian provides a way to be reasonably certain that the AXE executables are really built from the exact source on GitHub and have not been tampered with. It also makes sure that the same, tested dependencies are used and statically built into the executable.
