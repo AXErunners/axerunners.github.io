@@ -6,4 +6,5 @@ gem "jekyll-sitemap"
 gem "jekyll-github-metadata"
 gem "jekyll-mentions"
 gem "html-proofer"
+gem "rouge"
 gem 'mime-types', require: 'mime/types/full'
