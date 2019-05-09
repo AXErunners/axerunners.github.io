@@ -5,42 +5,16 @@ title: mining
 <h2 class="major">mining</h2>
 <span class="image main"><img src="images/minerdedication.jpg" alt="" /></span>
 <section><h3>Create AXE address to receive payments</h3>
-<p>Download the <a href="https://github.com/AXErunners/axe/releases"><b>AXE core</b></a> or <a href="https://github.com/AXErunners/electrum-axe/releases"><b>AXE Electrum</b></a> thin client. Generate a new address to receive payments from the mining operation.</p></section>
-<h3 class="major">CPU/GPU</h3>
-<h4>Download a miner</h4>
-SGminer for Windows <a href="https://github.com/nicehash/sgminer/releases"><b>download</b></a><br />
-SGminer Source <a href="https://github.com/nicehash/sgminer/releases"><b>download</b></a><br />
-CCminer 1.2 (Nvidia - Compute 2.5+) <a href="https://github.com/cbuchner1/ccminer/releases/download/v1.2/ccminer-v1.2.zip"><b>download</b></a><br />
-<br />
-<h4>Configure your miner (Windows)</h4>
-Create a `bat` file by opening the notepad and pasting one of the lines below that matches your setup. <br />
-<br />
-<h4>SGMiner</h4>
-<pre><code>sgminer --kernel darkcoin-mod -o stratum+tcp://us.bsod.pw:2500 -u PBSFWKt583Xb5t92EPccWnXP2UHMTtCt5F -p x
-sgminer --kernel darkcoin-mod -o stratum+tcp://eu1.arcpool.com:1208 -u PBSFWKt583Xb5t92EPccWnXP2UHMTtCt5F -p x
-sgminer --kernel darkcoin-mod -o stratum+tcp://cryptonova.eu:3533 -u PBSFWKt583Xb5t92EPccWnXP2UHMTtCt5F -p c=AXE
-sgminer --kernel darkcoin-mod -o stratum+tcp://zenpool.eu:1106 -u PBSFWKt583Xb5t92EPccWnXP2UHMTtCt5F -p x</pre></code>
-<h4>CCminer</h4>
-<pre><code>ccminer -a x11 -o stratum+tcp://us.bsod.pw:2500 -u PBSFWKt583Xb5t92EPccWnXP2UHMTtCt5F -p x
-ccminer -a x11 -o stratum+tcp://eu1.arcpool.com:1208 -u PBSFWKt583Xb5t92EPccWnXP2UHMTtCt5F -p x
-ccminer -a x11 -o stratum+tcp://cryptonova.eu:3533 -u PBSFWKt583Xb5t92EPccWnXP2UHMTtCt5F -p c=AXE
-ccminer -a x11 -o stratum+tcp://zenpool.eu:1106 -u PBSFWKt583Xb5t92EPccWnXP2UHMTtCt5F -p x</pre></code>
-You then need to change -u <code>PBSFWKt583Xb5t92EPccWnXP2UHMTtCt5F</code> to reflect your own address. Replace <code>stratum+tcp://POOLADDRESS:PORT</code> to another pool if needed. Finally, go to "File > Save as" and save the file as `start.bat` in the same folder containing your miners application files. You are now ready to mine, double click on <code>start.bat</code> to start the operation.<br />
-<br />
+<p>Download the <a href="https://github.com/AXErunners/axe/releases"><b>Axe core</b></a>, <a href="https://github.com/AXErunners/electrum-axe/releases"><b>Axe Electrum</b></a> or mobile client. Generate a new address to receive payments from the mining operation.</p></section>
 <section><h3 class="major">ASIC</h3>
 Connect to your ASIC miner and enter values according to the following sample:<br />
 <br />
 <pre><code>Url: POOLADDRESS:PORT
 Worker: WALLETADDRESS
-Password: X</pre></code></section>
-
-<h3 class="major">p2pool</h3>
+Password: X</pre></section>
 <p>
-List of known addresses:
-</p>
-<pre><code>45.76.57.1:7923
-178.62.97.225:7923
-85.175.96.251:7923</pre></code>
+Use <a href="https://axe-p2pool-scanner.arcpool.com">p2pool-scanner</a> to find the best pool for your operations.
+<h3 class="major">p2pool</h3>
 Requirements:
 <li>axed >= 1.3.0</li>
 <li>Python >= 2.7</li>
