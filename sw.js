@@ -3,7 +3,7 @@ layout: null
 ---
 var urlsToCache = [];
 
-var CACHE_NAME = 'axerunners-cache-v15';
+var CACHE_NAME = 'axerunners-cache-v16';
 
 self.addEventListener('install', function(event) {
   // Perform install steps
