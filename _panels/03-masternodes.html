@@ -50,9 +50,15 @@ git clone https://github.com/axerunners/axerunner
 ~/axerunner/axerunner install sentinel
 </pre></code>
 
-<h4 class="major">Generate masternode key on local machine</h4>
-Download AXE core from <a href="https://github.com/AXErunners/axe/releases">releases</a>. Open your local Axe wallet (<code>axe-qt</code>)and let it sync with the network. After downloading the blockchain you can create masternode address with the key. Open debug console to enter <code>masternode genkey</code> and <code>getaccountaddress mn</code>. Send 1000 AXE to just generated <code>mn</code> address.</p>
+<h4 class="major">Generate masternode bls key on local machine</h4>
+Download AXE core from <a href="https://github.com/AXErunners/axe/releases">releases</a>. Open your local Axe wallet (<code>axe-qt</code>)and let it sync with the network. After downloading the blockchain you can create masternode address with the key. Open debug console to enter <code>bls generate</code> and <code>getaccountaddress mn</code>. Send 1000 AXE to just generated <code>mn</code> address.</p>
 <p>
+<pre><code>bls generate
+
+{
+  "secret": "28a85abb5aa8e820f65e33974cef0ab0bf06195f61454d2feb7fa578612d2228",
+  "public": "144cbf4d472716b9504a54c7ca26906a3346253b787ffeb1a4999325049f5b2c51ef2e7c215d85f0a9142ec1c78db99b"
+}</pre></code>
 <h4 class="major">Go back to VPS to edit the configuration file</h4>
 <pre><code>cd ~ && cd .axecore
 nano axe.conf</pre></code>
@@ -68,24 +74,107 @@ server=1
 daemon=1
 #- - - -
 masternode=1
-masternodeprivkey=XXX
-externalip=XXX.XXX.XXX.XXX</pre></code>
+masternodeprivkey=
+externalip=XXX.XXX.XXX.XXX
+masternodeblsprivkey=XXXXXXXXXXXXXXXXXXXXXXXXXXX
+#- - - -</pre></code>
 <li><code>rpcuser/password</code> might be random</li>
 <li><code>externalip</code> is your VPS static address</li>
-<li><code>masternodeprivkey</code> is generated with <code>masternode genkey</code></li>
+<li><code>masternodeblsprivkey</code> is generated with <code>bls generate</code></li>
 </ul></p>
 <br />
-<h4 class="major">Finish local wallet setup</h4>
-<p>Go to your local datadir and edit <code>masternode.conf</code> to make it look like example below:
-<pre><code>mn1 207.246.65.01:9937 93HaYBVUCYjEMezH1Y4sBGLALQZE1Yc1K64xiqgX37tGBDQL8Xg 7603c20a05258c208b58b0a0d77603b9fc93d47cfa403035f87f3ce0af814566 0
-mn2 207.246.65.02:9937 92Da1aYg6sbenP6uwskJgEY2XWB5LwJ7bXRtc3UPeShtHWJDjDv 5d898e78244f3206e0105f421cdb071d91d111a51cd88eb5511fc0dbf4bfd95f 1</pre></code>
-<li><code>mn1</code> is the alias of your masternode</li>
-<li><code>207.246.65.01:9937</code> is the IP address of your VPS and Axe RPC port <code>9337</code></li>
-<li><code>93HaYBVUCYjEMezH1Y4sBGLALQZE1Yc1K64xiqgX37tGBDQL8Xg</code> is your masternode private key</li>
-<li><code>5d898e78244f3206e0105f421cdb071d91d111a51cd88eb5511fc0dbf4bfd95f 1</code> is the mn transaction output from <code>masternode outputs</code></li>
-</p>
+<p>Press enter to make sure there is a blank line at the end of the file, then press Ctrl + X to close the editor and Y and Enter save the file. We now need to restart the masternode for this change to take effect. Enter the following commands, waiting a few seconds in between to give Axe Core time to shut down:</p>
+<pre><code>~/.axecore/axe-cli stop
+~/.axecore/axed</pre></code>
 <br />
-<section><h4 class="major">Start your masternode</h4>
-Go to your local wallet's masternode tab (on/off switch in Options) and start your masternode.
+<h4 class="major">Prepare a ProRegTx transaction</h4>
+<p>we need to get a new, unused address from the wallet to serve as the owner address. This is different to the collateral address</p>
+<pre><code>getnewaddress
 
-If your node shows <code>WATCHDOG EXPIRED</code> status - this usually indicates an issue with Sentinel. Check the schedule with <code>crontab -e</code> and give it a few hours. It might take a few hours for masternode to switch to <code>ENABLED</code> status.</section>
+PMwR1zf2Cv9gcMdHULRVbTTMGw7arvpbM5</pre></code>
+<p>Then either generate or choose an existing second address to receive the owner’s masternode payouts:</p>
+<pre><code>getnewaddress
+
+PLqyR8PHEB7Fp1ue8nSuLfuxQhrj5PSTDv</pre></code>
+<br />
+<p> You can also optionally generate and fund a third address to pay the transaction fee. The private keys to the owner and fee source addresses must exist in the wallet submitting the transaction to the network. If your wallet is protect by a password, it must now be unlocked to perform the following commands. Unlock your wallet for 5 minutes: </p>
+<pre><code>walletpassphrase yourSecretPassword 300</pre></code>
+<br />
+<p> We will now prepare an unsigned ProRegTx special transaction using the <code>protx register_prepare</code>  command. This command has the following syntax: </p>
+<pre><code> protx register_prepare collateralHash collateralIndex ipAndPort ownerKeyAddr
+  operatorPubKey votingKeyAddr operatorReward payoutAddress (feeSourceAddress)</pre></code>
+<br />
+<p>Open a text editor such as notepad to prepare this command. Replace each argument to the command as follows:</p>
+<li><code>collateralHash</code>:The txid of the 1000 Axe collateral funding transaction</li>
+<li><code>collateralIndex</code>The output index of the 1000 Axe funding transaction</li>
+<li><code>ipAndPort</code>Masternode IP address and port, in the format <code>x.x.x.x:9937</code></li>
+<li><code>ownerKeyAddr</code>The new Axe address generated above for the owner/voting address</li>
+<li><code>operatorPubKey</code>The BLS public key generated above</li>
+<li><code>votingKeyAddr</code>The new Axe address generated above, or the address of a delegate, used for proposal voting</li>
+<li><code>operatorReward</code>The percentage of the block reward allocated to the operator as payment</li>
+<li><code>payoutAddress</code>A new or existing Axe address to receive the owner’s masternode rewards</li>
+<li><code>feeSourceAddress</code> An (optional) address used to fund ProTx fee. <code>payoutAddress</code> will be used if not specified.</li>
+<br />
+<p> Example (remove line breaks if copying): </p>
+<pre><code>protx register_prepare
+  ad308ec104bdf113444be609eb3dce9474a5550424204c6538843e3ccd3d4e78
+  1
+  140.82.59.51:9999
+  PMwR1zf2Cv9gcMdHULRVbTTMGw7arvpbM5
+  144cbf4d472716b9504a54c7ca26906a3346253b787ffeb1a4999325049f5b2c51ef2e7c215d85f0a9142ec1c78db99b
+  PMwR1zf2Cv9gcMdHULRVbTTMGw7arvpbM5
+  0
+  PLqyR8PHEB7Fp1ue8nSuLfuxQhrj5PSTDv</pre></code>
+<br />
+<p>Output:</p>
+<pre><code>
+{
+   "tx": "0300010001784e3dcd3c3e8438654c20240455a57494ce3deb09e64b4413f1bd04c18e30ad0000000000feffffff01cccfa204000000001976a9141ea44ced396667eb7d1c5b3699e04b5b3046ecfb88ac00000000d1010000000000784e3dcd3c3e8438654c20240455a57494ce3deb09e64b4413f1bd04c18e30ad0100000000000000000000000000ffff8c523b33271411c59262c9633a1bb810a7fc2b833c43cfa852ab144cbf4d472716b9504a54c7ca26906a3346253b787ffeb1a4999325049f5b2c51ef2e7c215d85f0a9142ec1c78db99b11c59262c9633a1bb810a7fc2b833c43cfa852ab00001976a91405c5fed6a3eb0b92ea5119039efae7a8dee5456488ac4e6cc5451440a6044dbd04d33a11f4cddc9021532ede3012ebbc31c0bb4ceb9c00",
+  "collateralAddress": "PiFfzbwiN9oneftd7cEfr3kQLRwQ4kp7ue",
+  "signMessage": "PLqyR8PHEB7Fp1ue8nSuLfuxQhrj5PSTDv|0|yMwR1zf2Cv9gcMdHULRVbTTMGw7arvpbM5|PMwR1zf2Cv9gcMdHULRVbTTMGw7arvpbM5|4e00de34ee03d28adb4e1fdaec966ae239c11da7e6115f566fc4b3f75c8a5503"
+}</pre></code>
+<br />
+<p> Next we will use the <code>collateralAddress</code> and <code>signMessage</code> fields to sign the transaction, and the
+  output of the <code>tx</code> field to submit the transaction. </p>
+<br />
+<h4 class="major">Sign the ProRegTx transaction</h4>
+<br />
+<p> We will now sign the content of the <code>signMessage</code> field using the private key for the <code>collateral addres</code>s as specified in collateralAddress. </p>
+<pre><code>signmessage address message</pre></code>
+<br />
+<p>Example:</p>
+<pre><code>signmessage PiFfzbwiN9oneftd7cEfr3kQLRwQ4kp7ue PLqyR8PHEB7Fp1ue8nSuLfuxQhrj5PSTDv|0|PMwR1zf2Cv9gcMdHULRVbTTMGw7arvpbM5|PMwR1zf2Cv9gcMdHULRVbTTMGw7arvpbM5|4e00de34ee03d28adb4e1fdaec966ae239c11da7e6115f566fc4b3f75c8a5503</pre></code>
+<br />
+<p>Output:</p>
+<pre><code>H3ub9BATtvuV+zDGdkUQNoUGpaYFr/O1FypmrSmH5WJ0KFRi8T10FSew0EJO/+Ij+OLv4r0rt+HS9pQFsZgc2dE=</pre></code>
+<br />
+<h4 class="major">Submit the signed message</h4>
+<br />
+<p> We will now submit the ProRegTx special transaction to the blockchain to register the masternode.
+  This command must be sent from a Axe Core wallet holding a balance, since a standard transaction fee
+  is involved. The command takes the following syntax: </p>
+<br />
+<pre><code>protx register_submit tx sig</pre></code>
+<br />
+<p>Where:</p>
+<li><code>tx</code>: The serialized transaction previously returned in the <code>tx</code> output field from the <code>protx register_prepare</code> command </li>
+<li><code>sig</code>: The message signed with the collateral key from the <code>signmessage</code> command</li>
+<br />
+<p>Example:</p>
+<br />
+<pre><code>protx register_submit 0300010001784e3dcd3c3e8438654c20240455a57494ce3deb09e64b4413f1bd04c18e30ad0000000000feffffff01cccfa204000000001976a9141ea44ced396667eb7d1c5b3699e04b5b3046ecfb88ac00000000d1010000000000784e3dcd3c3e8438654c20240455a57494ce3deb09e64b4413f1bd04c18e30ad0100000000000000000000000000ffff8c523b33271411c59262c9633a1bb810a7fc2b833c43cfa852ab144cbf4d472716b9504a54c7ca26906a3346253b787ffeb1a4999325049f5b2c51ef2e7c215d85f0a9142ec1c78db99b11c59262c9633a1bb810a7fc2b833c43cfa852ab00001976a91405c5fed6a3eb0b92ea5119039efae7a8dee5456488ac4e6cc5451440a6044dbd04d33a11f4cddc9021532ede3012ebbc31c0bb4ceb9c00 H3ub9BATtvuV+zDGdkUQNoUGpaYFr/O1FypmrSmH5WJ0KFRi8T10FSew0EJO/+Ij+OLv4r0rt+HS9pQFsZgc2dE=</pre></code>
+<br />
+<p>Output:</p>
+<pre><code>b823338301e47875493c20361a23aef034578030c639480203b394669ab05e09</pre></code>
+<br />
+<p>Your masternode is now registered and will appear on the Deterministic Masternode List after the transaction
+  is mined to a block. You can view this list on the Masternodes -> Masternodes tab of the Axe Core wallet,
+  or in the console using the command <code>protx list valid</code>, where the txid of the final <code>protx register_submit</code>
+  transaction identifies your DIP003 masternode. </p>
+<br />
+<p> At this point you can go back to your terminal window and monitor your masternode using <code>axerunner/axerunner status</code>,
+ by entering <code>~/.axecore/axe-cli masternode status</code></p>	
+<br />
+<p>At this point you can safely log out of your server by typing <code>exit</code>. Congratulations! 
+  Your masternode is now running.</p>	
+
