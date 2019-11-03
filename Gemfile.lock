@@ -85,10 +85,10 @@ GEM
     mime-types-data (3.2019.1009)
     mini_magick (4.9.5)
     mini_portile2 (2.4.0)
-    minitest (5.12.2)
+    minitest (5.13.0)
     multi_json (1.14.1)
     multipart-post (2.1.1)
-    nokogiri (1.10.4)
+    nokogiri (1.10.5)
       mini_portile2 (~> 2.4.0)
     octokit (4.14.0)
       sawyer (~> 0.8.0, >= 0.5.3)
@@ -134,7 +134,7 @@ GEM
       thread_safe (~> 0.1)
     unicode-display_width (1.6.0)
     yell (2.2.0)
-    zeitwerk (2.2.0)
+    zeitwerk (2.2.1)
 
 PLATFORMS
   ruby
