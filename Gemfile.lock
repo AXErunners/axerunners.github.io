@@ -64,7 +64,7 @@ GEM
     jekyll-github-metadata (2.13.0)
       jekyll (>= 3.4, < 5.0)
       octokit (~> 4.0, != 4.4.0)
-    jekyll-mentions (1.5.1)
+    jekyll-mentions (1.6.0)
       html-pipeline (~> 2.3)
       jekyll (>= 3.7, < 5.0)
     jekyll-sass-converter (2.1.0)
@@ -89,7 +89,7 @@ GEM
     minitest (5.14.0)
     multi_json (1.14.1)
     multipart-post (2.1.1)
-    nokogiri (1.10.8)
+    nokogiri (1.10.9)
       mini_portile2 (~> 2.4.0)
     nokogumbo (2.0.2)
       nokogiri (~> 1.8, >= 1.8.4)
@@ -138,7 +138,7 @@ GEM
       thread_safe (~> 0.1)
     unicode-display_width (1.6.1)
     yell (2.2.2)
-    zeitwerk (2.2.2)
+    zeitwerk (2.3.0)
 
 PLATFORMS
   ruby
