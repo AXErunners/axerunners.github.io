@@ -10,59 +10,7 @@ title: core
 </section>
 <h2>Gitian builds</h2>
 
-<p>Use <a href="https://github.com/AXErunners/axe-gitian">AXE-gitian</a> to perform deterministic binary builds using <a href="https://www.vagrantup.com/">Vagrant</a> and <a href="https://www.virtualbox.org/">VirtualBox</a> with <a href="https://www.ansible.com/">Ansible</a>. This section covers build process on macOS (<a href="https://github.com/AXErunners/axe-gitian#requirements">linux</a> instructions). Gitian provides a way to be reasonably certain that the AXE executables are really built from the exact source on GitHub and have not been tampered with. It also makes sure that the same, tested dependencies are used and statically built into the executable.
+<p>Use <a href="https://github.com/AXErunners/axe-gitian">AXE-gitian</a> to perform deterministic binary builds using <a href="https://www.vagrantup.com/">Vagrant</a> and <a href="https://www.virtualbox.org/">VirtualBox</a> with <a href="https://www.ansible.com/">Ansible</a>. Gitian provides a way to be reasonably certain that the AXE executables are really built from the exact source on GitHub and have not been tampered with. It also makes sure that the same, tested dependencies are used and statically built into the executable. Multiple developers build from source code by following a specific descriptor ("recipe"), cryptographically sign the result, and upload the resulting signature. These results are compared and only if they match is the build is accepted. </p>
 
-Multiple developers build from source code by following a specific descriptor ("recipe"), cryptographically sign the result, and upload the resulting signature. These results are compared and only if they match is the build is accepted.</p>
-
-<h4>GnuPG</h4>
-
-<p>Download and install the latest version of GPG Suite from <a href="https://gpgtools.org">here</a>.</p>
-
-<h4>Vagrant</h4>
-
-<p>Download and install the latest version of Vagrant from <a href="https://www.vagrantup.com/downloads.html">here</a>.</p>
-
-<h4>VirtualBoX</h4>
-
-<p>Download and install the latest version of VirtualBox from <a href="https://www.virtualbox.org/wiki/Downloads">here</a>.</p>
-
-<h4>Ansible</h4>
-
-Install prerequisites
-<pre><code>ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-brew doctor
-brew install git
-sudo easy_install pip
-</pre></code>
-Setup Ansible
-
-<pre><code>sudo pip install ansible</pre></code>
-
-<h3>axe-gitian</h3>
-<pre><code>git clone https://github.com/AXErunners/axe-gitian
-cd axe-gitian
-</pre></code>
-Edit your <code>gitian.yml</code> file:
-<pre><code>
-# URL of repository containing AXE source code.
-axe_git_repo_url: 'https://github.com/AXErunners/axe'
-
-# Specific tag or branch you want to build.
-axe_version: 'master'
-
-# The name@ in the e-mail address of your GPG key, alternatively a key ID.
-gpg_key_name: 'F16219F4C23F91112E9C734A8DFCBF8E5A4D8019'
-
-# OPTIONAL set to import your SSH key into the VM. Example: id_rsa, id_ed25519. Assumed to reside in ~/.ssh
-ssh_key_name: ''
-</pre></code>
-<p>Place <a href="https://github.com/AXErunners/axe/blob/master/doc/README_osx.md">Apple SDK</a> tarball (<code>MacOSX10.11.sdk.tar.gz</code>) into <code>axe-gitian</code> folder for macOS builds.</p>
-<p>Start the build with <code>vagrant up --provision axe-build</code>.</p>
-<p>Then connect to the box with <code>vagrant ssh axe-build</code>.</p>
-Prepare the container and start building with:
-<pre><code>#replace $SIGNER and $VERSION to match your gitian.yml
-./gitian-build.py --setup $signer $version
-./gitian-build.py -B $SIGNER $VERSION
-</pre></code>
-<p>Commit assertions from the box using <code>git</code> (<a href="https://github.com/settings/tokens">access token</a> might be needed) or use <code>vagrant scp</code> <a href="https://github.com/AXErunners/axe-gitian#copying-files">plugin</a> to transfer data.</p>
-<p><i>guide for <a href="https://github.com/AXErunners/axe-gitian#requirements">linux</a></i></p>
+<ul><li><a href="https://github.com/AXErunners/axe-gitian#requirements">Guide</a></li>
+<li><a href="https://github.com/AXErunners/gitian.sigs">Sigs</a></li></ul>
