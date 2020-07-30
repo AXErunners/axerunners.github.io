@@ -85,7 +85,7 @@ masternodeblsprivkey=XXXXXXXXXXXXXXXXXXXXXXXXXXX
 <pre><code>~/axerunner/axerunner restart now</pre></code>
 <br />
 <h4 class="major">Prepare a ProRegTx transaction</h4>
-<p>we need to get a new, unused address from the wallet to serve as the owner address. This is different to the collateral address</p>
+<p>We need to get a new, unused address from the wallet to serve as the owner address. This is different to the collateral address</p>
 <pre><code>getnewaddress
 
 PMwR1zf2Cv9gcMdHULRVbTTMGw7arvpbM5</pre></code>
@@ -136,7 +136,7 @@ PLqyR8PHEB7Fp1ue8nSuLfuxQhrj5PSTDv</pre></code>
 <br />
 <h4 class="major">Sign the ProRegTx transaction</h4>
 <br />
-<p> We will now sign the content of the <code>signMessage</code> field using the private key for the <code>collateral addres</code>s as specified in collateralAddress. </p>
+<p> We will now sign the content of the <code>signMessage</code> field using the private key for the <code>collateral address</code> as specified in collateralAddress. </p>
 <pre><code>signmessage address message</pre></code>
 <br />
 <p>Example:</p>
@@ -169,9 +169,6 @@ PLqyR8PHEB7Fp1ue8nSuLfuxQhrj5PSTDv</pre></code>
   or in the console using the command <code>protx list valid</code>, where the txid of the final <code>protx register_submit</code>
   transaction identifies your DIP003 masternode. </p>
 <br />
-<p> At this point you can go back to your terminal window and monitor your masternode using <code>axerunner/axerunner status</code>,
- by entering <code>~/.axecore/axe-cli masternode status</code></p>	
+<p> At this point you can go back to your terminal window and monitor your masternode using <code>axerunner/axerunner status</code></p>	
 <br />
-<p>At this point you can safely log out of your server by typing <code>exit</code>. Congratulations! 
-  Your masternode is now running.</p>	
 
