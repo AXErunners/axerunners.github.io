@@ -38,9 +38,8 @@ Add some swap:
 sudo chmod 600 /swapfile
 sudo mkswap /swapfile
 sudo swapon /swapfile
-sudo nano /etc/fstab</pre></code>
+sudo sh -c 'echo "/swapfile none swap sw 0 0" >> /etc/fstab'</pre></code>
 <br />
-Enter the following file at the end: <code>/swapfile none swap sw 0 0</code><br />
 
 <br />
 <h4 class="major">Install AXE on VPS</h4>
