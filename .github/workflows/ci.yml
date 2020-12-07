@@ -14,8 +14,8 @@ jobs:
     - uses: actions/checkout@v2
     - name: Prepare
       uses: actions/setup-ruby@v1
-        with:
-          ruby-version: ${{ matrix.ruby }}
+      with:
+        ruby-version: ${{ matrix.ruby }}
     - name: Run tests
       run: |
         sudo apt-get -yqq install libpq-dev
