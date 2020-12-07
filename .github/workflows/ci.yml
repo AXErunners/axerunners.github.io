@@ -1,0 +1,25 @@
+name: jekyll tests
+
+on: [push, pull_request]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        ruby: [ '2.6', '2.7' ]
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Prepare
+      uses: actions/setup-ruby@v1
+        with:
+          ruby-version: ${{ matrix.ruby }}
+    - name: Run tests
+      run: |
+        sudo apt-get -yqq install libpq-dev
+        gem install bundler
+        bundle install
+        bundle exec jekyll build --verbose
+        bundle exec htmlproofer ./_site --http-status-ignore "999" --url-swap "https?\:\/\/(127\.0\.0\.1\:4000|localhost\:4000|axerunners\.github.io):" --only-4xx --allow-hash-href --empty-alt-ignore --url-ignore "/wallet-generator,https://www.crunchbase.com/organization/axerunners"
