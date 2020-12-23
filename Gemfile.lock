@@ -22,7 +22,7 @@ GEM
       ruby2_keywords
     fastimage (1.8.1)
       addressable (~> 2.3, >= 2.3.5)
-    ffi (1.14.0)
+    ffi (1.14.2)
     forwardable-extended (2.6.0)
     hike (1.2.3)
     html-pipeline (2.14.0)
@@ -104,7 +104,7 @@ GEM
     public_suffix (4.0.6)
     rack (1.6.13)
     rainbow (3.0.0)
-    rake (13.0.2)
+    rake (13.0.3)
     rb-fsevent (0.10.4)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
@@ -159,4 +159,4 @@ DEPENDENCIES
   rouge
 
 BUNDLED WITH
-   2.0.2
+   2.1.4
