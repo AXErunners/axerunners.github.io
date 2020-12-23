@@ -19,4 +19,4 @@ jobs:
         gem install bundler
         bundle install
         bundle exec jekyll build --verbose
-        bundle exec htmlproofer ./_site --http-status-ignore "999" --url-swap "https?\:\/\/(127\.0\.0\.1\:4000|localhost\:4000|axerunners\.github.io):" --only-4xx --allow-hash-href --empty-alt-ignore --url-ignore "/wallet-generator,https://www.crunchbase.com/organization/axerunners"
+        bundle exec htmlproofer ./_site --http-status-ignore "999" --url-swap "https?\:\/\/(127\.0\.0\.1\:4000|localhost\:4000|axerunners\.github.io):" --only-4xx --allow-hash-href --empty-alt-ignore --url-ignore "/wallet-generator,https://www.crunchbase.com/organization/axerunners,https://twitter.com/axerunners"
